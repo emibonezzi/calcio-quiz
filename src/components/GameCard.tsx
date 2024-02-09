@@ -31,19 +31,10 @@ export interface Props {
       away: number;
     };
   };
+  onGuess: (guess: string) => void;
 }
 
-const GameCard = ({ game }: Props) => {
-  const correctScore = `${game.goals.home}-${game.goals.away}`;
-
-  const checkScore = (userGuess: string, correct: string) => {
-    if (userGuess === correct) {
-      console.log("correct!");
-    } else {
-      console.log("wrong!");
-    }
-  };
-
+const GameCard = ({ game, onGuess }: Props) => {
   return (
     <Flex justifyContent="center">
       <Grid
@@ -68,8 +59,8 @@ const GameCard = ({ game }: Props) => {
           <TeamCard logo={game.teams.home.logo} name={game.teams.home.name} />
         </GridItem>
         <GridItem area="score">
-          <ScoreGuesser onScore={(guess) => checkScore(guess, correctScore)} />
-          {/* {game.goals.home}-{game.goals.away} */}
+          <ScoreGuesser onScore={(guess) => onGuess(guess)} />
+          {game.goals.home}-{game.goals.away}
         </GridItem>
         <GridItem area="away">
           <TeamCard logo={game.teams.away.logo} name={game.teams.away.name} />

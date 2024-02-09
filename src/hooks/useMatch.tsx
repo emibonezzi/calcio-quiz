@@ -19,14 +19,17 @@ interface Fixture {
   };
 }
 
-const useMatch = () => {
+const useMatch = (answerStatus: boolean) => {
   const [game, setGame] = useState<Fixture>();
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
-    setGame(sampleResponse.response[11]);
-  }, []);
+    const randomGame = Math.floor(
+      Math.random() * sampleResponse.response.length - 1
+    );
+    setGame(sampleResponse.response[randomGame]);
+  }, [answerStatus]);
 
   /*   useEffect(() => {
     apiClient

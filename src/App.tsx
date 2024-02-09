@@ -5,10 +5,27 @@ import GameCard from "./components/GameCard";
 import { useEffect, useState } from "react";
 
 function App() {
-  const { game, isLoading } = useMatch(); // fetch match from API
-  const [score, currentScore] = useState();
+  const [answerStatus, setAnswerStatus] = useState(false);
+  const { game, isLoading } = useMatch(answerStatus); // fetch match from API
+  // on new Game setAnswerStatus to false
+  useEffect(() => {
+    setAnswerStatus(false);
+  }, [game]);
 
   if (!isLoading) return <Spinner />;
+
+  const correctScore = `${game?.goals.home}-${game?.goals.away}`;
+
+  const checkScore = (userGuess: string, correct: string) => {
+    if (!answerStatus) {
+      if (userGuess === correct) {
+        setAnswerStatus(true);
+        console.log("Correct");
+      } else {
+        console.log("Wrong!");
+      }
+    }
+  };
 
   return (
     <Grid
@@ -21,7 +38,11 @@ function App() {
         <NavBar />
       </GridItem>
       <GridItem area="question">
-        <GameCard game={game}></GameCard>
+        <GameCard
+          onGuess={(guess) => checkScore(guess, correctScore)}
+          game={game}
+        ></GameCard>
+        {answerStatus ? <p>Correct!</p> : ""}
       </GridItem>
     </Grid>
   );
