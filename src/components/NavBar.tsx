@@ -1,19 +1,21 @@
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Switch, Text } from "@chakra-ui/react";
 import { PiSoccerBall } from "react-icons/pi";
 
 const NavBar = () => {
   return (
-    <Flex justifyContent="center" alignItems="center" gap={4}>
+    <Flex gap={{ base: 5 }} justifyContent="space-between" alignItems="center">
+      <Box fontSize={{ base: "50px", lg: "80px" }}>
+        <PiSoccerBall color="green"></PiSoccerBall>
+      </Box>
       <Heading
-        letterSpacing="1px"
         fontFamily="sans-serif"
-        fontWeight="100"
         display="flex"
         alignItems="center"
-        fontSize={{ base: "xl", lg: "9xl" }}
+        fontSize={{ base: "xl", lg: "5xl" }}
       >
-        CalcioQuiz <PiSoccerBall color="green"></PiSoccerBall>
+        GuessTheScore
       </Heading>
+      <Switch size={{ base: "md", lg: "lg" }} colorScheme="green" />
     </Flex>
   );
 };

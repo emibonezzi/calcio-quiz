@@ -13,7 +13,8 @@ const ScoreCard = ({ score, personalBest, attempts }: Props) => {
       borderRadius={{ base: 25, lg: 50 }}
       p={5}
       flexDirection="column"
-      boxSize="400px"
+      justifyContent="center"
+      boxSize={{ base: "200px", lg: "400px" }}
       boxShadow="xl"
     >
       <Flex justifyContent="space-between">
