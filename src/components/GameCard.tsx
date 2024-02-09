@@ -38,6 +38,7 @@ const GameCard = ({ game, onGuess }: Props) => {
   return (
     <Flex justifyContent="center">
       <Grid
+        alignItems="center"
         boxShadow="2xl"
         borderRadius={{ base: 25, lg: 50 }}
         padding={{ base: 3, lg: 10 }}

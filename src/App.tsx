@@ -3,10 +3,13 @@ import NavBar from "./components/NavBar";
 import useMatch from "./hooks/useMatch";
 import GameCard from "./components/GameCard";
 import { useEffect, useState } from "react";
+import ScoreCard from "./components/ScoreCard";
 
 function App() {
   const [answerStatus, setAnswerStatus] = useState(false);
   const [score, setScore] = useState(0);
+  const [attempts, setAttempts] = useState(5);
+  const [personalBest, setPersonalBest] = useState(0);
   const { game, isLoading } = useMatch(answerStatus); // fetch match from API
 
   // on new Game setAnswerStatus to false
@@ -22,9 +25,11 @@ function App() {
     if (!answerStatus) {
       if (userGuess === correct) {
         setAnswerStatus(true);
+        setScore(score + 1);
         console.log("Correct");
       } else {
         console.log("Wrong!");
+        setAttempts(attempts - 1);
       }
     }
   };
@@ -34,7 +39,10 @@ function App() {
       gap={10}
       px={{ base: "0", lg: "20px" }}
       paddingY="20px"
-      templateAreas={`"navbar" "question"`}
+      templateAreas={{
+        base: `"navbar" "question" "score"`,
+        lg: `"navbar navbar" "question score"`,
+      }}
     >
       <GridItem mb={3} area="navbar">
         <NavBar />
@@ -45,6 +53,13 @@ function App() {
           game={game}
         ></GameCard>
         {answerStatus ? <p>Correct!</p> : ""}
+      </GridItem>
+      <GridItem area="score">
+        <ScoreCard
+          score={score}
+          attempts={attempts}
+          personalBest={personalBest}
+        ></ScoreCard>
       </GridItem>
     </Grid>
   );
