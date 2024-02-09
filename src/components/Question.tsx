@@ -1,10 +1,12 @@
 import { Button, Flex, Heading } from "@chakra-ui/react";
-import React from "react";
+import { sampleResponse } from "../utils/sampleResponse";
+import GameCard from "./GameCard";
+import { Fixture } from "../hooks/useMatch";
 
-const Question = () => {
+const Question = (game) => {
   return (
     <Flex justifyContent="center">
-      <Button size="lg">Start quiz</Button>
+      <GameCard></GameCard>
     </Flex>
   );
 };
