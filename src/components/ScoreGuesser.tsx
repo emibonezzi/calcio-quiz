@@ -18,6 +18,7 @@ const ScoreGuesser = ({ onScore }: Props) => {
   const {
     handleSubmit,
     register,
+    reset,
     formState: { errors },
   } = useForm<ScoreData>({ resolver: zodResolver(schema) });
 
@@ -26,6 +27,7 @@ const ScoreGuesser = ({ onScore }: Props) => {
       onSubmit={handleSubmit((event) => {
         let userGuess = `${event.home}-${event.away}`;
         onScore(userGuess);
+        reset();
       })}
     >
       <Flex>
@@ -36,12 +38,12 @@ const ScoreGuesser = ({ onScore }: Props) => {
           fontWeight="bold"
           textAlign="center"
           type="number"
-          fontSize="7xl"
+          fontSize={{ base: "20px", lg: "7xl" }}
           h={"fit-content"}
           w={"2ch"}
         />
         {/*         {errors.home && <p>{errors.home.message}</p>} */}
-        <Heading mx={2} fontSize="7xl">
+        <Heading mx={2} fontSize={{ base: "20px", lg: "7xl" }}>
           -
         </Heading>
         <label htmlFor="away"></label>
@@ -51,7 +53,7 @@ const ScoreGuesser = ({ onScore }: Props) => {
           fontWeight="bold"
           textAlign="center"
           type="number"
-          fontSize="7xl"
+          fontSize={{ base: "20px", lg: "7xl" }}
           h={"fit-content"}
           w={"2ch"}
         />

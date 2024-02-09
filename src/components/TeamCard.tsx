@@ -7,9 +7,21 @@ interface Props {
 
 const TeamCard = ({ logo, name }: Props) => {
   return (
-    <Flex flexDirection="column" justifyContent="center" alignItems="center">
-      <Image src={logo}></Image>
-      <Heading>{name}</Heading>
+    <Flex
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+      overflow="hidden"
+    >
+      <Image mb={3} w={{ base: "50px", lg: "180px" }} src={logo}></Image>
+      <Heading
+        fontSize={{
+          base: "10px",
+          lg: "2xl",
+        }}
+      >
+        {name}
+      </Heading>
     </Flex>
   );
 };

@@ -34,14 +34,17 @@ const useMatch = (answerStatus: boolean) => {
   /*   useEffect(() => {
     apiClient
       .get("/fixtures", {
-        params: { league: 39, season: 2020 },
+        params: { league: 39, season: 2022 },
       })
       .then((res) => {
         setIsLoading(true);
-        setGame(res.data.response[2]);
+        const randomGame = Math.floor(
+          Math.random() * sampleResponse.response.length - 1
+        );
+        setGame(res.data.response[randomGame]);
       })
       .catch((err) => console.log(err.message));
-  }, []); */
+  }, [answerStatus]); */
 
   return { game, isLoading };
 };

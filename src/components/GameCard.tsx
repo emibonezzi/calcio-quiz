@@ -39,18 +39,18 @@ const GameCard = ({ game, onGuess }: Props) => {
     <Flex justifyContent="center">
       <Grid
         boxShadow="2xl"
-        borderRadius={50}
-        padding={10}
+        borderRadius={{ base: 25, lg: 50 }}
+        padding={{ base: 3, lg: 10 }}
         gap={5}
         templateAreas={`"header header header" "home score away"`}
         templateColumns={"auto"}
       >
         <GridItem area="header">
           <Flex justifyContent="space-between">
-            <Badge fontSize="15px" color="#a881af">
+            <Badge fontSize={{ base: "7px", lg: "15px" }} color="#a881af">
               {game.league.name}
             </Badge>
-            <Badge fontSize="15px" color="#a881af">
+            <Badge fontSize={{ base: "7px", lg: "15px" }} color="#a881af">
               {new Date(game.fixture.date).toLocaleDateString()}
             </Badge>
           </Flex>

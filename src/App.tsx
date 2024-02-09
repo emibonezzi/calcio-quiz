@@ -6,7 +6,9 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [answerStatus, setAnswerStatus] = useState(false);
+  const [score, setScore] = useState(0);
   const { game, isLoading } = useMatch(answerStatus); // fetch match from API
+
   // on new Game setAnswerStatus to false
   useEffect(() => {
     setAnswerStatus(false);
@@ -30,9 +32,9 @@ function App() {
   return (
     <Grid
       gap={10}
-      px="20px"
+      px={{ base: "0", lg: "20px" }}
       paddingY="20px"
-      templateAreas={` "navbar" "question"`}
+      templateAreas={`"navbar" "question"`}
     >
       <GridItem mb={3} area="navbar">
         <NavBar />

@@ -10,7 +10,7 @@ const NavBar = () => {
         fontWeight="100"
         display="flex"
         alignItems="center"
-        fontSize={{ base: "5xl", lg: "9xl" }}
+        fontSize={{ base: "xl", lg: "9xl" }}
       >
         CalcioQuiz <PiSoccerBall color="green"></PiSoccerBall>
       </Heading>
