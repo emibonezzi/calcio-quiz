@@ -1,11 +1,11 @@
 export const sampleResponse = {
   get: "fixtures",
   parameters: {
-    league: "135",
-    season: "2020",
+    league: "2",
+    season: "2022",
   },
   errors: [],
-  results: 380,
+  results: 214,
   paging: {
     current: 1,
     total: 1,
@@ -13,19 +13,19 @@ export const sampleResponse = {
   response: [
     {
       fixture: {
-        id: 608480,
-        referee: "M. Piccinini",
+        id: 865410,
+        referee: "T. Musial",
         timezone: "UTC",
-        date: "2020-09-30T16:00:00+00:00",
-        timestamp: 1601481600,
+        date: "2022-06-21T19:30:00+00:00",
+        timestamp: 1655839800,
         periods: {
-          first: 1601481600,
-          second: 1601485200,
+          first: 1655839800,
+          second: 1655843400,
         },
         venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
+          id: 831,
+          name: "Víkingsvöllur",
+          city: "Reykjavík",
         },
         status: {
           long: "Match Finished",
@@ -34,66 +34,1086 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 1",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Preliminary Round",
       },
       teams: {
         home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
+          id: 2273,
+          name: "FC Levadia Tallinn",
+          logo: "https://media.api-sports.io/football/teams/2273.png",
           winner: false,
         },
         away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
+          id: 278,
+          name: "Vikingur Reykjavik",
+          logo: "https://media.api-sports.io/football/teams/278.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 6,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 3,
+        },
+        fulltime: {
+          home: 1,
+          away: 6,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 865411,
+        referee: "R. Saggi",
+        timezone: "UTC",
+        date: "2022-06-21T13:00:00+00:00",
+        timestamp: 1655816400,
+        periods: {
+          first: 1655816400,
+          second: 1655820000,
+        },
+        venue: {
+          id: 831,
+          name: "Víkingsvöllur",
+          city: "Reykjavík",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Preliminary Round",
+      },
+      teams: {
+        home: {
+          id: 2249,
+          name: "La Fiorita",
+          logo: "https://media.api-sports.io/football/teams/2249.png",
+          winner: false,
+        },
+        away: {
+          id: 3342,
+          name: "Inter Club d'Escaldes",
+          logo: "https://media.api-sports.io/football/teams/3342.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866829,
+        referee: "B. Dankert",
+        timezone: "UTC",
+        date: "2022-07-05T16:00:00+00:00",
+        timestamp: 1657036800,
+        periods: {
+          first: 1657036800,
+          second: 1657040400,
+        },
+        venue: {
+          id: 121,
+          name: "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
+          city: "Yerevan",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 709,
+          name: "Pyunik Yerevan",
+          logo: "https://media.api-sports.io/football/teams/709.png",
+          winner: null,
+        },
+        away: {
+          id: 2246,
+          name: "CFR 1907 Cluj",
+          logo: "https://media.api-sports.io/football/teams/2246.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866830,
+        referee: "M. Fabbri",
+        timezone: "UTC",
+        date: "2022-07-13T18:30:00+00:00",
+        timestamp: 1657737000,
+        periods: {
+          first: 1657737000,
+          second: 1657740600,
+        },
+        venue: {
+          id: 1311,
+          name: "Stadionul Dr. Constantin Rădulescu",
+          city: "Cluj-Napoca",
+        },
+        status: {
+          long: "Match Finished",
+          short: "PEN",
+          elapsed: 120,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 2246,
+          name: "CFR 1907 Cluj",
+          logo: "https://media.api-sports.io/football/teams/2246.png",
+          winner: false,
+        },
+        away: {
+          id: 709,
+          name: "Pyunik Yerevan",
+          logo: "https://media.api-sports.io/football/teams/709.png",
           winner: true,
         },
       },
       goals: {
         home: 2,
-        away: 5,
+        away: 2,
       },
       score: {
         halftime: {
           home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: 1,
+          away: 1,
+        },
+        penalty: {
+          home: 3,
           away: 4,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866831,
+        referee: "A. Papapetrou",
+        timezone: "UTC",
+        date: "2022-07-06T18:15:00+00:00",
+        timestamp: 1657131300,
+        periods: {
+          first: 1657131300,
+          second: 1657134900,
+        },
+        venue: {
+          id: 1441,
+          name: "Ljudski vrt",
+          city: "Maribor",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 552,
+          name: "Maribor",
+          logo: "https://media.api-sports.io/football/teams/552.png",
+          winner: null,
+        },
+        away: {
+          id: 392,
+          name: "Shakhter Soligorsk",
+          logo: "https://media.api-sports.io/football/teams/392.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866832,
+        referee: "E. Jorgji",
+        timezone: "UTC",
+        date: "2022-07-13T17:00:00+00:00",
+        timestamp: 1657731600,
+        periods: {
+          first: 1657731600,
+          second: 1657735200,
+        },
+        venue: {
+          id: 2404,
+          name: "Yeni Sakarya Atatürk Stadyumu",
+          city: "Adapazarı",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 392,
+          name: "Shakhter Soligorsk",
+          logo: "https://media.api-sports.io/football/teams/392.png",
+          winner: false,
+        },
+        away: {
+          id: 552,
+          name: "Maribor",
+          logo: "https://media.api-sports.io/football/teams/552.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 0,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866833,
+        referee: "Vitor Ferreira",
+        timezone: "UTC",
+        date: "2022-07-05T17:45:00+00:00",
+        timestamp: 1657043100,
+        periods: {
+          first: 1657043100,
+          second: 1657046700,
+        },
+        venue: {
+          id: 10547,
+          name: "Huvepharma Arena",
+          city: "Razgrad",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 566,
+          name: "Ludogorets",
+          logo: "https://media.api-sports.io/football/teams/566.png",
+          winner: true,
+        },
+        away: {
+          id: 673,
+          name: "Sutjeska",
+          logo: "https://media.api-sports.io/football/teams/673.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
         },
         fulltime: {
           home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866834,
+        referee: "G. Bogár",
+        timezone: "UTC",
+        date: "2022-07-12T19:00:00+00:00",
+        timestamp: 1657652400,
+        periods: {
+          first: 1657652400,
+          second: 1657656000,
+        },
+        venue: {
+          id: 2532,
+          name: "DG Arena",
+          city: "Podgorica",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 673,
+          name: "Sutjeska",
+          logo: "https://media.api-sports.io/football/teams/673.png",
+          winner: false,
+        },
+        away: {
+          id: 566,
+          name: "Ludogorets",
+          logo: "https://media.api-sports.io/football/teams/566.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866835,
+        referee: "R. Saggi",
+        timezone: "UTC",
+        date: "2022-07-06T17:30:00+00:00",
+        timestamp: 1657128600,
+        periods: {
+          first: 1657128600,
+          second: 1657132200,
+        },
+        venue: {
+          id: null,
+          name: "Stade Jos Nosbaum",
+          city: "Dudelange",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 578,
+          name: "F91 Dudelange",
+          logo: "https://media.api-sports.io/football/teams/578.png",
+          winner: true,
+        },
+        away: {
+          id: 694,
+          name: "Tirana",
+          logo: "https://media.api-sports.io/football/teams/694.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866836,
+        referee: "César Soto",
+        timezone: "UTC",
+        date: "2022-07-12T18:00:00+00:00",
+        timestamp: 1657648800,
+        periods: {
+          first: 1657648800,
+          second: 1657652400,
+        },
+        venue: {
+          id: null,
+          name: "Air Albania Stadium",
+          city: "Tirana",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 694,
+          name: "Tirana",
+          logo: "https://media.api-sports.io/football/teams/694.png",
+          winner: false,
+        },
+        away: {
+          id: 578,
+          name: "F91 Dudelange",
+          logo: "https://media.api-sports.io/football/teams/578.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866837,
+        referee: "D. Bel",
+        timezone: "UTC",
+        date: "2022-07-06T14:00:00+00:00",
+        timestamp: 1657116000,
+        periods: {
+          first: 1657116000,
+          second: 1657119600,
+        },
+        venue: {
+          id: null,
+          name: "Ortalıq Stadion",
+          city: "Kostanay",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 2259,
+          name: "FK Tobol Kostanay",
+          logo: "https://media.api-sports.io/football/teams/2259.png",
+          winner: null,
+        },
+        away: {
+          id: 651,
+          name: "Ferencvarosi TC",
+          logo: "https://media.api-sports.io/football/teams/651.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866838,
+        referee: "K. Jakubik",
+        timezone: "UTC",
+        date: "2022-07-13T18:00:00+00:00",
+        timestamp: 1657735200,
+        periods: {
+          first: 1657735200,
+          second: 1657738800,
+        },
+        venue: {
+          id: 799,
+          name: "Groupama Aréna",
+          city: "Budapest",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 651,
+          name: "Ferencvarosi TC",
+          logo: "https://media.api-sports.io/football/teams/651.png",
+          winner: true,
+        },
+        away: {
+          id: 2259,
+          name: "FK Tobol Kostanay",
+          logo: "https://media.api-sports.io/football/teams/2259.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 5,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 3,
+          away: 1,
+        },
+        fulltime: {
+          home: 5,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866839,
+        referee: "R. Harvey",
+        timezone: "UTC",
+        date: "2022-07-05T18:00:00+00:00",
+        timestamp: 1657044000,
+        periods: {
+          first: 1657044000,
+          second: 1657047600,
+        },
+        venue: {
+          id: null,
+          name: "Stadiumi Fadil Vokrri",
+          city: "Pristina",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 12733,
+          name: "Ballkani",
+          logo: "https://media.api-sports.io/football/teams/12733.png",
+          winner: null,
+        },
+        away: {
+          id: 586,
+          name: "FK Zalgiris Vilnius",
+          logo: "https://media.api-sports.io/football/teams/586.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866840,
+        referee: "K. Hagenes",
+        timezone: "UTC",
+        date: "2022-07-12T16:00:00+00:00",
+        timestamp: 1657641600,
+        periods: {
+          first: 1657641600,
+          second: 1657645200,
+        },
+        venue: {
+          id: 1030,
+          name: "Vilniaus LFF stadionas",
+          city: "Vilnius",
+        },
+        status: {
+          long: "Match Finished",
+          short: "AET",
+          elapsed: 120,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 586,
+          name: "FK Zalgiris Vilnius",
+          logo: "https://media.api-sports.io/football/teams/586.png",
+          winner: true,
+        },
+        away: {
+          id: 12733,
+          name: "Ballkani",
+          logo: "https://media.api-sports.io/football/teams/12733.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: 1,
+          away: 0,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866841,
+        referee: "J. Xhaja",
+        timezone: "UTC",
+        date: "2022-07-06T16:00:00+00:00",
+        timestamp: 1657123200,
+        periods: {
+          first: 1657123200,
+          second: 1657126800,
+        },
+        venue: {
+          id: 615,
+          name: "Bolt Arena",
+          city: "Helsinki",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 649,
+          name: "HJK helsinki",
+          logo: "https://media.api-sports.io/football/teams/649.png",
+          winner: true,
+        },
+        away: {
+          id: 4160,
+          name: "Rīgas FS",
+          logo: "https://media.api-sports.io/football/teams/4160.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866842,
+        referee: "D. Fuxman",
+        timezone: "UTC",
+        date: "2022-07-12T15:30:00+00:00",
+        timestamp: 1657639800,
+        periods: {
+          first: 1657639800,
+          second: 1657643400,
+        },
+        venue: {
+          id: 11512,
+          name: "Slokas Stadionā",
+          city: "Jūrmala",
+        },
+        status: {
+          long: "Match Finished",
+          short: "PEN",
+          elapsed: 120,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 4160,
+          name: "Rīgas FS",
+          logo: "https://media.api-sports.io/football/teams/4160.png",
+          winner: false,
+        },
+        away: {
+          id: 649,
+          name: "HJK helsinki",
+          logo: "https://media.api-sports.io/football/teams/649.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 1,
+        },
+        extratime: {
+          home: 0,
+          away: 0,
+        },
+        penalty: {
+          home: 4,
           away: 5,
         },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
       },
     },
     {
       fixture: {
-        id: 608481,
-        referee: "R. Abisso",
+        id: 866843,
+        referee: "M. Al Hakim",
         timezone: "UTC",
-        date: "2020-09-19T16:00:00+00:00",
-        timestamp: 1600531200,
+        date: "2022-07-06T16:00:00+00:00",
+        timestamp: 1657123200,
         periods: {
-          first: 1600531200,
-          second: 1600534800,
+          first: 1657123200,
+          second: 1657126800,
         },
         venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
+          id: 1175,
+          name: "Aspmyra Stadion",
+          city: "Bodø",
         },
         status: {
           long: "Match Finished",
@@ -102,2337 +1122,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 1",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
       },
       teams: {
         home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
+          id: 327,
+          name: "Bodo/Glimt",
+          logo: "https://media.api-sports.io/football/teams/327.png",
           winner: true,
         },
         away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608482,
-        referee: "G. Ayroldi",
-        timezone: "UTC",
-        date: "2020-09-20T13:00:00+00:00",
-        timestamp: 1600606800,
-        periods: {
-          first: 1600606800,
-          second: 1600610400,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 1",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: true,
-        },
-        away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 3,
-          away: 1,
-        },
-        fulltime: {
-          home: 4,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608483,
-        referee: "M. Piccinini",
-        timezone: "UTC",
-        date: "2020-09-20T18:45:00+00:00",
-        timestamp: 1600627500,
-        periods: {
-          first: 1600627500,
-          second: 1600631100,
-        },
-        venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 1",
-      },
-      teams: {
-        home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608484,
-        referee: "F. Maresca",
-        timezone: "UTC",
-        date: "2020-09-30T18:45:00+00:00",
-        timestamp: 1601491500,
-        periods: {
-          first: 1601491500,
-          second: 1601495100,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 1",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: false,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 4,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 3,
-        },
-        fulltime: {
-          home: 1,
-          away: 4,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608485,
-        referee: "F. La Penna",
-        timezone: "UTC",
-        date: "2020-09-21T18:45:00+00:00",
-        timestamp: 1600713900,
-        periods: {
-          first: 1600713900,
-          second: 1600717500,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 1",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608486,
-        referee: "M. Mariani",
-        timezone: "UTC",
-        date: "2020-09-20T10:30:00+00:00",
-        timestamp: 1600597800,
-        periods: {
-          first: 1600597800,
-          second: 1600601400,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 1",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608487,
-        referee: "L. Marinelli",
-        timezone: "UTC",
-        date: "2020-09-20T16:00:00+00:00",
-        timestamp: 1600617600,
-        periods: {
-          first: 1600617600,
-          second: 1600621200,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 1",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: null,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608488,
-        referee: "A. Prontera",
-        timezone: "UTC",
-        date: "2020-09-30T16:00:00+00:00",
-        timestamp: 1601481600,
-        periods: {
-          first: 1601481600,
-          second: 1601485200,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 1",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608489,
-        referee: "D. Chiffi",
-        timezone: "UTC",
-        date: "2020-09-19T18:45:00+00:00",
-        timestamp: 1600541100,
-        periods: {
-          first: 1600541100,
-          second: 1600544700,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 1",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: true,
-        },
-        away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608490,
-        referee: "P. Valeri",
-        timezone: "UTC",
-        date: "2020-09-28T18:45:00+00:00",
-        timestamp: 1601318700,
-        periods: {
-          first: 1601318700,
-          second: 1601322300,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 2",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: true,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 4,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608491,
-        referee: "D. Massa",
-        timezone: "UTC",
-        date: "2020-09-26T16:00:00+00:00",
-        timestamp: 1601136000,
-        periods: {
-          first: 1601136000,
-          second: 1601139600,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 2",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608492,
-        referee: "L. Pairetto",
-        timezone: "UTC",
-        date: "2020-09-27T16:00:00+00:00",
-        timestamp: 1601222400,
-        periods: {
-          first: 1601222400,
-          second: 1601226000,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 2",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608493,
-        referee: "G. Calvarese",
-        timezone: "UTC",
-        date: "2020-09-26T18:45:00+00:00",
-        timestamp: 1601145900,
-        periods: {
-          first: 1601145900,
-          second: 1601149500,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 2",
-      },
-      teams: {
-        home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 4,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608494,
-        referee: "J. Sacchi",
-        timezone: "UTC",
-        date: "2020-09-27T16:00:00+00:00",
-        timestamp: 1601222400,
-        periods: {
-          first: 1601222400,
-          second: 1601226000,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 2",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 6,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 6,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608495,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2020-09-27T18:45:00+00:00",
-        timestamp: 1601232300,
-        periods: {
-          first: 1601232300,
-          second: 1601235900,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 2",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: null,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608496,
-        referee: "F. Dionisi",
-        timezone: "UTC",
-        date: "2020-09-26T16:00:00+00:00",
-        timestamp: 1601136000,
-        periods: {
-          first: 1601136000,
-          second: 1601139600,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 2",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: false,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608497,
-        referee: "D. Ghersini",
-        timezone: "UTC",
-        date: "2020-09-27T10:30:00+00:00",
-        timestamp: 1601202600,
-        periods: {
-          first: 1601202600,
-          second: 1601206200,
-        },
-        venue: {
-          id: 2758,
-          name: "Orogel Stadium-Dino Manuzzi",
-          city: "Cesena",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 2",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 4,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 4,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608498,
-        referee: "M. Irrati",
-        timezone: "UTC",
-        date: "2020-09-26T13:00:00+00:00",
-        timestamp: 1601125200,
-        periods: {
-          first: 1601125200,
-          second: 1601128800,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 2",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: false,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 4,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 3,
-        },
-        fulltime: {
-          home: 2,
-          away: 4,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608499,
-        referee: "M. Volpi",
-        timezone: "UTC",
-        date: "2020-09-27T13:00:00+00:00",
-        timestamp: 1601211600,
-        periods: {
-          first: 1601211600,
-          second: 1601215200,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 2",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: true,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608500,
-        referee: "F. Pasqua",
-        timezone: "UTC",
-        date: "2020-10-04T10:30:00+00:00",
-        timestamp: 1601807400,
-        periods: {
-          first: 1601807400,
-          second: 1601811000,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 3",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 5,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 4,
-          away: 1,
-        },
-        fulltime: {
-          home: 5,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608501,
-        referee: "S. Sozza",
-        timezone: "UTC",
-        date: "2020-10-04T13:00:00+00:00",
-        timestamp: 1601816400,
-        periods: {
-          first: 1601816400,
-          second: 1601820000,
-        },
-        venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 3",
-      },
-      teams: {
-        home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: true,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608502,
-        referee: "P. Giacomelli",
-        timezone: "UTC",
-        date: "2020-10-02T18:45:00+00:00",
-        timestamp: 1601664300,
-        periods: {
-          first: 1601664300,
-          second: 1601667900,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 3",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: false,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608503,
-        referee: "P. Valeri",
-        timezone: "UTC",
-        date: "2020-11-04T16:00:00+00:00",
-        timestamp: 1604505600,
-        periods: {
-          first: 1604505600,
-          second: 1604509200,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 3",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: false,
-        },
-        away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608504,
-        referee: "M. Mariani",
-        timezone: "UTC",
-        date: "2021-04-07T16:45:00+00:00",
-        timestamp: 1617813900,
-        periods: {
-          first: 1617813900,
-          second: 1617817500,
-        },
-        venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 3",
-      },
-      teams: {
-        home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608505,
-        referee: "M. Guida",
-        timezone: "UTC",
-        date: "2020-10-04T13:00:00+00:00",
-        timestamp: 1601816400,
-        periods: {
-          first: 1601816400,
-          second: 1601820000,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 3",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: null,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608506,
-        referee: "M. Serra",
-        timezone: "UTC",
-        date: "2020-10-04T16:00:00+00:00",
-        timestamp: 1601827200,
-        periods: {
-          first: 1601827200,
-          second: 1601830800,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 3",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608507,
-        referee: "A. Giua",
-        timezone: "UTC",
-        date: "2020-10-04T13:00:00+00:00",
-        timestamp: 1601816400,
-        periods: {
-          first: 1601816400,
-          second: 1601820000,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 3",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: true,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608508,
-        referee: "I. Pezzuto",
-        timezone: "UTC",
-        date: "2020-10-03T13:00:00+00:00",
-        timestamp: 1601730000,
-        periods: {
-          first: 1601730000,
-          second: 1601733600,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 3",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
-        },
-        away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 4,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608509,
-        referee: "R. Abisso",
-        timezone: "UTC",
-        date: "2020-10-03T18:45:00+00:00",
-        timestamp: 1601750700,
-        periods: {
-          first: 1601750700,
-          second: 1601754300,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 3",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-        away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608510,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2020-10-18T10:30:00+00:00",
-        timestamp: 1603017000,
-        periods: {
-          first: 1603017000,
-          second: 1603020600,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 4",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: false,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 4,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 4,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608511,
-        referee: "F. Fourneau",
-        timezone: "UTC",
-        date: "2020-10-17T18:45:00+00:00",
-        timestamp: 1602960300,
-        periods: {
-          first: 1602960300,
-          second: 1602963900,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 4",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: null,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608512,
-        referee: "M. Mariani",
-        timezone: "UTC",
-        date: "2020-10-17T16:00:00+00:00",
-        timestamp: 1602950400,
-        periods: {
-          first: 1602950400,
-          second: 1602954000,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 4",
-      },
-      teams: {
-        home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: false,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 2,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608513,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2020-10-17T13:00:00+00:00",
-        timestamp: 1602939600,
-        periods: {
-          first: 1602939600,
-          second: 1602943200,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 4",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 4,
-          away: 0,
-        },
-        fulltime: {
-          home: 4,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608514,
-        referee: "G. Ayroldi",
-        timezone: "UTC",
-        date: "2020-10-18T18:45:00+00:00",
-        timestamp: 1603046700,
-        periods: {
-          first: 1603046700,
-          second: 1603050300,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 4",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 5,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 5,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608515,
-        referee: "D. Orsato",
-        timezone: "UTC",
-        date: "2020-10-17T16:00:00+00:00",
-        timestamp: 1602950400,
-        periods: {
-          first: 1602950400,
-          second: 1602954000,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 4",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: true,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
+          id: 701,
+          name: "KI Klaksvik",
+          logo: "https://media.api-sports.io/football/teams/701.png",
           winner: false,
         },
       },
@@ -2461,19 +1169,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608516,
-        referee: "G. Manganiello",
+        id: 866844,
+        referee: "H. Feșnic",
         timezone: "UTC",
-        date: "2020-10-18T13:00:00+00:00",
-        timestamp: 1603026000,
+        date: "2022-07-13T17:00:00+00:00",
+        timestamp: 1657731600,
         periods: {
-          first: 1603026000,
-          second: 1603029600,
+          first: 1657731600,
+          second: 1657735200,
         },
         venue: {
-          id: 2758,
-          name: "Orogel Stadium-Dino Manuzzi",
-          city: "Cesena",
+          id: null,
+          name: "Við Djúpumýrar",
+          city: "Klaksvík, Borðoy",
         },
         status: {
           long: "Match Finished",
@@ -2482,3833 +1190,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 4",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
       },
       teams: {
         home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: null,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 2,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608517,
-        referee: "F. La Penna",
-        timezone: "UTC",
-        date: "2020-10-18T13:00:00+00:00",
-        timestamp: 1603026000,
-        periods: {
-          first: 1603026000,
-          second: 1603029600,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 4",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: false,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 2,
-        },
-        fulltime: {
-          home: 2,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608518,
-        referee: "M. Fabbri",
-        timezone: "UTC",
-        date: "2020-10-18T16:00:00+00:00",
-        timestamp: 1603036800,
-        periods: {
-          first: 1603036800,
-          second: 1603040400,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 4",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
+          id: 701,
+          name: "KI Klaksvik",
+          logo: "https://media.api-sports.io/football/teams/701.png",
           winner: true,
         },
         away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608519,
-        referee: "A. Rapuano",
-        timezone: "UTC",
-        date: "2020-10-19T18:45:00+00:00",
-        timestamp: 1603133100,
-        periods: {
-          first: 1603133100,
-          second: 1603136700,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 4",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: null,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608520,
-        referee: "G. Calvarese",
-        timezone: "UTC",
-        date: "2020-10-24T13:00:00+00:00",
-        timestamp: 1603544400,
-        periods: {
-          first: 1603544400,
-          second: 1603548000,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 5",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: false,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608521,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2020-10-25T14:00:00+00:00",
-        timestamp: 1603634400,
-        periods: {
-          first: 1603634400,
-          second: 1603638000,
-        },
-        venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 5",
-      },
-      teams: {
-        home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: false,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608522,
-        referee: "A. Di Martino",
-        timezone: "UTC",
-        date: "2020-10-25T11:30:00+00:00",
-        timestamp: 1603625400,
-        periods: {
-          first: 1603625400,
-          second: 1603629000,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 5",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: true,
-        },
-        away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 3,
-          away: 2,
-        },
-        fulltime: {
-          home: 4,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608523,
-        referee: "F. Fourneau",
-        timezone: "UTC",
-        date: "2020-10-25T17:00:00+00:00",
-        timestamp: 1603645200,
-        periods: {
-          first: 1603645200,
-          second: 1603648800,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 5",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: true,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608524,
-        referee: "D. Massa",
-        timezone: "UTC",
-        date: "2020-10-24T16:00:00+00:00",
-        timestamp: 1603555200,
-        periods: {
-          first: 1603555200,
-          second: 1603558800,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 5",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: false,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608525,
-        referee: "F. Pasqua",
-        timezone: "UTC",
-        date: "2020-10-25T19:45:00+00:00",
-        timestamp: 1603655100,
-        periods: {
-          first: 1603655100,
-          second: 1603658700,
-        },
-        venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 5",
-      },
-      teams: {
-        home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: null,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608526,
-        referee: "M. Irrati",
-        timezone: "UTC",
-        date: "2020-10-24T18:45:00+00:00",
-        timestamp: 1603565100,
-        periods: {
-          first: 1603565100,
-          second: 1603568700,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 5",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608527,
-        referee: "P. Giacomelli",
-        timezone: "UTC",
-        date: "2020-10-26T19:45:00+00:00",
-        timestamp: 1603741500,
-        periods: {
-          first: 1603741500,
-          second: 1603745100,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 5",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: null,
-        },
-        away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608528,
-        referee: "V. Marini",
-        timezone: "UTC",
-        date: "2020-10-25T14:00:00+00:00",
-        timestamp: 1603634400,
-        periods: {
-          first: 1603634400,
-          second: 1603638000,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 5",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: null,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 2,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608529,
-        referee: "M. Guida",
-        timezone: "UTC",
-        date: "2020-10-23T18:45:00+00:00",
-        timestamp: 1603478700,
-        periods: {
-          first: 1603478700,
-          second: 1603482300,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 5",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: null,
-        },
-        away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608530,
-        referee: "M. Fabbri",
-        timezone: "UTC",
-        date: "2020-10-31T19:45:00+00:00",
-        timestamp: 1604173500,
-        periods: {
-          first: 1604173500,
-          second: 1604177100,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 6",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: true,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608531,
-        referee: "F. Dionisi",
-        timezone: "UTC",
-        date: "2020-10-31T14:00:00+00:00",
-        timestamp: 1604152800,
-        periods: {
-          first: 1604152800,
-          second: 1604156400,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 6",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 2,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608532,
-        referee: "M. Piccinini",
-        timezone: "UTC",
-        date: "2020-10-31T17:00:00+00:00",
-        timestamp: 1604163600,
-        periods: {
-          first: 1604163600,
-          second: 1604167200,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 6",
-      },
-      teams: {
-        home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: null,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608533,
-        referee: "M. Mariani",
-        timezone: "UTC",
-        date: "2020-11-01T17:00:00+00:00",
-        timestamp: 1604250000,
-        periods: {
-          first: 1604250000,
-          second: 1604253600,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 6",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: false,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608534,
-        referee: "D. Orsato",
-        timezone: "UTC",
-        date: "2020-11-01T17:00:00+00:00",
-        timestamp: 1604250000,
-        periods: {
-          first: 1604250000,
-          second: 1604253600,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 6",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608535,
-        referee: "F. La Penna",
-        timezone: "UTC",
-        date: "2020-11-01T19:45:00+00:00",
-        timestamp: 1604259900,
-        periods: {
-          first: 1604259900,
-          second: 1604263500,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 6",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: null,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608536,
-        referee: "R. Abisso",
-        timezone: "UTC",
-        date: "2020-11-01T14:00:00+00:00",
-        timestamp: 1604239200,
-        periods: {
-          first: 1604239200,
-          second: 1604242800,
-        },
-        venue: {
-          id: 2758,
-          name: "Orogel Stadium-Dino Manuzzi",
-          city: "Cesena",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 6",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 4,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 4,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608537,
-        referee: "D. Chiffi",
-        timezone: "UTC",
-        date: "2020-11-01T14:00:00+00:00",
-        timestamp: 1604239200,
-        periods: {
-          first: 1604239200,
-          second: 1604242800,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 6",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: false,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 4,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 4,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608538,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2020-11-01T11:30:00+00:00",
-        timestamp: 1604230200,
-        periods: {
-          first: 1604230200,
-          second: 1604233800,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 6",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608539,
-        referee: "J. Sacchi",
-        timezone: "UTC",
-        date: "2020-11-02T19:45:00+00:00",
-        timestamp: 1604346300,
-        periods: {
-          first: 1604346300,
-          second: 1604349900,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 6",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: true,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608595,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2020-11-08T14:00:00+00:00",
-        timestamp: 1604844000,
-        periods: {
-          first: 1604844000,
-          second: 1604847600,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 7",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: null,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608596,
-        referee: "G. Aureliano",
-        timezone: "UTC",
-        date: "2020-11-07T17:00:00+00:00",
-        timestamp: 1604768400,
-        periods: {
-          first: 1604768400,
-          second: 1604772000,
-        },
-        venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 7",
-      },
-      teams: {
-        home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: false,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608597,
-        referee: "F. Pasqua",
-        timezone: "UTC",
-        date: "2020-11-08T17:00:00+00:00",
-        timestamp: 1604854800,
-        periods: {
-          first: 1604854800,
-          second: 1604858400,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 7",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: false,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608598,
-        referee: "G. Ayroldi",
-        timezone: "UTC",
-        date: "2020-11-07T14:00:00+00:00",
-        timestamp: 1604757600,
-        periods: {
-          first: 1604757600,
-          second: 1604761200,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 7",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: true,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608599,
-        referee: "M. Irrati",
-        timezone: "UTC",
-        date: "2020-11-08T14:00:00+00:00",
-        timestamp: 1604844000,
-        periods: {
-          first: 1604844000,
-          second: 1604847600,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 7",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: false,
-        },
-        away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608600,
-        referee: "D. Massa",
-        timezone: "UTC",
-        date: "2020-11-08T11:30:00+00:00",
-        timestamp: 1604835000,
-        periods: {
-          first: 1604835000,
-          second: 1604838600,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 7",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: null,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608601,
-        referee: "M. Guida",
-        timezone: "UTC",
-        date: "2020-11-08T19:45:00+00:00",
-        timestamp: 1604864700,
-        periods: {
-          first: 1604864700,
-          second: 1604868300,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 7",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: null,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 2,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608602,
-        referee: "F. La Penna",
-        timezone: "UTC",
-        date: "2020-11-07T19:45:00+00:00",
-        timestamp: 1604778300,
-        periods: {
-          first: 1604778300,
-          second: 1604781900,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 7",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: null,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608603,
-        referee: "E. Abbattista",
-        timezone: "UTC",
-        date: "2020-11-06T19:45:00+00:00",
-        timestamp: 1604691900,
-        periods: {
-          first: 1604691900,
-          second: 1604695500,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 7",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: null,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608604,
-        referee: "F. Fourneau",
-        timezone: "UTC",
-        date: "2020-11-08T14:00:00+00:00",
-        timestamp: 1604844000,
-        periods: {
-          first: 1604844000,
-          second: 1604847600,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 7",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-        away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608605,
-        referee: "J. Sacchi",
-        timezone: "UTC",
-        date: "2020-11-21T14:00:00+00:00",
-        timestamp: 1605967200,
-        periods: {
-          first: 1605967200,
-          second: 1605970800,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 8",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608606,
-        referee: "D. Ghersini",
-        timezone: "UTC",
-        date: "2020-11-22T11:30:00+00:00",
-        timestamp: 1606044600,
-        periods: {
-          first: 1606044600,
-          second: 1606048200,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 8",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: false,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608607,
-        referee: "F. La Penna",
-        timezone: "UTC",
-        date: "2020-11-22T14:00:00+00:00",
-        timestamp: 1606053600,
-        periods: {
-          first: 1606053600,
-          second: 1606057200,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 8",
-      },
-      teams: {
-        home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-        away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 4,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608608,
-        referee: "F. Maresca",
-        timezone: "UTC",
-        date: "2020-11-21T19:45:00+00:00",
-        timestamp: 1605987900,
-        periods: {
-          first: 1605987900,
-          second: 1605991500,
-        },
-        venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 8",
-      },
-      teams: {
-        home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608609,
-        referee: "P. Valeri",
-        timezone: "UTC",
-        date: "2020-11-22T19:45:00+00:00",
-        timestamp: 1606074300,
-        periods: {
-          first: 1606074300,
-          second: 1606077900,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 8",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: false,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608610,
-        referee: "G. Manganiello",
-        timezone: "UTC",
-        date: "2020-11-22T14:00:00+00:00",
-        timestamp: 1606053600,
-        periods: {
-          first: 1606053600,
-          second: 1606057200,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 8",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 3,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608611,
-        referee: "L. Marinelli",
-        timezone: "UTC",
-        date: "2020-11-22T14:00:00+00:00",
-        timestamp: 1606053600,
-        periods: {
-          first: 1606053600,
-          second: 1606057200,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 8",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: false,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608612,
-        referee: "A. Rapuano",
-        timezone: "UTC",
-        date: "2020-11-21T17:00:00+00:00",
-        timestamp: 1605978000,
-        periods: {
-          first: 1605978000,
-          second: 1605981600,
-        },
-        venue: {
-          id: 2758,
-          name: "Orogel Stadium-Dino Manuzzi",
-          city: "Cesena",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 8",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: null,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608613,
-        referee: "G. Calvarese",
-        timezone: "UTC",
-        date: "2020-11-22T17:00:00+00:00",
-        timestamp: 1606064400,
-        periods: {
-          first: 1606064400,
-          second: 1606068000,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 8",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: true,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608614,
-        referee: "D. Chiffi",
-        timezone: "UTC",
-        date: "2020-11-22T14:00:00+00:00",
-        timestamp: 1606053600,
-        periods: {
-          first: 1606053600,
-          second: 1606057200,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 8",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: false,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608615,
-        referee: "D. Massa",
-        timezone: "UTC",
-        date: "2020-11-28T19:45:00+00:00",
-        timestamp: 1606592700,
-        periods: {
-          first: 1606592700,
-          second: 1606596300,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 9",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: false,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608616,
-        referee: "F. Pasqua",
-        timezone: "UTC",
-        date: "2020-11-28T17:00:00+00:00",
-        timestamp: 1606582800,
-        periods: {
-          first: 1606582800,
-          second: 1606586400,
-        },
-        venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 9",
-      },
-      teams: {
-        home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: null,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608617,
-        referee: "M. Serra",
-        timezone: "UTC",
-        date: "2020-11-29T14:00:00+00:00",
-        timestamp: 1606658400,
-        periods: {
-          first: 1606658400,
-          second: 1606662000,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 9",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: true,
-        },
-        away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608618,
-        referee: "V. Marini",
-        timezone: "UTC",
-        date: "2020-11-29T17:00:00+00:00",
-        timestamp: 1606669200,
-        periods: {
-          first: 1606669200,
-          second: 1606672800,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 9",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: null,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608619,
-        referee: "M. Mariani",
-        timezone: "UTC",
-        date: "2020-11-30T19:45:00+00:00",
-        timestamp: 1606765500,
-        periods: {
-          first: 1606765500,
-          second: 1606769100,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 9",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: false,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608620,
-        referee: "G. Aureliano",
-        timezone: "UTC",
-        date: "2020-11-29T11:30:00+00:00",
-        timestamp: 1606649400,
-        periods: {
-          first: 1606649400,
-          second: 1606653000,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 9",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: false,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 1,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608621,
-        referee: "R. Abisso",
-        timezone: "UTC",
-        date: "2020-11-29T14:00:00+00:00",
-        timestamp: 1606658400,
-        periods: {
-          first: 1606658400,
-          second: 1606662000,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 9",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608622,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2020-11-29T19:45:00+00:00",
-        timestamp: 1606679100,
-        periods: {
-          first: 1606679100,
-          second: 1606682700,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 9",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-        away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 4,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608623,
-        referee: "M. Irrati",
-        timezone: "UTC",
-        date: "2020-11-28T14:00:00+00:00",
-        timestamp: 1606572000,
-        periods: {
-          first: 1606572000,
-          second: 1606575600,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 9",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: false,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 0,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608624,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2020-11-30T17:30:00+00:00",
-        timestamp: 1606757400,
-        periods: {
-          first: 1606757400,
-          second: 1606761000,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 9",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608625,
-        referee: "L. Marinelli",
-        timezone: "UTC",
-        date: "2020-12-06T17:00:00+00:00",
-        timestamp: 1607274000,
-        periods: {
-          first: 1607274000,
-          second: 1607277600,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 10",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 4,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 4,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608626,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2020-12-07T19:45:00+00:00",
-        timestamp: 1607370300,
-        periods: {
-          first: 1607370300,
-          second: 1607373900,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 10",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: null,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608627,
-        referee: "P. Valeri",
-        timezone: "UTC",
-        date: "2020-12-05T19:45:00+00:00",
-        timestamp: 1607197500,
-        periods: {
-          first: 1607197500,
-          second: 1607201100,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 10",
-      },
-      teams: {
-        home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
+          id: 327,
+          name: "Bodo/Glimt",
+          logo: "https://media.api-sports.io/football/teams/327.png",
           winner: false,
         },
       },
@@ -6337,19 +1237,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608628,
-        referee: "D. Orsato",
+        id: 866845,
+        referee: "A. Chivulete",
         timezone: "UTC",
-        date: "2020-12-05T17:00:00+00:00",
-        timestamp: 1607187600,
+        date: "2022-07-05T18:00:00+00:00",
+        timestamp: 1657044000,
         periods: {
-          first: 1607187600,
-          second: 1607191200,
+          first: 1657044000,
+          second: 1657047600,
         },
         venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
+          id: 1684,
+          name: "Park Hall Stadium",
+          city: "Oswestry / Croesoswallt, Shropshire",
         },
         status: {
           long: "Match Finished",
@@ -6358,98 +1258,98 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 10",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
       },
       teams: {
         home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
+          id: 354,
+          name: "The New Saints",
+          logo: "https://media.api-sports.io/football/teams/354.png",
           winner: true,
         },
         away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
+          id: 583,
+          name: "Linfield",
+          logo: "https://media.api-sports.io/football/teams/583.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866846,
+        referee: "D. Strukan",
+        timezone: "UTC",
+        date: "2022-07-13T18:45:00+00:00",
+        timestamp: 1657737900,
+        periods: {
+          first: 1657737900,
+          second: 1657741500,
+        },
+        venue: {
+          id: 1971,
+          name: "Windsor Park",
+          city: "Belfast",
+        },
+        status: {
+          long: "Match Finished",
+          short: "AET",
+          elapsed: 120,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 583,
+          name: "Linfield",
+          logo: "https://media.api-sports.io/football/teams/583.png",
+          winner: true,
+        },
+        away: {
+          id: 354,
+          name: "The New Saints",
+          logo: "https://media.api-sports.io/football/teams/354.png",
           winner: false,
         },
       },
       goals: {
         home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608629,
-        referee: "J. Sacchi",
-        timezone: "UTC",
-        date: "2020-12-06T14:00:00+00:00",
-        timestamp: 1607263200,
-        periods: {
-          first: 1607263200,
-          second: 1607266800,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 10",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: null,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
         away: 0,
       },
       score: {
@@ -6458,352 +1358,12 @@ export const sampleResponse = {
           away: 0,
         },
         fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608630,
-        referee: "F. Maresca",
-        timezone: "UTC",
-        date: "2020-12-06T14:00:00+00:00",
-        timestamp: 1607263200,
-        periods: {
-          first: 1607263200,
-          second: 1607266800,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 10",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: null,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608631,
-        referee: "G. Calvarese",
-        timezone: "UTC",
-        date: "2020-12-06T19:45:00+00:00",
-        timestamp: 1607283900,
-        periods: {
-          first: 1607283900,
-          second: 1607287500,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 10",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: false,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608632,
-        referee: "D. Chiffi",
-        timezone: "UTC",
-        date: "2020-12-05T14:00:00+00:00",
-        timestamp: 1607176800,
-        periods: {
-          first: 1607176800,
-          second: 1607180400,
-        },
-        venue: {
-          id: 2758,
-          name: "Orogel Stadium-Dino Manuzzi",
-          city: "Cesena",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 10",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608633,
-        referee: "G. Calvarese",
-        timezone: "UTC",
-        date: "2021-01-20T14:00:00+00:00",
-        timestamp: 1611151200,
-        periods: {
-          first: 1611151200,
-          second: 1611154800,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 10",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: null,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608634,
-        referee: "G. Manganiello",
-        timezone: "UTC",
-        date: "2020-12-06T11:30:00+00:00",
-        timestamp: 1607254200,
-        periods: {
-          first: 1607254200,
-          second: 1607257800,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 10",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: null,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
           home: 1,
           away: 0,
         },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
         extratime: {
-          home: null,
-          away: null,
+          home: 1,
+          away: 0,
         },
         penalty: {
           home: null,
@@ -6813,19 +1373,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608635,
-        referee: "M. Mariani",
+        id: 866847,
+        referee: "M. Krogh",
         timezone: "UTC",
-        date: "2020-12-13T14:00:00+00:00",
-        timestamp: 1607868000,
+        date: "2022-07-05T18:30:00+00:00",
+        timestamp: 1657045800,
         periods: {
-          first: 1607868000,
-          second: 1607871600,
+          first: 1657045800,
+          second: 1657049400,
         },
         venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
+          id: 865,
+          name: "Tallaght Stadium",
+          city: "Dublin",
         },
         status: {
           long: "Match Finished",
@@ -6834,25 +1394,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 11",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
       },
       teams: {
         home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
+          id: 652,
+          name: "Shamrock Rovers",
+          logo: "https://media.api-sports.io/football/teams/652.png",
           winner: true,
         },
         away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
+          id: 3884,
+          name: "Hibernians",
+          logo: "https://media.api-sports.io/football/teams/3884.png",
           winner: false,
         },
       },
@@ -6862,7 +1422,7 @@ export const sampleResponse = {
       },
       score: {
         halftime: {
-          home: 1,
+          home: 2,
           away: 0,
         },
         fulltime: {
@@ -6881,19 +1441,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608636,
-        referee: "G. Calvarese",
+        id: 866848,
+        referee: "M. Lukjančukas",
         timezone: "UTC",
-        date: "2020-12-13T14:00:00+00:00",
-        timestamp: 1607868000,
+        date: "2022-07-12T18:00:00+00:00",
+        timestamp: 1657648800,
         periods: {
-          first: 1607868000,
-          second: 1607871600,
+          first: 1657648800,
+          second: 1657652400,
         },
         venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
+          id: 1067,
+          name: "MFA Centenary Stadium",
+          city: "Ta'Qali",
         },
         status: {
           long: "Match Finished",
@@ -6902,977 +1462,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 11",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
       },
       teams: {
         home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: false,
-        },
-        away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 5,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 5,
-        },
-        fulltime: {
-          home: 1,
-          away: 5,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608637,
-        referee: "F. Pasqua",
-        timezone: "UTC",
-        date: "2020-12-13T11:45:00+00:00",
-        timestamp: 1607859900,
-        periods: {
-          first: 1607859900,
-          second: 1607863500,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 11",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608638,
-        referee: "A. Giua",
-        timezone: "UTC",
-        date: "2020-12-12T14:00:00+00:00",
-        timestamp: 1607781600,
-        periods: {
-          first: 1607781600,
-          second: 1607785200,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 11",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: true,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 4,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608639,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2020-12-13T17:00:00+00:00",
-        timestamp: 1607878800,
-        periods: {
-          first: 1607878800,
-          second: 1607882400,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 11",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: false,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608640,
-        referee: "R. Abisso",
-        timezone: "UTC",
-        date: "2020-12-12T19:45:00+00:00",
-        timestamp: 1607802300,
-        periods: {
-          first: 1607802300,
-          second: 1607805900,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 11",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: false,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608641,
-        referee: "F. Fourneau",
-        timezone: "UTC",
-        date: "2020-12-13T19:45:00+00:00",
-        timestamp: 1607888700,
-        periods: {
-          first: 1607888700,
-          second: 1607892300,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 11",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
+          id: 3884,
+          name: "Hibernians",
+          logo: "https://media.api-sports.io/football/teams/3884.png",
           winner: null,
         },
         away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608642,
-        referee: "F. La Penna",
-        timezone: "UTC",
-        date: "2020-12-13T14:00:00+00:00",
-        timestamp: 1607868000,
-        periods: {
-          first: 1607868000,
-          second: 1607871600,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 11",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608643,
-        referee: "S. Sozza",
-        timezone: "UTC",
-        date: "2020-12-11T19:45:00+00:00",
-        timestamp: 1607715900,
-        periods: {
-          first: 1607715900,
-          second: 1607719500,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 11",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608644,
-        referee: "D. Massa",
-        timezone: "UTC",
-        date: "2020-12-12T17:00:00+00:00",
-        timestamp: 1607792400,
-        periods: {
-          first: 1607792400,
-          second: 1607796000,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 11",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: false,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608645,
-        referee: "L. Pairetto",
-        timezone: "UTC",
-        date: "2020-12-15T19:45:00+00:00",
-        timestamp: 1608061500,
-        periods: {
-          first: 1608061500,
-          second: 1608065100,
-        },
-        venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 12",
-      },
-      teams: {
-        home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: null,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608646,
-        referee: "P. Valeri",
-        timezone: "UTC",
-        date: "2020-12-16T19:45:00+00:00",
-        timestamp: 1608147900,
-        periods: {
-          first: 1608147900,
-          second: 1608151500,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 12",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: null,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608647,
-        referee: "D. Orsato",
-        timezone: "UTC",
-        date: "2020-12-16T19:45:00+00:00",
-        timestamp: 1608147900,
-        periods: {
-          first: 1608147900,
-          second: 1608151500,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 12",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: null,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608648,
-        referee: "D. Massa",
-        timezone: "UTC",
-        date: "2020-12-16T19:45:00+00:00",
-        timestamp: 1608147900,
-        periods: {
-          first: 1608147900,
-          second: 1608151500,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 12",
-      },
-      teams: {
-        home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608649,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2020-12-16T17:30:00+00:00",
-        timestamp: 1608139800,
-        periods: {
-          first: 1608139800,
-          second: 1608143400,
-        },
-        venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 12",
-      },
-      teams: {
-        home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: null,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608650,
-        referee: "I. Pezzuto",
-        timezone: "UTC",
-        date: "2020-12-16T19:45:00+00:00",
-        timestamp: 1608147900,
-        periods: {
-          first: 1608147900,
-          second: 1608151500,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 12",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: null,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
+          id: 652,
+          name: "Shamrock Rovers",
+          logo: "https://media.api-sports.io/football/teams/652.png",
           winner: null,
         },
       },
@@ -7901,19 +1509,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608651,
-        referee: "R. Abisso",
+        id: 866849,
+        referee: "José Munuera",
         timezone: "UTC",
-        date: "2020-12-17T19:45:00+00:00",
-        timestamp: 1608234300,
+        date: "2022-07-05T18:00:00+00:00",
+        timestamp: 1657044000,
         periods: {
-          first: 1608234300,
-          second: 1608237900,
+          first: 1657044000,
+          second: 1657047600,
         },
         venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
+          id: 18626,
+          name: "Stadion Poznań",
+          city: "Poznań",
         },
         status: {
           long: "Match Finished",
@@ -7922,642 +1530,30 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 12",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
       },
       teams: {
         home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
+          id: 347,
+          name: "Lech Poznan",
+          logo: "https://media.api-sports.io/football/teams/347.png",
           winner: true,
         },
         away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
+          id: 556,
+          name: "Qarabag",
+          logo: "https://media.api-sports.io/football/teams/556.png",
           winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608652,
-        referee: "P. Giacomelli",
-        timezone: "UTC",
-        date: "2020-12-16T19:45:00+00:00",
-        timestamp: 1608147900,
-        periods: {
-          first: 1608147900,
-          second: 1608151500,
-        },
-        venue: {
-          id: 939,
-          name: "Stadio Alberto Picco",
-          city: "La Spezia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 12",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: null,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608653,
-        referee: "A. Di Martino",
-        timezone: "UTC",
-        date: "2020-12-15T17:30:00+00:00",
-        timestamp: 1608053400,
-        periods: {
-          first: 1608053400,
-          second: 1608057000,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 12",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: null,
-        },
-        away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608654,
-        referee: "R. Ros",
-        timezone: "UTC",
-        date: "2020-12-16T19:45:00+00:00",
-        timestamp: 1608147900,
-        periods: {
-          first: 1608147900,
-          second: 1608151500,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 12",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: false,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: true,
         },
       },
       goals: {
         home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608655,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2020-12-20T17:00:00+00:00",
-        timestamp: 1608483600,
-        periods: {
-          first: 1608483600,
-          second: 1608487200,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 13",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-        away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 4,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608656,
-        referee: "A. Giua",
-        timezone: "UTC",
-        date: "2020-12-20T14:00:00+00:00",
-        timestamp: 1608472800,
-        periods: {
-          first: 1608472800,
-          second: 1608476400,
-        },
-        venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 13",
-      },
-      teams: {
-        home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: true,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608657,
-        referee: "M. Piccinini",
-        timezone: "UTC",
-        date: "2020-12-20T14:00:00+00:00",
-        timestamp: 1608472800,
-        periods: {
-          first: 1608472800,
-          second: 1608476400,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 13",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: null,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608658,
-        referee: "F. Fourneau",
-        timezone: "UTC",
-        date: "2020-12-19T14:00:00+00:00",
-        timestamp: 1608386400,
-        periods: {
-          first: 1608386400,
-          second: 1608390000,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 13",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: null,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608659,
-        referee: "M. Fabbri",
-        timezone: "UTC",
-        date: "2020-12-20T14:00:00+00:00",
-        timestamp: 1608472800,
-        periods: {
-          first: 1608472800,
-          second: 1608476400,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 13",
-      },
-      teams: {
-        home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608660,
-        referee: "D. Orsato",
-        timezone: "UTC",
-        date: "2020-12-20T19:45:00+00:00",
-        timestamp: 1608493500,
-        periods: {
-          first: 1608493500,
-          second: 1608497100,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 13",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
         away: 0,
       },
       score: {
@@ -8566,689 +1562,9 @@ export const sampleResponse = {
           away: 0,
         },
         fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608661,
-        referee: "G. Calvarese",
-        timezone: "UTC",
-        date: "2020-12-19T19:45:00+00:00",
-        timestamp: 1608407100,
-        periods: {
-          first: 1608407100,
-          second: 1608410700,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 13",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 4,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 0,
-          away: 4,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608662,
-        referee: "G. Manganiello",
-        timezone: "UTC",
-        date: "2020-12-19T17:00:00+00:00",
-        timestamp: 1608397200,
-        periods: {
-          first: 1608397200,
-          second: 1608400800,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 13",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: true,
-        },
-        away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608663,
-        referee: "M. Mariani",
-        timezone: "UTC",
-        date: "2020-12-20T14:00:00+00:00",
-        timestamp: 1608472800,
-        periods: {
-          first: 1608472800,
-          second: 1608476400,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 13",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: false,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608664,
-        referee: "F. Pasqua",
-        timezone: "UTC",
-        date: "2020-12-20T11:30:00+00:00",
-        timestamp: 1608463800,
-        periods: {
-          first: 1608463800,
-          second: 1608467400,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 13",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608665,
-        referee: "D. Chiffi",
-        timezone: "UTC",
-        date: "2020-12-23T19:45:00+00:00",
-        timestamp: 1608752700,
-        periods: {
-          first: 1608752700,
-          second: 1608756300,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 14",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: null,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608666,
-        referee: "F. Maresca",
-        timezone: "UTC",
-        date: "2020-12-22T17:30:00+00:00",
-        timestamp: 1608658200,
-        periods: {
-          first: 1608658200,
-          second: 1608661800,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 14",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: true,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608667,
-        referee: "F. La Penna",
-        timezone: "UTC",
-        date: "2020-12-22T19:45:00+00:00",
-        timestamp: 1608666300,
-        periods: {
-          first: 1608666300,
-          second: 1608669900,
-        },
-        venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 14",
-      },
-      teams: {
-        home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: false,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608668,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2020-12-23T19:45:00+00:00",
-        timestamp: 1608752700,
-        periods: {
-          first: 1608752700,
-          second: 1608756300,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 14",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608669,
-        referee: "P. Valeri",
-        timezone: "UTC",
-        date: "2020-12-23T19:45:00+00:00",
-        timestamp: 1608752700,
-        periods: {
-          first: 1608752700,
-          second: 1608756300,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 14",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: null,
-        },
-        away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608670,
-        referee: "L. Pairetto",
-        timezone: "UTC",
-        date: "2020-12-23T19:45:00+00:00",
-        timestamp: 1608752700,
-        periods: {
-          first: 1608752700,
-          second: 1608756300,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 14",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 2,
-      },
-      score: {
-        halftime: {
           home: 1,
           away: 0,
         },
-        fulltime: {
-          home: 3,
-          away: 2,
-        },
         extratime: {
           home: null,
           away: null,
@@ -9261,19 +1577,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608671,
-        referee: "G. Ayroldi",
+        id: 866850,
+        referee: "A. Madley",
         timezone: "UTC",
-        date: "2020-12-23T19:45:00+00:00",
-        timestamp: 1608752700,
+        date: "2022-07-12T16:00:00+00:00",
+        timestamp: 1657641600,
         periods: {
-          first: 1608752700,
-          second: 1608756300,
+          first: 1657641600,
+          second: 1657645200,
         },
         venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
+          id: null,
+          name: "Tofiq Bəhramov adına Respublika stadionu",
+          city: "Baku",
         },
         status: {
           long: "Match Finished",
@@ -9282,297 +1598,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 14",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
       },
       teams: {
         home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: false,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608672,
-        referee: "D. Massa",
-        timezone: "UTC",
-        date: "2020-12-23T19:45:00+00:00",
-        timestamp: 1608752700,
-        periods: {
-          first: 1608752700,
-          second: 1608756300,
-        },
-        venue: {
-          id: 939,
-          name: "Stadio Alberto Picco",
-          city: "La Spezia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 14",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608673,
-        referee: "M. Volpi",
-        timezone: "UTC",
-        date: "2020-12-23T19:45:00+00:00",
-        timestamp: 1608752700,
-        periods: {
-          first: 1608752700,
-          second: 1608756300,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 14",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608674,
-        referee: "P. Giacomelli",
-        timezone: "UTC",
-        date: "2020-12-23T17:30:00+00:00",
-        timestamp: 1608744600,
-        periods: {
-          first: 1608744600,
-          second: 1608748200,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 14",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: false,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608675,
-        referee: "F. Maresca",
-        timezone: "UTC",
-        date: "2021-01-03T14:00:00+00:00",
-        timestamp: 1609682400,
-        periods: {
-          first: 1609682400,
-          second: 1609686000,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 15",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
+          id: 556,
+          name: "Qarabag",
+          logo: "https://media.api-sports.io/football/teams/556.png",
           winner: true,
         },
         away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
+          id: 347,
+          name: "Lech Poznan",
+          logo: "https://media.api-sports.io/football/teams/347.png",
           winner: false,
         },
       },
@@ -9583,6874 +1627,6 @@ export const sampleResponse = {
       score: {
         halftime: {
           home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 5,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608676,
-        referee: "F. Pasqua",
-        timezone: "UTC",
-        date: "2021-01-03T17:00:00+00:00",
-        timestamp: 1609693200,
-        periods: {
-          first: 1609693200,
-          second: 1609696800,
-        },
-        venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 15",
-      },
-      teams: {
-        home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: false,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608677,
-        referee: "G. Manganiello",
-        timezone: "UTC",
-        date: "2021-01-03T14:00:00+00:00",
-        timestamp: 1609682400,
-        periods: {
-          first: 1609682400,
-          second: 1609686000,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 15",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 4,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 4,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608678,
-        referee: "D. Orsato",
-        timezone: "UTC",
-        date: "2021-01-03T14:00:00+00:00",
-        timestamp: 1609682400,
-        periods: {
-          first: 1609682400,
-          second: 1609686000,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 15",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: null,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608679,
-        referee: "G. Calvarese",
-        timezone: "UTC",
-        date: "2021-01-03T14:00:00+00:00",
-        timestamp: 1609682400,
-        periods: {
-          first: 1609682400,
-          second: 1609686000,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 15",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: null,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608680,
-        referee: "G. Aureliano",
-        timezone: "UTC",
-        date: "2021-01-03T11:30:00+00:00",
-        timestamp: 1609673400,
-        periods: {
-          first: 1609673400,
-          second: 1609677000,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 15",
-      },
-      teams: {
-        home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-        away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 6,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 2,
-        },
-        fulltime: {
-          home: 6,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608681,
-        referee: "P. Giacomelli",
-        timezone: "UTC",
-        date: "2021-01-03T19:45:00+00:00",
-        timestamp: 1609703100,
-        periods: {
-          first: 1609703100,
-          second: 1609706700,
-        },
-        venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 15",
-      },
-      teams: {
-        home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 4,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608682,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2021-01-03T14:00:00+00:00",
-        timestamp: 1609682400,
-        periods: {
-          first: 1609682400,
-          second: 1609686000,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 15",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-        away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608683,
-        referee: "D. Chiffi",
-        timezone: "UTC",
-        date: "2021-01-03T14:00:00+00:00",
-        timestamp: 1609682400,
-        periods: {
-          first: 1609682400,
-          second: 1609686000,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 15",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608684,
-        referee: "L. Pairetto",
-        timezone: "UTC",
-        date: "2021-01-03T14:00:00+00:00",
-        timestamp: 1609682400,
-        periods: {
-          first: 1609682400,
-          second: 1609686000,
-        },
-        venue: {
-          id: 939,
-          name: "Stadio Alberto Picco",
-          city: "La Spezia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 15",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608685,
-        referee: "J. Sacchi",
-        timezone: "UTC",
-        date: "2021-01-06T14:00:00+00:00",
-        timestamp: 1609941600,
-        periods: {
-          first: 1609941600,
-          second: 1609945200,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 16",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608686,
-        referee: "G. Ayroldi",
-        timezone: "UTC",
-        date: "2021-01-06T14:00:00+00:00",
-        timestamp: 1609941600,
-        periods: {
-          first: 1609941600,
-          second: 1609945200,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 16",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: null,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608687,
-        referee: "E. Abbattista",
-        timezone: "UTC",
-        date: "2021-01-06T11:30:00+00:00",
-        timestamp: 1609932600,
-        periods: {
-          first: 1609932600,
-          second: 1609936200,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 16",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 2,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608688,
-        referee: "M. Piccinini",
-        timezone: "UTC",
-        date: "2021-01-06T14:00:00+00:00",
-        timestamp: 1609941600,
-        periods: {
-          first: 1609941600,
-          second: 1609945200,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 16",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-        away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 3,
-        },
-        fulltime: {
-          home: 1,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608689,
-        referee: "R. Abisso",
-        timezone: "UTC",
-        date: "2021-01-06T14:00:00+00:00",
-        timestamp: 1609941600,
-        periods: {
-          first: 1609941600,
-          second: 1609945200,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 16",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608690,
-        referee: "M. Irrati",
-        timezone: "UTC",
-        date: "2021-01-06T19:45:00+00:00",
-        timestamp: 1609962300,
-        periods: {
-          first: 1609962300,
-          second: 1609965900,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 16",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: false,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608691,
-        referee: "M. Mariani",
-        timezone: "UTC",
-        date: "2021-01-06T17:00:00+00:00",
-        timestamp: 1609952400,
-        periods: {
-          first: 1609952400,
-          second: 1609956000,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 16",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: false,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608692,
-        referee: "P. Valeri",
-        timezone: "UTC",
-        date: "2021-01-06T14:00:00+00:00",
-        timestamp: 1609941600,
-        periods: {
-          first: 1609941600,
-          second: 1609945200,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 16",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: true,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608693,
-        referee: "M. Fabbri",
-        timezone: "UTC",
-        date: "2021-01-06T14:00:00+00:00",
-        timestamp: 1609941600,
-        periods: {
-          first: 1609941600,
-          second: 1609945200,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 16",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608694,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2021-01-06T14:00:00+00:00",
-        timestamp: 1609941600,
-        periods: {
-          first: 1609941600,
-          second: 1609945200,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 16",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608695,
-        referee: "G. Manganiello",
-        timezone: "UTC",
-        date: "2021-01-09T14:00:00+00:00",
-        timestamp: 1610200800,
-        periods: {
-          first: 1610200800,
-          second: 1610204400,
-        },
-        venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 17",
-      },
-      teams: {
-        home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: false,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 4,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 4,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608696,
-        referee: "P. Giacomelli",
-        timezone: "UTC",
-        date: "2021-01-10T17:00:00+00:00",
-        timestamp: 1610298000,
-        periods: {
-          first: 1610298000,
-          second: 1610301600,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 17",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: true,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608697,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2021-01-09T17:00:00+00:00",
-        timestamp: 1610211600,
-        periods: {
-          first: 1610211600,
-          second: 1610215200,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 17",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: true,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608698,
-        referee: "D. Massa",
-        timezone: "UTC",
-        date: "2021-01-10T19:45:00+00:00",
-        timestamp: 1610307900,
-        periods: {
-          first: 1610307900,
-          second: 1610311500,
-        },
-        venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 17",
-      },
-      teams: {
-        home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608699,
-        referee: "F. Maresca",
-        timezone: "UTC",
-        date: "2021-01-09T19:45:00+00:00",
-        timestamp: 1610221500,
-        periods: {
-          first: 1610221500,
-          second: 1610225100,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 17",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-        away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608700,
-        referee: "L. Pairetto",
-        timezone: "UTC",
-        date: "2021-01-10T14:00:00+00:00",
-        timestamp: 1610287200,
-        periods: {
-          first: 1610287200,
-          second: 1610290800,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 17",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608701,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2021-01-10T11:30:00+00:00",
-        timestamp: 1610278200,
-        periods: {
-          first: 1610278200,
-          second: 1610281800,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 17",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: null,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608702,
-        referee: "M. Piccinini",
-        timezone: "UTC",
-        date: "2021-01-11T19:45:00+00:00",
-        timestamp: 1610394300,
-        periods: {
-          first: 1610394300,
-          second: 1610397900,
-        },
-        venue: {
-          id: 939,
-          name: "Stadio Alberto Picco",
-          city: "La Spezia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 17",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: true,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608703,
-        referee: "F. Pasqua",
-        timezone: "UTC",
-        date: "2021-01-10T14:00:00+00:00",
-        timestamp: 1610287200,
-        periods: {
-          first: 1610287200,
-          second: 1610290800,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 17",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608704,
-        referee: "L. Massimi",
-        timezone: "UTC",
-        date: "2021-01-10T14:00:00+00:00",
-        timestamp: 1610287200,
-        periods: {
-          first: 1610287200,
-          second: 1610290800,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 17",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: true,
-        },
-        away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608705,
-        referee: "L. Marinelli",
-        timezone: "UTC",
-        date: "2021-01-17T17:00:00+00:00",
-        timestamp: 1610902800,
-        periods: {
-          first: 1610902800,
-          second: 1610906400,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 18",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: null,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608706,
-        referee: "M. Mariani",
-        timezone: "UTC",
-        date: "2021-01-16T14:00:00+00:00",
-        timestamp: 1610805600,
-        periods: {
-          first: 1610805600,
-          second: 1610809200,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 18",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: true,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608707,
-        referee: "R. Abisso",
-        timezone: "UTC",
-        date: "2021-01-18T19:45:00+00:00",
-        timestamp: 1610999100,
-        periods: {
-          first: 1610999100,
-          second: 1611002700,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 18",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608708,
-        referee: "S. Sozza",
-        timezone: "UTC",
-        date: "2021-01-17T14:00:00+00:00",
-        timestamp: 1610892000,
-        periods: {
-          first: 1610892000,
-          second: 1610895600,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 18",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: true,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 4,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608709,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2021-01-17T19:45:00+00:00",
-        timestamp: 1610912700,
-        periods: {
-          first: 1610912700,
-          second: 1610916300,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 18",
-      },
-      teams: {
-        home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608710,
-        referee: "D. Orsato",
-        timezone: "UTC",
-        date: "2021-01-15T19:45:00+00:00",
-        timestamp: 1610739900,
-        periods: {
-          first: 1610739900,
-          second: 1610743500,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 18",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-        away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608711,
-        referee: "D. Chiffi",
-        timezone: "UTC",
-        date: "2021-01-17T11:30:00+00:00",
-        timestamp: 1610883000,
-        periods: {
-          first: 1610883000,
-          second: 1610886600,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 18",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 6,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 4,
-          away: 0,
-        },
-        fulltime: {
-          home: 6,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608712,
-        referee: "J. Sacchi",
-        timezone: "UTC",
-        date: "2021-01-16T19:45:00+00:00",
-        timestamp: 1610826300,
-        periods: {
-          first: 1610826300,
-          second: 1610829900,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 18",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: true,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608713,
-        referee: "I. Pezzuto",
-        timezone: "UTC",
-        date: "2021-01-17T14:00:00+00:00",
-        timestamp: 1610892000,
-        periods: {
-          first: 1610892000,
-          second: 1610895600,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 18",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: null,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608714,
-        referee: "M. Fabbri",
-        timezone: "UTC",
-        date: "2021-01-16T17:00:00+00:00",
-        timestamp: 1610816400,
-        periods: {
-          first: 1610816400,
-          second: 1610820000,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 18",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608715,
-        referee: "P. Giacomelli",
-        timezone: "UTC",
-        date: "2021-01-22T19:45:00+00:00",
-        timestamp: 1611344700,
-        periods: {
-          first: 1611344700,
-          second: 1611348300,
-        },
-        venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 19",
-      },
-      teams: {
-        home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: null,
-        },
-        away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608716,
-        referee: "M. Piccinini",
-        timezone: "UTC",
-        date: "2021-01-23T19:45:00+00:00",
-        timestamp: 1611431100,
-        periods: {
-          first: 1611431100,
-          second: 1611434700,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 19",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: true,
-        },
-        away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608717,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2021-01-24T14:00:00+00:00",
-        timestamp: 1611496800,
-        periods: {
-          first: 1611496800,
-          second: 1611500400,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 19",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: true,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608718,
-        referee: "J. Sacchi",
-        timezone: "UTC",
-        date: "2021-01-24T11:30:00+00:00",
-        timestamp: 1611487800,
-        periods: {
-          first: 1611487800,
-          second: 1611491400,
-        },
-        venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 19",
-      },
-      teams: {
-        home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608719,
-        referee: "A. Giua",
-        timezone: "UTC",
-        date: "2021-01-24T17:00:00+00:00",
-        timestamp: 1611507600,
-        periods: {
-          first: 1611507600,
-          second: 1611511200,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 19",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608720,
-        referee: "M. Mariani",
-        timezone: "UTC",
-        date: "2021-01-23T17:00:00+00:00",
-        timestamp: 1611421200,
-        periods: {
-          first: 1611421200,
-          second: 1611424800,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 19",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: false,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608721,
-        referee: "G. Manganiello",
-        timezone: "UTC",
-        date: "2021-01-24T19:45:00+00:00",
-        timestamp: 1611517500,
-        periods: {
-          first: 1611517500,
-          second: 1611521100,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 19",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608722,
-        referee: "L. Pairetto",
-        timezone: "UTC",
-        date: "2021-01-23T14:00:00+00:00",
-        timestamp: 1611410400,
-        periods: {
-          first: 1611410400,
-          second: 1611414000,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 19",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 4,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608723,
-        referee: "F. Maresca",
-        timezone: "UTC",
-        date: "2021-01-23T17:00:00+00:00",
-        timestamp: 1611421200,
-        periods: {
-          first: 1611421200,
-          second: 1611424800,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 19",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: null,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608724,
-        referee: "M. Fabbri",
-        timezone: "UTC",
-        date: "2021-01-24T14:00:00+00:00",
-        timestamp: 1611496800,
-        periods: {
-          first: 1611496800,
-          second: 1611500400,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 19",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: true,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608725,
-        referee: "F. Pasqua",
-        timezone: "UTC",
-        date: "2021-01-30T19:45:00+00:00",
-        timestamp: 1612035900,
-        periods: {
-          first: 1612035900,
-          second: 1612039500,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 20",
-      },
-      teams: {
-        home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 4,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608726,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2021-01-29T19:45:00+00:00",
-        timestamp: 1611949500,
-        periods: {
-          first: 1611949500,
-          second: 1611953100,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 20",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608727,
-        referee: "P. Giacomelli",
-        timezone: "UTC",
-        date: "2021-01-31T14:00:00+00:00",
-        timestamp: 1612101600,
-        periods: {
-          first: 1612101600,
-          second: 1612105200,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 20",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 0,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608728,
-        referee: "M. Fabbri",
-        timezone: "UTC",
-        date: "2021-01-30T17:00:00+00:00",
-        timestamp: 1612026000,
-        periods: {
-          first: 1612026000,
-          second: 1612029600,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 20",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: false,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608729,
-        referee: "D. Chiffi",
-        timezone: "UTC",
-        date: "2021-01-31T14:00:00+00:00",
-        timestamp: 1612101600,
-        periods: {
-          first: 1612101600,
-          second: 1612105200,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 20",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: false,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608730,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2021-01-30T14:00:00+00:00",
-        timestamp: 1612015200,
-        periods: {
-          first: 1612015200,
-          second: 1612018800,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 20",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: false,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608731,
-        referee: "F. La Penna",
-        timezone: "UTC",
-        date: "2021-01-31T17:00:00+00:00",
-        timestamp: 1612112400,
-        periods: {
-          first: 1612112400,
-          second: 1612116000,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 20",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608732,
-        referee: "M. Mariani",
-        timezone: "UTC",
-        date: "2021-01-31T14:00:00+00:00",
-        timestamp: 1612101600,
-        periods: {
-          first: 1612101600,
-          second: 1612105200,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 20",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: null,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608733,
-        referee: "A. Di Martino",
-        timezone: "UTC",
-        date: "2021-01-31T11:30:00+00:00",
-        timestamp: 1612092600,
-        periods: {
-          first: 1612092600,
-          second: 1612096200,
-        },
-        venue: {
-          id: 939,
-          name: "Stadio Alberto Picco",
-          city: "La Spezia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 20",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608734,
-        referee: "M. Piccinini",
-        timezone: "UTC",
-        date: "2021-01-31T19:45:00+00:00",
-        timestamp: 1612122300,
-        periods: {
-          first: 1612122300,
-          second: 1612125900,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 20",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 3,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608735,
-        referee: "M. Guida",
-        timezone: "UTC",
-        date: "2021-02-07T17:00:00+00:00",
-        timestamp: 1612717200,
-        periods: {
-          first: 1612717200,
-          second: 1612720800,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 21",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 0,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608736,
-        referee: "M. Irrati",
-        timezone: "UTC",
-        date: "2021-02-07T19:45:00+00:00",
-        timestamp: 1612727100,
-        periods: {
-          first: 1612727100,
-          second: 1612730700,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 21",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608737,
-        referee: "L. Pairetto",
-        timezone: "UTC",
-        date: "2021-02-07T14:00:00+00:00",
-        timestamp: 1612706400,
-        periods: {
-          first: 1612706400,
-          second: 1612710000,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 21",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-        away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 4,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608738,
-        referee: "F. La Penna",
-        timezone: "UTC",
-        date: "2021-02-05T19:45:00+00:00",
-        timestamp: 1612554300,
-        periods: {
-          first: 1612554300,
-          second: 1612557900,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 21",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: false,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608739,
-        referee: "G. Manganiello",
-        timezone: "UTC",
-        date: "2021-02-06T19:45:00+00:00",
-        timestamp: 1612640700,
-        periods: {
-          first: 1612640700,
-          second: 1612644300,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 21",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: true,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608740,
-        referee: "D. Orsato",
-        timezone: "UTC",
-        date: "2021-02-06T17:00:00+00:00",
-        timestamp: 1612630800,
-        periods: {
-          first: 1612630800,
-          second: 1612634400,
-        },
-        venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 21",
-      },
-      teams: {
-        home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-        away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608741,
-        referee: "G. Aureliano",
-        timezone: "UTC",
-        date: "2021-02-07T11:30:00+00:00",
-        timestamp: 1612697400,
-        periods: {
-          first: 1612697400,
-          second: 1612701000,
-        },
-        venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 21",
-      },
-      teams: {
-        home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: null,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608742,
-        referee: "J. Sacchi",
-        timezone: "UTC",
-        date: "2021-02-06T14:00:00+00:00",
-        timestamp: 1612620000,
-        periods: {
-          first: 1612620000,
-          second: 1612623600,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 21",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: false,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608743,
-        referee: "F. Fourneau",
-        timezone: "UTC",
-        date: "2021-02-06T14:00:00+00:00",
-        timestamp: 1612620000,
-        periods: {
-          first: 1612620000,
-          second: 1612623600,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 21",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: null,
-        },
-        away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 3,
-          away: 2,
-        },
-        fulltime: {
-          home: 3,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608744,
-        referee: "A. Santoro",
-        timezone: "UTC",
-        date: "2021-02-07T14:00:00+00:00",
-        timestamp: 1612706400,
-        periods: {
-          first: 1612706400,
-          second: 1612710000,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 21",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: true,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608745,
-        referee: "M. Piccinini",
-        timezone: "UTC",
-        date: "2021-02-14T14:00:00+00:00",
-        timestamp: 1613311200,
-        periods: {
-          first: 1613311200,
-          second: 1613314800,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 22",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608746,
-        referee: "D. Ghersini",
-        timezone: "UTC",
-        date: "2021-02-12T19:45:00+00:00",
-        timestamp: 1613159100,
-        periods: {
-          first: 1613159100,
-          second: 1613162700,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 22",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: null,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608747,
-        referee: "F. Maresca",
-        timezone: "UTC",
-        date: "2021-02-14T14:00:00+00:00",
-        timestamp: 1613311200,
-        periods: {
-          first: 1613311200,
-          second: 1613314800,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 22",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: true,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608748,
-        referee: "F. Pasqua",
-        timezone: "UTC",
-        date: "2021-02-13T14:00:00+00:00",
-        timestamp: 1613224800,
-        periods: {
-          first: 1613224800,
-          second: 1613228400,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 22",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608749,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2021-02-13T17:00:00+00:00",
-        timestamp: 1613235600,
-        periods: {
-          first: 1613235600,
-          second: 1613239200,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 22",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608750,
-        referee: "M. Fabbri",
-        timezone: "UTC",
-        date: "2021-02-14T19:45:00+00:00",
-        timestamp: 1613331900,
-        periods: {
-          first: 1613331900,
-          second: 1613335500,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 22",
-      },
-      teams: {
-        home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608751,
-        referee: "D. Chiffi",
-        timezone: "UTC",
-        date: "2021-02-13T19:45:00+00:00",
-        timestamp: 1613245500,
-        periods: {
-          first: 1613245500,
-          second: 1613249100,
-        },
-        venue: {
-          id: 939,
-          name: "Stadio Alberto Picco",
-          city: "La Spezia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 22",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: true,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608752,
-        referee: "L. Massimi",
-        timezone: "UTC",
-        date: "2021-02-15T19:45:00+00:00",
-        timestamp: 1613418300,
-        periods: {
-          first: 1613418300,
-          second: 1613421900,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 22",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: true,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608753,
-        referee: "I. Pezzuto",
-        timezone: "UTC",
-        date: "2021-02-14T17:00:00+00:00",
-        timestamp: 1613322000,
-        periods: {
-          first: 1613322000,
-          second: 1613325600,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 22",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608754,
-        referee: "P. Giacomelli",
-        timezone: "UTC",
-        date: "2021-02-14T11:30:00+00:00",
-        timestamp: 1613302200,
-        periods: {
-          first: 1613302200,
-          second: 1613305800,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 22",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608755,
-        referee: "F. La Penna",
-        timezone: "UTC",
-        date: "2021-02-20T19:45:00+00:00",
-        timestamp: 1613850300,
-        periods: {
-          first: 1613850300,
-          second: 1613853900,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 23",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: null,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608756,
-        referee: "V. Marini",
-        timezone: "UTC",
-        date: "2021-02-22T19:45:00+00:00",
-        timestamp: 1614023100,
-        periods: {
-          first: 1614023100,
-          second: 1614026700,
-        },
-        venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 23",
-      },
-      teams: {
-        home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-        away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608757,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2021-02-21T14:00:00+00:00",
-        timestamp: 1613916000,
-        periods: {
-          first: 1613916000,
-          second: 1613919600,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 23",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: false,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608758,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2021-02-21T17:00:00+00:00",
-        timestamp: 1613926800,
-        periods: {
-          first: 1613926800,
-          second: 1613930400,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 23",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 4,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608759,
-        referee: "L. Pairetto",
-        timezone: "UTC",
-        date: "2021-02-21T19:45:00+00:00",
-        timestamp: 1613936700,
-        periods: {
-          first: 1613936700,
-          second: 1613940300,
-        },
-        venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 23",
-      },
-      teams: {
-        home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: null,
-        },
-        away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608760,
-        referee: "D. Massa",
-        timezone: "UTC",
-        date: "2021-02-20T14:00:00+00:00",
-        timestamp: 1613829600,
-        periods: {
-          first: 1613829600,
-          second: 1613833200,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 23",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608761,
-        referee: "G. Calvarese",
-        timezone: "UTC",
-        date: "2021-02-19T17:30:00+00:00",
-        timestamp: 1613755800,
-        periods: {
-          first: 1613755800,
-          second: 1613759400,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 23",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: true,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608762,
-        referee: "D. Orsato",
-        timezone: "UTC",
-        date: "2021-02-19T19:45:00+00:00",
-        timestamp: 1613763900,
-        periods: {
-          first: 1613763900,
-          second: 1613767500,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 23",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-        away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608763,
-        referee: "M. Irrati",
-        timezone: "UTC",
-        date: "2021-02-21T11:30:00+00:00",
-        timestamp: 1613907000,
-        periods: {
-          first: 1613907000,
-          second: 1613910600,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 23",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: null,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608764,
-        referee: "M. Marchetti",
-        timezone: "UTC",
-        date: "2021-02-20T17:00:00+00:00",
-        timestamp: 1613840400,
-        periods: {
-          first: 1613840400,
-          second: 1613844000,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 23",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: null,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608765,
-        referee: "L. Marinelli",
-        timezone: "UTC",
-        date: "2021-02-28T11:30:00+00:00",
-        timestamp: 1614511800,
-        periods: {
-          first: 1614511800,
-          second: 1614515400,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 24",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: false,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608766,
-        referee: "R. Abisso",
-        timezone: "UTC",
-        date: "2021-02-28T17:00:00+00:00",
-        timestamp: 1614531600,
-        periods: {
-          first: 1614531600,
-          second: 1614535200,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 24",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608767,
-        referee: "M. Fabbri",
-        timezone: "UTC",
-        date: "2021-02-28T14:00:00+00:00",
-        timestamp: 1614520800,
-        periods: {
-          first: 1614520800,
-          second: 1614524400,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 24",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608768,
-        referee: "M. Volpi",
-        timezone: "UTC",
-        date: "2021-02-28T14:00:00+00:00",
-        timestamp: 1614520800,
-        periods: {
-          first: 1614520800,
-          second: 1614524400,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 24",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: true,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608769,
-        referee: "D. Chiffi",
-        timezone: "UTC",
-        date: "2021-02-28T14:00:00+00:00",
-        timestamp: 1614520800,
-        periods: {
-          first: 1614520800,
-          second: 1614524400,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 24",
-      },
-      teams: {
-        home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608770,
-        referee: "F. Maresca",
-        timezone: "UTC",
-        date: "2021-02-27T19:45:00+00:00",
-        timestamp: 1614455100,
-        periods: {
-          first: 1614455100,
-          second: 1614458700,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 24",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: null,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608771,
-        referee: "P. Giacomelli",
-        timezone: "UTC",
-        date: "2021-02-27T17:00:00+00:00",
-        timestamp: 1614445200,
-        periods: {
-          first: 1614445200,
-          second: 1614448800,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 24",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: true,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608772,
-        referee: "M. Guida",
-        timezone: "UTC",
-        date: "2021-02-28T19:45:00+00:00",
-        timestamp: 1614541500,
-        periods: {
-          first: 1614541500,
-          second: 1614545100,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 24",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: false,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608773,
-        referee: "D. Orsato",
-        timezone: "UTC",
-        date: "2021-02-27T14:00:00+00:00",
-        timestamp: 1614434400,
-        periods: {
-          first: 1614434400,
-          second: 1614438000,
-        },
-        venue: {
-          id: 939,
-          name: "Stadio Alberto Picco",
-          city: "La Spezia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 24",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: null,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608774,
-        referee: "M. Mariani",
-        timezone: "UTC",
-        date: "2021-03-17T14:00:00+00:00",
-        timestamp: 1615989600,
-        periods: {
-          first: 1615989600,
-          second: 1615993200,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 24",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: true,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 3,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608775,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2021-03-03T19:45:00+00:00",
-        timestamp: 1614800700,
-        periods: {
-          first: 1614800700,
-          second: 1614804300,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 25",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: true,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608776,
-        referee: "S. Sozza",
-        timezone: "UTC",
-        date: "2021-03-03T19:45:00+00:00",
-        timestamp: 1614800700,
-        periods: {
-          first: 1614800700,
-          second: 1614804300,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 25",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-        away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 5,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
           away: 1,
         },
         fulltime: {
@@ -16469,19 +1645,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608777,
-        referee: "F. Pasqua",
+        id: 866851,
+        referee: "S. Gishamer",
         timezone: "UTC",
-        date: "2021-03-04T19:45:00+00:00",
-        timestamp: 1614887100,
+        date: "2022-07-05T18:45:00+00:00",
+        timestamp: 1657046700,
         periods: {
-          first: 1614887100,
-          second: 1614890700,
+          first: 1657046700,
+          second: 1657050300,
         },
         venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
+          id: 1045,
+          name: "Toše Proeski Arena",
+          city: "Skopje",
         },
         status: {
           long: "Match Finished",
@@ -16490,307 +1666,35 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 25",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
       },
       teams: {
         home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
+          id: 2265,
+          name: "Shkupi 1927",
+          logo: "https://media.api-sports.io/football/teams/2265.png",
           winner: true,
         },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608778,
-        referee: "V. Marini",
-        timezone: "UTC",
-        date: "2021-03-03T17:30:00+00:00",
-        timestamp: 1614792600,
-        periods: {
-          first: 1614792600,
-          second: 1614796200,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 25",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: null,
-        },
         away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: null,
+          id: 667,
+          name: "Lincoln Red Imps FC",
+          logo: "https://media.api-sports.io/football/teams/667.png",
+          winner: false,
         },
       },
       goals: {
         home: 3,
-        away: 3,
+        away: 0,
       },
       score: {
         halftime: {
           home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608779,
-        referee: "G. Calvarese",
-        timezone: "UTC",
-        date: "2021-03-03T19:45:00+00:00",
-        timestamp: 1614800700,
-        periods: {
-          first: 1614800700,
-          second: 1614804300,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 25",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: false,
-        },
-        away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608780,
-        referee: "L. Pairetto",
-        timezone: "UTC",
-        date: "2021-03-03T19:45:00+00:00",
-        timestamp: 1614800700,
-        periods: {
-          first: 1614800700,
-          second: 1614804300,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 25",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: null,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608781,
-        referee: "J. Sacchi",
-        timezone: "UTC",
-        date: "2021-03-02T19:45:00+00:00",
-        timestamp: 1614714300,
-        periods: {
-          first: 1614714300,
-          second: 1614717900,
-        },
-        venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 25",
-      },
-      teams: {
-        home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
           away: 0,
         },
         fulltime: {
@@ -16809,19 +1713,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608782,
-        referee: "M. Fabbri",
+        id: 866852,
+        referee: "F. Glova",
         timezone: "UTC",
-        date: "2021-05-18T18:30:00+00:00",
-        timestamp: 1621362600,
+        date: "2022-07-12T16:00:00+00:00",
+        timestamp: 1657641600,
         periods: {
-          first: 1621362600,
-          second: 1621366200,
+          first: 1657641600,
+          second: 1657645200,
         },
         venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
+          id: 760,
+          name: "Victoria Stadium",
+          city: "Gibraltar",
         },
         status: {
           long: "Match Finished",
@@ -16830,773 +1734,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 25",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
       },
       teams: {
         home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: null,
-        },
-        away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608783,
-        referee: "D. Massa",
-        timezone: "UTC",
-        date: "2021-03-03T19:45:00+00:00",
-        timestamp: 1614800700,
-        periods: {
-          first: 1614800700,
-          second: 1614804300,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 25",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: null,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608784,
-        referee: "G. Ayroldi",
-        timezone: "UTC",
-        date: "2021-03-03T19:45:00+00:00",
-        timestamp: 1614800700,
-        periods: {
-          first: 1614800700,
-          second: 1614804300,
-        },
-        venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 25",
-      },
-      teams: {
-        home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: false,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 0,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608785,
-        referee: "M. Mariani",
-        timezone: "UTC",
-        date: "2021-03-08T19:45:00+00:00",
-        timestamp: 1615232700,
-        periods: {
-          first: 1615232700,
-          second: 1615236300,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 26",
-      },
-      teams: {
-        home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
+          id: 667,
+          name: "Lincoln Red Imps FC",
+          logo: "https://media.api-sports.io/football/teams/667.png",
           winner: true,
         },
         away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608786,
-        referee: "F. Fourneau",
-        timezone: "UTC",
-        date: "2021-03-06T14:00:00+00:00",
-        timestamp: 1615039200,
-        periods: {
-          first: 1615039200,
-          second: 1615042800,
-        },
-        venue: {
-          id: 939,
-          name: "Stadio Alberto Picco",
-          city: "La Spezia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 26",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: null,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608787,
-        referee: "D. Chiffi",
-        timezone: "UTC",
-        date: "2021-03-07T19:45:00+00:00",
-        timestamp: 1615146300,
-        periods: {
-          first: 1615146300,
-          second: 1615149900,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 26",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608788,
-        referee: "P. Giacomelli",
-        timezone: "UTC",
-        date: "2021-03-07T17:00:00+00:00",
-        timestamp: 1615136400,
-        periods: {
-          first: 1615136400,
-          second: 1615140000,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 26",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: null,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608789,
-        referee: "M. Fabbri",
-        timezone: "UTC",
-        date: "2021-03-07T11:30:00+00:00",
-        timestamp: 1615116600,
-        periods: {
-          first: 1615116600,
-          second: 1615120200,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 26",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608790,
-        referee: "D. Massa",
-        timezone: "UTC",
-        date: "2021-03-06T19:45:00+00:00",
-        timestamp: 1615059900,
-        periods: {
-          first: 1615059900,
-          second: 1615063500,
-        },
-        venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 26",
-      },
-      teams: {
-        home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608791,
-        referee: "D. Orsato",
-        timezone: "UTC",
-        date: "2021-03-07T14:00:00+00:00",
-        timestamp: 1615125600,
-        periods: {
-          first: 1615125600,
-          second: 1615129200,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 26",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: false,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608792,
-        referee: "R. Abisso",
-        timezone: "UTC",
-        date: "2021-03-07T14:00:00+00:00",
-        timestamp: 1615125600,
-        periods: {
-          first: 1615125600,
-          second: 1615129200,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 26",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: null,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608793,
-        referee: "L. Maggioni",
-        timezone: "UTC",
-        date: "2021-03-06T17:00:00+00:00",
-        timestamp: 1615050000,
-        periods: {
-          first: 1615050000,
-          second: 1615053600,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 26",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: true,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
+          id: 2265,
+          name: "Shkupi 1927",
+          logo: "https://media.api-sports.io/football/teams/2265.png",
           winner: false,
         },
       },
@@ -17625,19 +1781,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608794,
-        referee: "M. Guida",
+        id: 866853,
+        referee: "F. Maresca",
         timezone: "UTC",
-        date: "2021-03-07T14:00:00+00:00",
-        timestamp: 1615125600,
+        date: "2022-07-06T18:00:00+00:00",
+        timestamp: 1657130400,
         periods: {
-          first: 1615125600,
-          second: 1615129200,
+          first: 1657130400,
+          second: 1657134000,
         },
         venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
+          id: 202,
+          name: "Stadion Bijeli Brijeg",
+          city: "Mostar",
         },
         status: {
           long: "Match Finished",
@@ -17646,40 +1802,40 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 26",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
       },
       teams: {
         home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: true,
+          id: 588,
+          name: "Zrinjski",
+          logo: "https://media.api-sports.io/football/teams/588.png",
+          winner: null,
         },
         away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: false,
+          id: 568,
+          name: "Sheriff Tiraspol",
+          logo: "https://media.api-sports.io/football/teams/568.png",
+          winner: null,
         },
       },
       goals: {
-        home: 4,
-        away: 2,
+        home: 0,
+        away: 0,
       },
       score: {
         halftime: {
-          home: 1,
-          away: 1,
+          home: 0,
+          away: 0,
         },
         fulltime: {
-          home: 4,
-          away: 2,
+          home: 0,
+          away: 0,
         },
         extratime: {
           home: null,
@@ -17693,19 +1849,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608795,
-        referee: "A. Rapuano",
+        id: 866854,
+        referee: "R. Petrescu",
         timezone: "UTC",
-        date: "2021-03-12T14:00:00+00:00",
-        timestamp: 1615557600,
+        date: "2022-07-12T17:00:00+00:00",
+        timestamp: 1657645200,
         periods: {
-          first: 1615557600,
-          second: 1615561200,
+          first: 1657645200,
+          second: 1657648800,
         },
         venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
+          id: 2615,
+          name: "Stadionul Zimbru",
+          city: "Chişinău",
         },
         status: {
           long: "Match Finished",
@@ -17714,25 +1870,705 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 27",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
       },
       teams: {
         home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
+          id: 568,
+          name: "Sheriff Tiraspol",
+          logo: "https://media.api-sports.io/football/teams/568.png",
           winner: true,
         },
         away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
+          id: 588,
+          name: "Zrinjski",
+          logo: "https://media.api-sports.io/football/teams/588.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866855,
+        referee: "D. Coote",
+        timezone: "UTC",
+        date: "2022-07-06T18:30:00+00:00",
+        timestamp: 1657132200,
+        periods: {
+          first: 1657132200,
+          second: 1657135800,
+        },
+        venue: {
+          id: 11914,
+          name: "Štadión Tehelné pole",
+          city: "Bratislava",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 656,
+          name: "Slovan Bratislava",
+          logo: "https://media.api-sports.io/football/teams/656.png",
+          winner: null,
+        },
+        away: {
+          id: 705,
+          name: "Dinamo Batumi",
+          logo: "https://media.api-sports.io/football/teams/705.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 866856,
+        referee: "António Nobre",
+        timezone: "UTC",
+        date: "2022-07-13T17:00:00+00:00",
+        timestamp: 1657731600,
+        periods: {
+          first: 1657731600,
+          second: 1657735200,
+        },
+        venue: {
+          id: null,
+          name: "Batumi Arena",
+          city: "Batumi",
+        },
+        status: {
+          long: "Match Finished",
+          short: "AET",
+          elapsed: 120,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 705,
+          name: "Dinamo Batumi",
+          logo: "https://media.api-sports.io/football/teams/705.png",
+          winner: false,
+        },
+        away: {
+          id: 656,
+          name: "Slovan Bratislava",
+          logo: "https://media.api-sports.io/football/teams/656.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: 1,
+          away: 2,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 867213,
+        referee: "S. Stegemann",
+        timezone: "UTC",
+        date: "2022-07-20T17:00:00+00:00",
+        timestamp: 1658336400,
+        periods: {
+          first: 1658336400,
+          second: 1658340000,
+        },
+        venue: {
+          id: 868,
+          name: "Sammy Ofer Stadium",
+          city: "Haifa",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 4195,
+          name: "Maccabi Haifa",
+          logo: "https://media.api-sports.io/football/teams/4195.png",
+          winner: null,
+        },
+        away: {
+          id: 553,
+          name: "Olympiakos Piraeus",
+          logo: "https://media.api-sports.io/football/teams/553.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 867214,
+        referee: "D. Stefanski",
+        timezone: "UTC",
+        date: "2022-07-27T19:00:00+00:00",
+        timestamp: 1658948400,
+        periods: {
+          first: 1658948400,
+          second: 1658952000,
+        },
+        venue: {
+          id: null,
+          name: "Stadio Georgios Karaiskáki",
+          city: "Piraeus",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 553,
+          name: "Olympiakos Piraeus",
+          logo: "https://media.api-sports.io/football/teams/553.png",
+          winner: false,
+        },
+        away: {
+          id: 4195,
+          name: "Maccabi Haifa",
+          logo: "https://media.api-sports.io/football/teams/4195.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 4,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 0,
+          away: 4,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 867215,
+        referee: "N. Simović",
+        timezone: "UTC",
+        date: "2022-07-19T17:45:00+00:00",
+        timestamp: 1658252700,
+        periods: {
+          first: 1658252700,
+          second: 1658256300,
+        },
+        venue: {
+          id: 453,
+          name: "MCH Arena",
+          city: "Herning",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 397,
+          name: "FC Midtjylland",
+          logo: "https://media.api-sports.io/football/teams/397.png",
+          winner: null,
+        },
+        away: {
+          id: 614,
+          name: "AEK Larnaca",
+          logo: "https://media.api-sports.io/football/teams/614.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 867216,
+        referee: "I. Vad II",
+        timezone: "UTC",
+        date: "2022-07-26T15:30:00+00:00",
+        timestamp: 1658849400,
+        periods: {
+          first: 1658849400,
+          second: 1658853000,
+        },
+        venue: {
+          id: null,
+          name: "AEK Arena - George Karapatakis",
+          city: "Larnaca",
+        },
+        status: {
+          long: "Match Finished",
+          short: "PEN",
+          elapsed: 120,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 614,
+          name: "AEK Larnaca",
+          logo: "https://media.api-sports.io/football/teams/614.png",
+          winner: false,
+        },
+        away: {
+          id: 397,
+          name: "FC Midtjylland",
+          logo: "https://media.api-sports.io/football/teams/397.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: 0,
+          away: 0,
+        },
+        penalty: {
+          home: 3,
+          away: 4,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 867217,
+        referee: "G. Nyberg",
+        timezone: "UTC",
+        date: "2022-07-20T18:00:00+00:00",
+        timestamp: 1658340000,
+        periods: {
+          first: 1658340000,
+          second: 1658343600,
+        },
+        venue: {
+          id: 12602,
+          name: "Stadion Miejski LKS Lodz",
+          city: "Łódź",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 572,
+          name: "Dynamo Kyiv",
+          logo: "https://media.api-sports.io/football/teams/572.png",
+          winner: null,
+        },
+        away: {
+          id: 611,
+          name: "Fenerbahce",
+          logo: "https://media.api-sports.io/football/teams/611.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 867218,
+        referee: "M. Irrati",
+        timezone: "UTC",
+        date: "2022-07-27T17:00:00+00:00",
+        timestamp: 1658941200,
+        periods: {
+          first: 1658941200,
+          second: 1658944800,
+        },
+        venue: {
+          id: 1581,
+          name: "Ülker Stadyumu Fenerbahçe Şükrü Saracoğlu Spor Kompleksi",
+          city: "İstanbul",
+        },
+        status: {
+          long: "Match Finished",
+          short: "AET",
+          elapsed: 120,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 611,
+          name: "Fenerbahce",
+          logo: "https://media.api-sports.io/football/teams/611.png",
+          winner: false,
+        },
+        away: {
+          id: 572,
+          name: "Dynamo Kyiv",
+          logo: "https://media.api-sports.io/football/teams/572.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: 0,
+          away: 1,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 871876,
+        referee: "U. Schnyder",
+        timezone: "UTC",
+        date: "2022-06-24T19:30:00+00:00",
+        timestamp: 1656099000,
+        periods: {
+          first: 1656099000,
+          second: 1656102600,
+        },
+        venue: {
+          id: 831,
+          name: "Víkingsvöllur",
+          city: "Reykjavík",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Preliminary Round",
+      },
+      teams: {
+        home: {
+          id: 3342,
+          name: "Inter Club d'Escaldes",
+          logo: "https://media.api-sports.io/football/teams/3342.png",
+          winner: false,
+        },
+        away: {
+          id: 278,
+          name: "Vikingur Reykjavik",
+          logo: "https://media.api-sports.io/football/teams/278.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 878836,
+        referee: "D. Muntean",
+        timezone: "UTC",
+        date: "2022-07-05T17:00:00+00:00",
+        timestamp: 1657040400,
+        periods: {
+          first: 1657040400,
+          second: 1657044000,
+        },
+        venue: {
+          id: 1518,
+          name: "Eleda Stadion",
+          city: "Malmö",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 375,
+          name: "Malmo FF",
+          logo: "https://media.api-sports.io/football/teams/375.png",
+          winner: true,
+        },
+        away: {
+          id: 278,
+          name: "Vikingur Reykjavik",
+          logo: "https://media.api-sports.io/football/teams/278.png",
           winner: false,
         },
       },
@@ -17761,19 +2597,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608796,
-        referee: "P. Giacomelli",
+        id: 878837,
+        referee: "J. Beaton",
         timezone: "UTC",
-        date: "2021-03-13T17:00:00+00:00",
-        timestamp: 1615654800,
+        date: "2022-07-12T19:30:00+00:00",
+        timestamp: 1657654200,
         periods: {
-          first: 1615654800,
-          second: 1615658400,
+          first: 1657654200,
+          second: 1657657800,
         },
         venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
+          id: 831,
+          name: "Víkingsvöllur",
+          city: "Reykjavík",
         },
         status: {
           long: "Match Finished",
@@ -17782,25 +2618,161 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 27",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "1st Qualifying Round",
       },
       teams: {
         home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
+          id: 278,
+          name: "Vikingur Reykjavik",
+          logo: "https://media.api-sports.io/football/teams/278.png",
+          winner: null,
+        },
+        away: {
+          id: 375,
+          name: "Malmo FF",
+          logo: "https://media.api-sports.io/football/teams/375.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 3,
+        away: 3,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 2,
+        },
+        fulltime: {
+          home: 3,
+          away: 3,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 897740,
+        referee: "Ricardo De Burgos",
+        timezone: "UTC",
+        date: "2022-07-20T18:00:00+00:00",
+        timestamp: 1658340000,
+        periods: {
+          first: 1658340000,
+          second: 1658343600,
+        },
+        venue: {
+          id: 799,
+          name: "Groupama Aréna",
+          city: "Budapest",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 651,
+          name: "Ferencvarosi TC",
+          logo: "https://media.api-sports.io/football/teams/651.png",
           winner: false,
         },
         away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
+          id: 656,
+          name: "Slovan Bratislava",
+          logo: "https://media.api-sports.io/football/teams/656.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 897741,
+        referee: "M. Di Bello",
+        timezone: "UTC",
+        date: "2022-07-27T18:30:00+00:00",
+        timestamp: 1658946600,
+        periods: {
+          first: 1658946600,
+          second: 1658950200,
+        },
+        venue: {
+          id: 11914,
+          name: "Štadión Tehelné pole",
+          city: "Bratislava",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 656,
+          name: "Slovan Bratislava",
+          logo: "https://media.api-sports.io/football/teams/656.png",
+          winner: false,
+        },
+        away: {
+          id: 651,
+          name: "Ferencvarosi TC",
+          logo: "https://media.api-sports.io/football/teams/651.png",
           winner: true,
         },
       },
@@ -17811,7 +2783,7 @@ export const sampleResponse = {
       score: {
         halftime: {
           home: 0,
-          away: 3,
+          away: 2,
         },
         fulltime: {
           home: 1,
@@ -17829,19 +2801,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608797,
-        referee: "P. Valeri",
+        id: 897742,
+        referee: "A. Treimanis",
         timezone: "UTC",
-        date: "2021-03-14T14:00:00+00:00",
-        timestamp: 1615730400,
+        date: "2022-07-19T18:45:00+00:00",
+        timestamp: 1658256300,
         periods: {
-          first: 1615730400,
-          second: 1615734000,
+          first: 1658256300,
+          second: 1658259900,
         },
         venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
+          id: 1971,
+          name: "Windsor Park",
+          city: "Belfast",
         },
         status: {
           long: "Match Finished",
@@ -17850,1181 +2822,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 27",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
       },
       teams: {
         home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: false,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608798,
-        referee: "G. Calvarese",
-        timezone: "UTC",
-        date: "2021-03-14T17:00:00+00:00",
-        timestamp: 1615741200,
-        periods: {
-          first: 1615741200,
-          second: 1615744800,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 27",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 3,
-        },
-        fulltime: {
-          home: 1,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608799,
-        referee: "F. Pasqua",
-        timezone: "UTC",
-        date: "2021-03-14T19:45:00+00:00",
-        timestamp: 1615751100,
-        periods: {
-          first: 1615751100,
-          second: 1615754700,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 27",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: false,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608800,
-        referee: "M. Piccinini",
-        timezone: "UTC",
-        date: "2021-03-14T14:00:00+00:00",
-        timestamp: 1615730400,
-        periods: {
-          first: 1615730400,
-          second: 1615734000,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 27",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
+          id: 583,
+          name: "Linfield",
+          logo: "https://media.api-sports.io/football/teams/583.png",
           winner: true,
         },
         away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608801,
-        referee: "M. Irrati",
-        timezone: "UTC",
-        date: "2021-03-14T11:30:00+00:00",
-        timestamp: 1615721400,
-        periods: {
-          first: 1615721400,
-          second: 1615725000,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 27",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: true,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608802,
-        referee: "V. Marini",
-        timezone: "UTC",
-        date: "2021-03-12T19:45:00+00:00",
-        timestamp: 1615578300,
-        periods: {
-          first: 1615578300,
-          second: 1615581900,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 27",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608803,
-        referee: "G. Camplone",
-        timezone: "UTC",
-        date: "2021-03-13T19:45:00+00:00",
-        timestamp: 1615664700,
-        periods: {
-          first: 1615664700,
-          second: 1615668300,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 27",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: null,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608804,
-        referee: "A. Prontera",
-        timezone: "UTC",
-        date: "2021-03-13T14:00:00+00:00",
-        timestamp: 1615644000,
-        periods: {
-          first: 1615644000,
-          second: 1615647600,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 27",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608805,
-        referee: "L. Pairetto",
-        timezone: "UTC",
-        date: "2021-03-21T11:30:00+00:00",
-        timestamp: 1616326200,
-        periods: {
-          first: 1616326200,
-          second: 1616329800,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 28",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: false,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608806,
-        referee: "R. Abisso",
-        timezone: "UTC",
-        date: "2021-03-21T14:00:00+00:00",
-        timestamp: 1616335200,
-        periods: {
-          first: 1616335200,
-          second: 1616338800,
-        },
-        venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 28",
-      },
-      teams: {
-        home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: false,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608807,
-        referee: "F. Fourneau",
-        timezone: "UTC",
-        date: "2021-03-20T14:00:00+00:00",
-        timestamp: 1616248800,
-        periods: {
-          first: 1616248800,
-          second: 1616252400,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 28",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608808,
-        referee: "M. Mariani",
-        timezone: "UTC",
-        date: "2021-03-20T17:00:00+00:00",
-        timestamp: 1616259600,
-        periods: {
-          first: 1616259600,
-          second: 1616263200,
-        },
-        venue: {
-          id: 939,
-          name: "Stadio Alberto Picco",
-          city: "La Spezia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 28",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: true,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608809,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2021-03-19T19:45:00+00:00",
-        timestamp: 1616183100,
-        periods: {
-          first: 1616183100,
-          second: 1616186700,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 28",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608810,
-        referee: "F. Maresca",
-        timezone: "UTC",
-        date: "2021-03-21T14:00:00+00:00",
-        timestamp: 1616335200,
-        periods: {
-          first: 1616335200,
-          second: 1616338800,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 28",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608811,
-        referee: "M. Guida",
-        timezone: "UTC",
-        date: "2021-03-21T17:00:00+00:00",
-        timestamp: 1616346000,
-        periods: {
-          first: 1616346000,
-          second: 1616349600,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 28",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: false,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608812,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2021-03-21T19:45:00+00:00",
-        timestamp: 1616355900,
-        periods: {
-          first: 1616355900,
-          second: 1616359500,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 28",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: false,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608813,
-        referee: "M. Irrati",
-        timezone: "UTC",
-        date: "2021-04-07T16:45:00+00:00",
-        timestamp: 1617813900,
-        periods: {
-          first: 1617813900,
-          second: 1617817500,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 28",
-      },
-      teams: {
-        home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608814,
-        referee: "D. Orsato",
-        timezone: "UTC",
-        date: "2021-03-21T14:00:00+00:00",
-        timestamp: 1616335200,
-        periods: {
-          first: 1616335200,
-          second: 1616338800,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 28",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: true,
-        },
-        away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
+          id: 327,
+          name: "Bodo/Glimt",
+          logo: "https://media.api-sports.io/football/teams/327.png",
           winner: false,
         },
       },
@@ -19034,7 +2850,7 @@ export const sampleResponse = {
       },
       score: {
         halftime: {
-          home: 1,
+          home: 0,
           away: 0,
         },
         fulltime: {
@@ -19053,19 +2869,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608815,
-        referee: "A. Di Martino",
+        id: 897743,
+        referee: "R. Reinshreiber",
         timezone: "UTC",
-        date: "2021-04-03T13:00:00+00:00",
-        timestamp: 1617454800,
+        date: "2022-07-27T16:00:00+00:00",
+        timestamp: 1658937600,
         periods: {
-          first: 1617454800,
-          second: 1617458400,
+          first: 1658937600,
+          second: 1658941200,
         },
         venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
+          id: 1175,
+          name: "Aspmyra Stadion",
+          city: "Bodø",
         },
         status: {
           long: "Match Finished",
@@ -19074,108 +2890,40 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 29",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
       },
       teams: {
         home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
+          id: 327,
+          name: "Bodo/Glimt",
+          logo: "https://media.api-sports.io/football/teams/327.png",
           winner: true,
         },
         away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
+          id: 583,
+          name: "Linfield",
+          logo: "https://media.api-sports.io/football/teams/583.png",
           winner: false,
         },
       },
       goals: {
-        home: 4,
-        away: 3,
+        home: 8,
+        away: 0,
       },
       score: {
         halftime: {
-          home: 3,
-          away: 1,
-        },
-        fulltime: {
           home: 4,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608816,
-        referee: "F. Maresca",
-        timezone: "UTC",
-        date: "2021-04-03T13:00:00+00:00",
-        timestamp: 1617454800,
-        periods: {
-          first: 1617454800,
-          second: 1617458400,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 29",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: null,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
+          away: 0,
         },
         fulltime: {
-          home: 1,
-          away: 1,
+          home: 8,
+          away: 0,
         },
         extratime: {
           home: null,
@@ -19189,19 +2937,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608817,
-        referee: "P. Giacomelli",
+        id: 897744,
+        referee: "H. Lechner",
         timezone: "UTC",
-        date: "2021-04-03T18:45:00+00:00",
-        timestamp: 1617475500,
+        date: "2022-07-20T18:15:00+00:00",
+        timestamp: 1658340900,
         periods: {
-          first: 1617475500,
-          second: 1617479100,
+          first: 1658340900,
+          second: 1658344500,
         },
         venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
+          id: 1441,
+          name: "Ljudski vrt",
+          city: "Maribor",
         },
         status: {
           long: "Match Finished",
@@ -19210,651 +2958,39 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 29",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
       },
       teams: {
         home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: false,
+          id: 552,
+          name: "Maribor",
+          logo: "https://media.api-sports.io/football/teams/552.png",
+          winner: null,
         },
         away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: true,
+          id: 568,
+          name: "Sheriff Tiraspol",
+          logo: "https://media.api-sports.io/football/teams/568.png",
+          winner: null,
         },
       },
       goals: {
         home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608818,
-        referee: "M. Fabbri",
-        timezone: "UTC",
-        date: "2021-04-03T16:00:00+00:00",
-        timestamp: 1617465600,
-        periods: {
-          first: 1617465600,
-          second: 1617469200,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 29",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608819,
-        referee: "D. Massa",
-        timezone: "UTC",
-        date: "2021-04-03T13:00:00+00:00",
-        timestamp: 1617454800,
-        periods: {
-          first: 1617454800,
-          second: 1617458400,
-        },
-        venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 29",
-      },
-      teams: {
-        home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: null,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608820,
-        referee: "L. Pairetto",
-        timezone: "UTC",
-        date: "2021-04-03T13:00:00+00:00",
-        timestamp: 1617454800,
-        periods: {
-          first: 1617454800,
-          second: 1617458400,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 29",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: null,
-        },
-        away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608821,
-        referee: "M. Piccinini",
-        timezone: "UTC",
-        date: "2021-04-03T10:30:00+00:00",
-        timestamp: 1617445800,
-        periods: {
-          first: 1617445800,
-          second: 1617449400,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 29",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: null,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608822,
-        referee: "A. Giua",
-        timezone: "UTC",
-        date: "2021-04-03T13:00:00+00:00",
-        timestamp: 1617454800,
-        periods: {
-          first: 1617454800,
-          second: 1617458400,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 29",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608823,
-        referee: "G. Manganiello",
-        timezone: "UTC",
-        date: "2021-04-03T13:00:00+00:00",
-        timestamp: 1617454800,
-        periods: {
-          first: 1617454800,
-          second: 1617458400,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 29",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608824,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2021-04-03T13:00:00+00:00",
-        timestamp: 1617454800,
-        periods: {
-          first: 1617454800,
-          second: 1617458400,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 29",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608825,
-        referee: "J. Sacchi",
-        timezone: "UTC",
-        date: "2021-04-11T18:45:00+00:00",
-        timestamp: 1618166700,
-        periods: {
-          first: 1618166700,
-          second: 1618170300,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 30",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: false,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 2,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608826,
-        referee: "M. Guida",
-        timezone: "UTC",
-        date: "2021-04-11T16:00:00+00:00",
-        timestamp: 1618156800,
-        periods: {
-          first: 1618156800,
-          second: 1618160400,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 30",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
         away: 0,
       },
       score: {
         halftime: {
-          home: 1,
+          home: 0,
           away: 0,
         },
         fulltime: {
-          home: 1,
+          home: 0,
           away: 0,
         },
         extratime: {
@@ -19869,19 +3005,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608827,
-        referee: "L. Pairetto",
+        id: 897745,
+        referee: "T. Bognár",
         timezone: "UTC",
-        date: "2021-04-11T10:30:00+00:00",
-        timestamp: 1618137000,
+        date: "2022-07-26T17:00:00+00:00",
+        timestamp: 1658854800,
         periods: {
-          first: 1618137000,
-          second: 1618140600,
+          first: 1658854800,
+          second: 1658858400,
         },
         venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
+          id: 2615,
+          name: "Stadionul Zimbru",
+          city: "Chişinău",
         },
         status: {
           long: "Match Finished",
@@ -19890,25 +3026,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 30",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
       },
       teams: {
         home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
+          id: 568,
+          name: "Sheriff Tiraspol",
+          logo: "https://media.api-sports.io/football/teams/568.png",
           winner: true,
         },
         away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
+          id: 552,
+          name: "Maribor",
+          logo: "https://media.api-sports.io/football/teams/552.png",
           winner: false,
         },
       },
@@ -19937,19 +3073,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608828,
-        referee: "S. Sozza",
+        id: 897746,
+        referee: "C. Pawson",
         timezone: "UTC",
-        date: "2021-04-10T13:00:00+00:00",
-        timestamp: 1618059600,
+        date: "2022-07-19T16:00:00+00:00",
+        timestamp: 1658246400,
         periods: {
-          first: 1618059600,
-          second: 1618063200,
+          first: 1658246400,
+          second: 1658250000,
         },
         venue: {
-          id: 939,
-          name: "Stadio Alberto Picco",
-          city: "La Spezia",
+          id: 121,
+          name: "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
+          city: "Yerevan",
         },
         status: {
           long: "Match Finished",
@@ -19958,30 +3094,234 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 30",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
       },
       teams: {
         home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
+          id: 709,
+          name: "Pyunik Yerevan",
+          logo: "https://media.api-sports.io/football/teams/709.png",
+          winner: false,
+        },
+        away: {
+          id: 578,
+          name: "F91 Dudelange",
+          logo: "https://media.api-sports.io/football/teams/578.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 897747,
+        referee: "José Munuera",
+        timezone: "UTC",
+        date: "2022-07-26T17:30:00+00:00",
+        timestamp: 1658856600,
+        periods: {
+          first: 1658856600,
+          second: 1658860200,
+        },
+        venue: {
+          id: null,
+          name: "Stade Jos Nosbaum",
+          city: "Dudelange",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 578,
+          name: "F91 Dudelange",
+          logo: "https://media.api-sports.io/football/teams/578.png",
+          winner: false,
+        },
+        away: {
+          id: 709,
+          name: "Pyunik Yerevan",
+          logo: "https://media.api-sports.io/football/teams/709.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 4,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 4,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 897748,
+        referee: "G. Kabakov",
+        timezone: "UTC",
+        date: "2022-07-19T16:00:00+00:00",
+        timestamp: 1658246400,
+        periods: {
+          first: 1658246400,
+          second: 1658250000,
+        },
+        venue: {
+          id: 1030,
+          name: "Vilniaus LFF stadionas",
+          city: "Vilnius",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 586,
+          name: "FK Zalgiris Vilnius",
+          logo: "https://media.api-sports.io/football/teams/586.png",
           winner: true,
         },
         away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
+          id: 375,
+          name: "Malmo FF",
+          logo: "https://media.api-sports.io/football/teams/375.png",
           winner: false,
         },
       },
       goals: {
-        home: 3,
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 897749,
+        referee: "K. Tohver",
+        timezone: "UTC",
+        date: "2022-07-27T17:00:00+00:00",
+        timestamp: 1658941200,
+        periods: {
+          first: 1658941200,
+          second: 1658944800,
+        },
+        venue: {
+          id: 1518,
+          name: "Eleda Stadion",
+          city: "Malmö",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 375,
+          name: "Malmo FF",
+          logo: "https://media.api-sports.io/football/teams/375.png",
+          winner: false,
+        },
+        away: {
+          id: 586,
+          name: "FK Zalgiris Vilnius",
+          logo: "https://media.api-sports.io/football/teams/586.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
         away: 2,
       },
       score: {
@@ -19990,7 +3330,7 @@ export const sampleResponse = {
           away: 1,
         },
         fulltime: {
-          home: 3,
+          home: 0,
           away: 2,
         },
         extratime: {
@@ -20005,19 +3345,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608829,
-        referee: "M. Di Bello",
+        id: 897750,
+        referee: "I. Peljto",
         timezone: "UTC",
-        date: "2021-04-11T13:00:00+00:00",
-        timestamp: 1618146000,
+        date: "2022-07-19T16:00:00+00:00",
+        timestamp: 1658246400,
         periods: {
-          first: 1618146000,
-          second: 1618149600,
+          first: 1658246400,
+          second: 1658250000,
         },
         venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
+          id: null,
+          name: "Tofiq Bəhramov adına Respublika stadionu",
+          city: "Baku",
         },
         status: {
           long: "Match Finished",
@@ -20026,31 +3366,31 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 30",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
       },
       teams: {
         home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
+          id: 556,
+          name: "Qarabag",
+          logo: "https://media.api-sports.io/football/teams/556.png",
           winner: true,
         },
         away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
+          id: 783,
+          name: "FC Zurich",
+          logo: "https://media.api-sports.io/football/teams/783.png",
           winner: false,
         },
       },
       goals: {
         home: 3,
-        away: 1,
+        away: 2,
       },
       score: {
         halftime: {
@@ -20059,6 +3399,210 @@ export const sampleResponse = {
         },
         fulltime: {
           home: 3,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 897751,
+        referee: "A. Lindhout",
+        timezone: "UTC",
+        date: "2022-07-27T17:00:00+00:00",
+        timestamp: 1658941200,
+        periods: {
+          first: 1658941200,
+          second: 1658944800,
+        },
+        venue: {
+          id: 1533,
+          name: "Stadion Letzigrund",
+          city: "Zürich",
+        },
+        status: {
+          long: "Match Finished",
+          short: "AET",
+          elapsed: 120,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 783,
+          name: "FC Zurich",
+          logo: "https://media.api-sports.io/football/teams/783.png",
+          winner: null,
+        },
+        away: {
+          id: 556,
+          name: "Qarabag",
+          logo: "https://media.api-sports.io/football/teams/556.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 1,
+        },
+        extratime: {
+          home: 0,
+          away: 1,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 897752,
+        referee: "João Pedro Pinheiro",
+        timezone: "UTC",
+        date: "2022-07-19T17:45:00+00:00",
+        timestamp: 1658252700,
+        periods: {
+          first: 1658252700,
+          second: 1658256300,
+        },
+        venue: {
+          id: 10547,
+          name: "Huvepharma Arena",
+          city: "Razgrad",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 566,
+          name: "Ludogorets",
+          logo: "https://media.api-sports.io/football/teams/566.png",
+          winner: true,
+        },
+        away: {
+          id: 652,
+          name: "Shamrock Rovers",
+          logo: "https://media.api-sports.io/football/teams/652.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 3,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 2,
+          away: 0,
+        },
+        fulltime: {
+          home: 3,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 897753,
+        referee: "F. Maresca",
+        timezone: "UTC",
+        date: "2022-07-26T19:00:00+00:00",
+        timestamp: 1658862000,
+        periods: {
+          first: 1658862000,
+          second: 1658865600,
+        },
+        venue: {
+          id: 865,
+          name: "Tallaght Stadium",
+          city: "Dublin",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 652,
+          name: "Shamrock Rovers",
+          logo: "https://media.api-sports.io/football/teams/652.png",
+          winner: true,
+        },
+        away: {
+          id: 566,
+          name: "Ludogorets",
+          logo: "https://media.api-sports.io/football/teams/566.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
           away: 1,
         },
         extratime: {
@@ -20073,19 +3617,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608830,
-        referee: "D. Chiffi",
+        id: 897754,
+        referee: "R. Petrescu",
         timezone: "UTC",
-        date: "2021-04-11T13:00:00+00:00",
-        timestamp: 1618146000,
+        date: "2022-07-19T19:00:00+00:00",
+        timestamp: 1658257200,
         periods: {
-          first: 1618146000,
-          second: 1618149600,
+          first: 1658257200,
+          second: 1658260800,
         },
         venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
+          id: 412,
+          name: "Stadion Maksimir",
+          city: "Zagreb",
         },
         status: {
           long: "Match Finished",
@@ -20094,25 +3638,93 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 30",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
       },
       teams: {
         home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
+          id: 620,
+          name: "Dinamo Zagreb",
+          logo: "https://media.api-sports.io/football/teams/620.png",
+          winner: null,
+        },
+        away: {
+          id: 2265,
+          name: "Shkupi 1927",
+          logo: "https://media.api-sports.io/football/teams/2265.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 1,
+        },
+        fulltime: {
+          home: 2,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 897755,
+        referee: "J. Kehlet",
+        timezone: "UTC",
+        date: "2022-07-26T19:00:00+00:00",
+        timestamp: 1658862000,
+        periods: {
+          first: 1658862000,
+          second: 1658865600,
+        },
+        venue: {
+          id: 1045,
+          name: "Toše Proeski Arena",
+          city: "Skopje",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 2265,
+          name: "Shkupi 1927",
+          logo: "https://media.api-sports.io/football/teams/2265.png",
           winner: false,
         },
         away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
+          id: 620,
+          name: "Dinamo Zagreb",
+          logo: "https://media.api-sports.io/football/teams/620.png",
           winner: true,
         },
       },
@@ -20141,19 +3753,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608831,
-        referee: "F. Maresca",
+        id: 897756,
+        referee: "N. Dabanović",
         timezone: "UTC",
-        date: "2021-04-10T16:00:00+00:00",
-        timestamp: 1618070400,
+        date: "2022-07-20T16:00:00+00:00",
+        timestamp: 1658332800,
         periods: {
-          first: 1618070400,
-          second: 1618074000,
+          first: 1658332800,
+          second: 1658336400,
         },
         venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
+          id: 615,
+          name: "Bolt Arena",
+          city: "Helsinki",
         },
         status: {
           long: "Match Finished",
@@ -20162,98 +3774,30 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 30",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
       },
       teams: {
         home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
+          id: 649,
+          name: "HJK helsinki",
+          logo: "https://media.api-sports.io/football/teams/649.png",
           winner: false,
         },
         away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
+          id: 567,
+          name: "Plzen",
+          logo: "https://media.api-sports.io/football/teams/567.png",
           winner: true,
         },
       },
       goals: {
         home: 1,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 1,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608832,
-        referee: "P. Valeri",
-        timezone: "UTC",
-        date: "2021-04-11T13:00:00+00:00",
-        timestamp: 1618146000,
-        periods: {
-          first: 1618146000,
-          second: 1618149600,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 30",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: false,
-        },
-        away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
         away: 2,
       },
       score: {
@@ -20262,7 +3806,7 @@ export const sampleResponse = {
           away: 1,
         },
         fulltime: {
-          home: 0,
+          home: 1,
           away: 2,
         },
         extratime: {
@@ -20277,19 +3821,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608833,
-        referee: "V. Marini",
+        id: 897757,
+        referee: "A. Stavrev",
         timezone: "UTC",
-        date: "2021-04-12T18:45:00+00:00",
-        timestamp: 1618253100,
+        date: "2022-07-26T17:00:00+00:00",
+        timestamp: 1658854800,
         periods: {
-          first: 1618253100,
-          second: 1618256700,
+          first: 1658854800,
+          second: 1658858400,
         },
         venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
+          id: 438,
+          name: "Doosan Aréna",
+          city: "Plzeň",
         },
         status: {
           long: "Match Finished",
@@ -20298,447 +3842,39 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 30",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "2nd Qualifying Round",
       },
       teams: {
         home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: false,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608834,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2021-04-10T18:45:00+00:00",
-        timestamp: 1618080300,
-        periods: {
-          first: 1618080300,
-          second: 1618083900,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 30",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-        away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608835,
-        referee: "D. Ghersini",
-        timezone: "UTC",
-        date: "2021-04-18T13:00:00+00:00",
-        timestamp: 1618750800,
-        periods: {
-          first: 1618750800,
-          second: 1618754400,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 31",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
+          id: 567,
+          name: "Plzen",
+          logo: "https://media.api-sports.io/football/teams/567.png",
           winner: true,
         },
         away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
+          id: 649,
+          name: "HJK helsinki",
+          logo: "https://media.api-sports.io/football/teams/649.png",
           winner: false,
         },
       },
       goals: {
         home: 5,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 3,
-          away: 1,
-        },
-        fulltime: {
-          home: 5,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608836,
-        referee: "G. Aureliano",
-        timezone: "UTC",
-        date: "2021-04-17T16:00:00+00:00",
-        timestamp: 1618675200,
-        periods: {
-          first: 1618675200,
-          second: 1618678800,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 31",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608837,
-        referee: "G. Calvarese",
-        timezone: "UTC",
-        date: "2021-04-18T10:30:00+00:00",
-        timestamp: 1618741800,
-        periods: {
-          first: 1618741800,
-          second: 1618745400,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 31",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608838,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2021-04-18T18:45:00+00:00",
-        timestamp: 1618771500,
-        periods: {
-          first: 1618771500,
-          second: 1618775100,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 31",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: null,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608839,
-        referee: "D. Orsato",
-        timezone: "UTC",
-        date: "2021-04-18T13:00:00+00:00",
-        timestamp: 1618750800,
-        periods: {
-          first: 1618750800,
-          second: 1618754400,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 31",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
         away: 0,
       },
       score: {
         halftime: {
-          home: 0,
+          home: 3,
           away: 0,
         },
         fulltime: {
-          home: 1,
+          home: 5,
           away: 0,
         },
         extratime: {
@@ -20753,19 +3889,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608840,
-        referee: "P. Valeri",
+        id: 901884,
+        referee: "D. Massa",
         timezone: "UTC",
-        date: "2021-04-17T18:45:00+00:00",
-        timestamp: 1618685100,
+        date: "2022-08-02T18:00:00+00:00",
+        timestamp: 1659463200,
         periods: {
-          first: 1618685100,
-          second: 1618688700,
+          first: 1659463200,
+          second: 1659466800,
         },
         venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
+          id: 659,
+          name: "Stade Louis II",
+          city: "Monaco",
         },
         status: {
           long: "Match Finished",
@@ -20774,31 +3910,303 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 31",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
       },
       teams: {
         home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
+          id: 91,
+          name: "Monaco",
+          logo: "https://media.api-sports.io/football/teams/91.png",
+          winner: null,
+        },
+        away: {
+          id: 197,
+          name: "PSV Eindhoven",
+          logo: "https://media.api-sports.io/football/teams/197.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 901885,
+        referee: "Jesús Gil",
+        timezone: "UTC",
+        date: "2022-08-09T18:30:00+00:00",
+        timestamp: 1660069800,
+        periods: {
+          first: 1660069800,
+          second: 1660073400,
+        },
+        venue: {
+          id: 1143,
+          name: "Philips Stadion",
+          city: "Eindhoven",
+        },
+        status: {
+          long: "Match Finished",
+          short: "AET",
+          elapsed: 120,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 197,
+          name: "PSV Eindhoven",
+          logo: "https://media.api-sports.io/football/teams/197.png",
           winner: true,
         },
         away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
+          id: 91,
+          name: "Monaco",
+          logo: "https://media.api-sports.io/football/teams/91.png",
           winner: false,
         },
       },
       goals: {
-        home: 4,
-        away: 3,
+        home: 3,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 2,
+        },
+        extratime: {
+          home: 1,
+          away: 0,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 901886,
+        referee: "I. Peljto",
+        timezone: "UTC",
+        date: "2022-08-02T18:45:00+00:00",
+        timestamp: 1659465900,
+        periods: {
+          first: 1659465900,
+          second: 1659469500,
+        },
+        venue: {
+          id: 186,
+          name: "King Power at Den Dreef Stadion",
+          city: "Heverlee",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 1393,
+          name: "Union St. Gilloise",
+          logo: "https://media.api-sports.io/football/teams/1393.png",
+          winner: true,
+        },
+        away: {
+          id: 257,
+          name: "Rangers",
+          logo: "https://media.api-sports.io/football/teams/257.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 901887,
+        referee: "A. Sidiropoulos",
+        timezone: "UTC",
+        date: "2022-08-09T18:45:00+00:00",
+        timestamp: 1660070700,
+        periods: {
+          first: 1660070700,
+          second: 1660074300,
+        },
+        venue: {
+          id: 1401,
+          name: "Ibrox Stadium",
+          city: "Glasgow",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 257,
+          name: "Rangers",
+          logo: "https://media.api-sports.io/football/teams/257.png",
+          winner: true,
+        },
+        away: {
+          id: 1393,
+          name: "Union St. Gilloise",
+          logo: "https://media.api-sports.io/football/teams/1393.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 3,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 3,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 923123,
+        referee: "C. Çakιr",
+        timezone: "UTC",
+        date: "2022-08-02T17:45:00+00:00",
+        timestamp: 1659462300,
+        periods: {
+          first: 1659462300,
+          second: 1659465900,
+        },
+        venue: {
+          id: 10547,
+          name: "Huvepharma Arena",
+          city: "Razgrad",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 566,
+          name: "Ludogorets",
+          logo: "https://media.api-sports.io/football/teams/566.png",
+          winner: false,
+        },
+        away: {
+          id: 620,
+          name: "Dinamo Zagreb",
+          logo: "https://media.api-sports.io/football/teams/620.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 2,
       },
       score: {
         halftime: {
@@ -20806,7 +4214,347 @@ export const sampleResponse = {
           away: 2,
         },
         fulltime: {
+          home: 1,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 923124,
+        referee: "B. Bastien",
+        timezone: "UTC",
+        date: "2022-08-09T18:00:00+00:00",
+        timestamp: 1660068000,
+        periods: {
+          first: 1660068000,
+          second: 1660071600,
+        },
+        venue: {
+          id: 412,
+          name: "Stadion Maksimir",
+          city: "Zagreb",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 620,
+          name: "Dinamo Zagreb",
+          logo: "https://media.api-sports.io/football/teams/620.png",
+          winner: true,
+        },
+        away: {
+          id: 566,
+          name: "Ludogorets",
+          logo: "https://media.api-sports.io/football/teams/566.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 4,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 3,
+          away: 1,
+        },
+        fulltime: {
           home: 4,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 923125,
+        referee: "D. Makkelie",
+        timezone: "UTC",
+        date: "2022-08-02T17:00:00+00:00",
+        timestamp: 1659459600,
+        periods: {
+          first: 1659459600,
+          second: 1659463200,
+        },
+        venue: {
+          id: 2615,
+          name: "Stadionul Zimbru",
+          city: "Chişinău",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 568,
+          name: "Sheriff Tiraspol",
+          logo: "https://media.api-sports.io/football/teams/568.png",
+          winner: false,
+        },
+        away: {
+          id: 567,
+          name: "Plzen",
+          logo: "https://media.api-sports.io/football/teams/567.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 923126,
+        referee: "O. Grinfeeld",
+        timezone: "UTC",
+        date: "2022-08-09T17:00:00+00:00",
+        timestamp: 1660064400,
+        periods: {
+          first: 1660064400,
+          second: 1660068000,
+        },
+        venue: {
+          id: 438,
+          name: "Doosan Aréna",
+          city: "Plzeň",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 567,
+          name: "Plzen",
+          logo: "https://media.api-sports.io/football/teams/567.png",
+          winner: true,
+        },
+        away: {
+          id: 568,
+          name: "Sheriff Tiraspol",
+          logo: "https://media.api-sports.io/football/teams/568.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 923127,
+        referee: "Alejandro Hernández",
+        timezone: "UTC",
+        date: "2022-08-02T19:00:00+00:00",
+        timestamp: 1659466800,
+        periods: {
+          first: 1659466800,
+          second: 1659470400,
+        },
+        venue: {
+          id: null,
+          name: "Estádio do Sport Lisboa e Benfica",
+          city: "Lisboa",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 211,
+          name: "Benfica",
+          logo: "https://media.api-sports.io/football/teams/211.png",
+          winner: true,
+        },
+        away: {
+          id: 397,
+          name: "FC Midtjylland",
+          logo: "https://media.api-sports.io/football/teams/397.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 4,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 3,
+          away: 0,
+        },
+        fulltime: {
+          home: 4,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 923128,
+        referee: "S. Jovanović",
+        timezone: "UTC",
+        date: "2022-08-09T17:45:00+00:00",
+        timestamp: 1660067100,
+        periods: {
+          first: 1660067100,
+          second: 1660070700,
+        },
+        venue: {
+          id: 457,
+          name: "Cepheus Park Randers",
+          city: "Randers",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 397,
+          name: "FC Midtjylland",
+          logo: "https://media.api-sports.io/football/teams/397.png",
+          winner: false,
+        },
+        away: {
+          id: 211,
+          name: "Benfica",
+          logo: "https://media.api-sports.io/football/teams/211.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 3,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
           away: 3,
         },
         extratime: {
@@ -20821,19 +4569,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608841,
-        referee: "D. Massa",
+        id: 923129,
+        referee: "Artur Soares Dias",
         timezone: "UTC",
-        date: "2021-04-18T16:00:00+00:00",
-        timestamp: 1618761600,
+        date: "2022-08-03T18:45:00+00:00",
+        timestamp: 1659552300,
         periods: {
-          first: 1618761600,
-          second: 1618765200,
+          first: 1659552300,
+          second: 1659555900,
         },
         venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
+          id: 1406,
+          name: "Stadion Rajko Mitić",
+          city: "Beograd",
         },
         status: {
           long: "Match Finished",
@@ -20842,652 +4590,40 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 31",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
       },
       teams: {
         home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
+          id: 598,
+          name: "FK Crvena Zvezda",
+          logo: "https://media.api-sports.io/football/teams/598.png",
           winner: true,
         },
         away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608842,
-        referee: "M. Piccinini",
-        timezone: "UTC",
-        date: "2021-04-18T13:00:00+00:00",
-        timestamp: 1618750800,
-        periods: {
-          first: 1618750800,
-          second: 1618754400,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 31",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: true,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 4,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608843,
-        referee: "L. Massimi",
-        timezone: "UTC",
-        date: "2021-04-17T13:00:00+00:00",
-        timestamp: 1618664400,
-        periods: {
-          first: 1618664400,
-          second: 1618668000,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 31",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: false,
-        },
-        away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608844,
-        referee: "F. Dionisi",
-        timezone: "UTC",
-        date: "2021-04-17T13:00:00+00:00",
-        timestamp: 1618664400,
-        periods: {
-          first: 1618664400,
-          second: 1618668000,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 31",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: true,
-        },
-        away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608845,
-        referee: "G. Calvarese",
-        timezone: "UTC",
-        date: "2021-04-22T16:30:00+00:00",
-        timestamp: 1619109000,
-        periods: {
-          first: 1619109000,
-          second: 1619112600,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 32",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: null,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608846,
-        referee: "L. Pairetto",
-        timezone: "UTC",
-        date: "2021-04-21T18:45:00+00:00",
-        timestamp: 1619030700,
-        periods: {
-          first: 1619030700,
-          second: 1619034300,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 32",
-      },
-      teams: {
-        home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: null,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 2,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608847,
-        referee: "M. Guida",
-        timezone: "UTC",
-        date: "2021-04-21T18:45:00+00:00",
-        timestamp: 1619030700,
-        periods: {
-          first: 1619030700,
-          second: 1619034300,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 32",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608848,
-        referee: "A. Prontera",
-        timezone: "UTC",
-        date: "2021-04-20T18:45:00+00:00",
-        timestamp: 1618944300,
-        periods: {
-          first: 1618944300,
-          second: 1618947900,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 32",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: false,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608849,
-        referee: "D. Chiffi",
-        timezone: "UTC",
-        date: "2021-04-21T18:45:00+00:00",
-        timestamp: 1619030700,
-        periods: {
-          first: 1619030700,
-          second: 1619034300,
-        },
-        venue: {
-          id: 939,
-          name: "Stadio Alberto Picco",
-          city: "La Spezia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 32",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: null,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608850,
-        referee: "M. Di Bello",
-        timezone: "UTC",
-        date: "2021-04-22T18:45:00+00:00",
-        timestamp: 1619117100,
-        periods: {
-          first: 1619117100,
-          second: 1619120700,
-        },
-        venue: {
-          id: 11904,
-          name: "Stadio Diego Armando Maradona",
-          city: "Napoli",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 32",
-      },
-      teams: {
-        home: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
+          id: 709,
+          name: "Pyunik Yerevan",
+          logo: "https://media.api-sports.io/football/teams/709.png",
           winner: false,
         },
       },
       goals: {
         home: 5,
-        away: 2,
+        away: 0,
       },
       score: {
         halftime: {
-          home: 2,
+          home: 3,
           away: 0,
         },
         fulltime: {
           home: 5,
-          away: 2,
+          away: 0,
         },
         extratime: {
           home: null,
@@ -21501,19 +4637,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608851,
-        referee: "P. Giacomelli",
+        id: 923130,
+        referee: "W. Collum",
         timezone: "UTC",
-        date: "2021-04-21T18:45:00+00:00",
-        timestamp: 1619030700,
+        date: "2022-08-09T17:00:00+00:00",
+        timestamp: 1660064400,
         periods: {
-          first: 1619030700,
-          second: 1619034300,
+          first: 1660064400,
+          second: 1660068000,
         },
         venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
+          id: 121,
+          name: "Vazgen Sargsyan anvan Hanrapetakan Marzadasht",
+          city: "Yerevan",
         },
         status: {
           long: "Match Finished",
@@ -21522,175 +4658,39 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 32",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
       },
       teams: {
         home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608852,
-        referee: "D. Paterna",
-        timezone: "UTC",
-        date: "2021-04-21T18:45:00+00:00",
-        timestamp: 1619030700,
-        periods: {
-          first: 1619030700,
-          second: 1619034300,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 32",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
+          id: 709,
+          name: "Pyunik Yerevan",
+          logo: "https://media.api-sports.io/football/teams/709.png",
           winner: false,
         },
         away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
+          id: 598,
+          name: "FK Crvena Zvezda",
+          logo: "https://media.api-sports.io/football/teams/598.png",
           winner: true,
         },
       },
       goals: {
         home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608853,
-        referee: "J. Sacchi",
-        timezone: "UTC",
-        date: "2021-04-21T16:30:00+00:00",
-        timestamp: 1619022600,
-        periods: {
-          first: 1619022600,
-          second: 1619026200,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 32",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: false,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
         away: 2,
       },
       score: {
         halftime: {
-          home: 1,
-          away: 0,
+          home: 0,
+          away: 1,
         },
         fulltime: {
-          home: 1,
+          home: 0,
           away: 2,
         },
         extratime: {
@@ -21705,19 +4705,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608854,
-        referee: "V. Marini",
+        id: 924399,
+        referee: "I. Vad II",
         timezone: "UTC",
-        date: "2021-04-21T18:45:00+00:00",
-        timestamp: 1619030700,
+        date: "2022-08-03T16:00:00+00:00",
+        timestamp: 1659542400,
         periods: {
-          first: 1619030700,
-          second: 1619034300,
+          first: 1659542400,
+          second: 1659546000,
         },
         venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
+          id: 1175,
+          name: "Aspmyra Stadion",
+          city: "Bodø",
         },
         status: {
           long: "Match Finished",
@@ -21726,93 +4726,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 32",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
       },
       teams: {
         home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: null,
-        },
-        away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608855,
-        referee: "M. Fabbri",
-        timezone: "UTC",
-        date: "2021-04-25T18:45:00+00:00",
-        timestamp: 1619376300,
-        periods: {
-          first: 1619376300,
-          second: 1619379900,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 33",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
+          id: 327,
+          name: "Bodo/Glimt",
+          logo: "https://media.api-sports.io/football/teams/327.png",
           winner: true,
         },
         away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
+          id: 586,
+          name: "FK Zalgiris Vilnius",
+          logo: "https://media.api-sports.io/football/teams/586.png",
           winner: false,
         },
       },
@@ -21841,19 +4773,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608856,
-        referee: "A. Rapuano",
+        id: 924400,
+        referee: "S. Schärer",
         timezone: "UTC",
-        date: "2021-04-24T16:00:00+00:00",
-        timestamp: 1619280000,
+        date: "2022-08-09T16:00:00+00:00",
+        timestamp: 1660060800,
         periods: {
-          first: 1619280000,
-          second: 1619283600,
+          first: 1660060800,
+          second: 1660064400,
         },
         venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
+          id: 1030,
+          name: "Vilniaus LFF stadionas",
+          city: "Vilnius",
         },
         status: {
           long: "Match Finished",
@@ -21862,93 +4794,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 33",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
       },
       teams: {
         home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-        away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 4,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 3,
-        },
-        fulltime: {
-          home: 3,
-          away: 4,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608857,
-        referee: "D. Massa",
-        timezone: "UTC",
-        date: "2021-04-25T13:00:00+00:00",
-        timestamp: 1619355600,
-        periods: {
-          first: 1619355600,
-          second: 1619359200,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 33",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
+          id: 586,
+          name: "FK Zalgiris Vilnius",
+          logo: "https://media.api-sports.io/football/teams/586.png",
           winner: null,
         },
         away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
+          id: 327,
+          name: "Bodo/Glimt",
+          logo: "https://media.api-sports.io/football/teams/327.png",
           winner: null,
         },
       },
@@ -21977,19 +4841,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608858,
-        referee: "D. Orsato",
+        id: 924401,
+        referee: "M. Mariani",
         timezone: "UTC",
-        date: "2021-04-26T18:45:00+00:00",
-        timestamp: 1619462700,
+        date: "2022-08-03T17:00:00+00:00",
+        timestamp: 1659546000,
         periods: {
-          first: 1619462700,
-          second: 1619466300,
+          first: 1659546000,
+          second: 1659549600,
         },
         venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
+          id: 868,
+          name: "Sammy Ofer Stadium",
+          city: "Haifa",
         },
         status: {
           long: "Match Finished",
@@ -21998,30 +4862,30 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 33",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
       },
       teams: {
         home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
+          id: 4195,
+          name: "Maccabi Haifa",
+          logo: "https://media.api-sports.io/football/teams/4195.png",
           winner: true,
         },
         away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
+          id: 602,
+          name: "Apollon Limassol",
+          logo: "https://media.api-sports.io/football/teams/602.png",
           winner: false,
         },
       },
       goals: {
-        home: 3,
+        home: 4,
         away: 0,
       },
       score: {
@@ -22030,7 +4894,7 @@ export const sampleResponse = {
           away: 0,
         },
         fulltime: {
-          home: 3,
+          home: 4,
           away: 0,
         },
         extratime: {
@@ -22045,19 +4909,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608859,
-        referee: "P. Valeri",
+        id: 924402,
+        referee: "F. Zwayer",
         timezone: "UTC",
-        date: "2021-04-26T16:30:00+00:00",
-        timestamp: 1619454600,
+        date: "2022-08-09T17:00:00+00:00",
+        timestamp: 1660064400,
         periods: {
-          first: 1619454600,
-          second: 1619458200,
+          first: 1660064400,
+          second: 1660068000,
         },
         venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
+          id: null,
+          name: "Neo GSP",
+          city: "Levkosía",
         },
         status: {
           long: "Match Finished",
@@ -22066,25 +4930,909 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 33",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
       },
       teams: {
         home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
+          id: 602,
+          name: "Apollon Limassol",
+          logo: "https://media.api-sports.io/football/teams/602.png",
+          winner: true,
+        },
+        away: {
+          id: 4195,
+          name: "Maccabi Haifa",
+          logo: "https://media.api-sports.io/football/teams/4195.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 2,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 924403,
+        referee: "A. Ekberg",
+        timezone: "UTC",
+        date: "2022-08-03T16:00:00+00:00",
+        timestamp: 1659542400,
+        periods: {
+          first: 1659542400,
+          second: 1659546000,
+        },
+        venue: {
+          id: null,
+          name: "Tofiq Bəhramov adına Respublika stadionu",
+          city: "Baku",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 556,
+          name: "Qarabag",
+          logo: "https://media.api-sports.io/football/teams/556.png",
+          winner: null,
+        },
+        away: {
+          id: 651,
+          name: "Ferencvarosi TC",
+          logo: "https://media.api-sports.io/football/teams/651.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 924404,
+        referee: "Carlos del Cerro",
+        timezone: "UTC",
+        date: "2022-08-09T18:00:00+00:00",
+        timestamp: 1660068000,
+        periods: {
+          first: 1660068000,
+          second: 1660071600,
+        },
+        venue: {
+          id: 799,
+          name: "Groupama Aréna",
+          city: "Budapest",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 651,
+          name: "Ferencvarosi TC",
+          logo: "https://media.api-sports.io/football/teams/651.png",
           winner: false,
         },
         away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
+          id: 556,
+          name: "Qarabag",
+          logo: "https://media.api-sports.io/football/teams/556.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 3,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 3,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 924405,
+        referee: "F. Letexier",
+        timezone: "UTC",
+        date: "2022-08-03T18:00:00+00:00",
+        timestamp: 1659549600,
+        periods: {
+          first: 1659549600,
+          second: 1659553200,
+        },
+        venue: {
+          id: 12602,
+          name: "Stadion Miejski LKS Lodz",
+          city: "Łódź",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 572,
+          name: "Dynamo Kyiv",
+          logo: "https://media.api-sports.io/football/teams/572.png",
+          winner: true,
+        },
+        away: {
+          id: 637,
+          name: "Sturm Graz",
+          logo: "https://media.api-sports.io/football/teams/637.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 924406,
+        referee: "I. Kružliak",
+        timezone: "UTC",
+        date: "2022-08-09T18:30:00+00:00",
+        timestamp: 1660069800,
+        periods: {
+          first: 1660069800,
+          second: 1660073400,
+        },
+        venue: {
+          id: 150,
+          name: "Merkur Arena",
+          city: "Graz",
+        },
+        status: {
+          long: "Match Finished",
+          short: "AET",
+          elapsed: 120,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "3rd Qualifying Round",
+      },
+      teams: {
+        home: {
+          id: 637,
+          name: "Sturm Graz",
+          logo: "https://media.api-sports.io/football/teams/637.png",
+          winner: false,
+        },
+        away: {
+          id: 572,
+          name: "Dynamo Kyiv",
+          logo: "https://media.api-sports.io/football/teams/572.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: 0,
+          away: 2,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 927410,
+        referee: "M. Oliver",
+        timezone: "UTC",
+        date: "2022-08-16T19:00:00+00:00",
+        timestamp: 1660676400,
+        periods: {
+          first: 1660676400,
+          second: 1660680000,
+        },
+        venue: {
+          id: 11600,
+          name: "Parken",
+          city: "København",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Play-offs",
+      },
+      teams: {
+        home: {
+          id: 400,
+          name: "FC Copenhagen",
+          logo: "https://media.api-sports.io/football/teams/400.png",
+          winner: true,
+        },
+        away: {
+          id: 998,
+          name: "Trabzonspor",
+          logo: "https://media.api-sports.io/football/teams/998.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 927411,
+        referee: "D. Makkelie",
+        timezone: "UTC",
+        date: "2022-08-24T19:00:00+00:00",
+        timestamp: 1661367600,
+        periods: {
+          first: 1661367600,
+          second: 1661371200,
+        },
+        venue: {
+          id: 19221,
+          name: "Şenol Güneş Spor Kompleksi",
+          city: "Trabzon",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Play-offs",
+      },
+      teams: {
+        home: {
+          id: 998,
+          name: "Trabzonspor",
+          logo: "https://media.api-sports.io/football/teams/998.png",
+          winner: null,
+        },
+        away: {
+          id: 400,
+          name: "FC Copenhagen",
+          logo: "https://media.api-sports.io/football/teams/400.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 933167,
+        referee: "D. Makkelie",
+        timezone: "UTC",
+        date: "2022-08-16T19:00:00+00:00",
+        timestamp: 1660676400,
+        periods: {
+          first: 1660676400,
+          second: 1660680000,
+        },
+        venue: {
+          id: 1175,
+          name: "Aspmyra Stadion",
+          city: "Bodø",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Play-offs",
+      },
+      teams: {
+        home: {
+          id: 327,
+          name: "Bodo/Glimt",
+          logo: "https://media.api-sports.io/football/teams/327.png",
+          winner: true,
+        },
+        away: {
+          id: 620,
+          name: "Dinamo Zagreb",
+          logo: "https://media.api-sports.io/football/teams/620.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 933168,
+        referee: "Antonio Mateu",
+        timezone: "UTC",
+        date: "2022-08-24T19:00:00+00:00",
+        timestamp: 1661367600,
+        periods: {
+          first: 1661367600,
+          second: 1661371200,
+        },
+        venue: {
+          id: 412,
+          name: "Stadion Maksimir",
+          city: "Zagreb",
+        },
+        status: {
+          long: "Match Finished",
+          short: "AET",
+          elapsed: 120,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Play-offs",
+      },
+      teams: {
+        home: {
+          id: 620,
+          name: "Dinamo Zagreb",
+          logo: "https://media.api-sports.io/football/teams/620.png",
+          winner: true,
+        },
+        away: {
+          id: 327,
+          name: "Bodo/Glimt",
+          logo: "https://media.api-sports.io/football/teams/327.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 4,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 2,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 1,
+        },
+        extratime: {
+          home: 2,
+          away: 0,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 933169,
+        referee: "D. Orsato",
+        timezone: "UTC",
+        date: "2022-08-16T19:00:00+00:00",
+        timestamp: 1660676400,
+        periods: {
+          first: 1660676400,
+          second: 1660680000,
+        },
+        venue: {
+          id: 1401,
+          name: "Ibrox Stadium",
+          city: "Glasgow",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Play-offs",
+      },
+      teams: {
+        home: {
+          id: 257,
+          name: "Rangers",
+          logo: "https://media.api-sports.io/football/teams/257.png",
+          winner: null,
+        },
+        away: {
+          id: 197,
+          name: "PSV Eindhoven",
+          logo: "https://media.api-sports.io/football/teams/197.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 1,
+        },
+        fulltime: {
+          home: 2,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 933170,
+        referee: "S. Marciniak",
+        timezone: "UTC",
+        date: "2022-08-24T19:00:00+00:00",
+        timestamp: 1661367600,
+        periods: {
+          first: 1661367600,
+          second: 1661371200,
+        },
+        venue: {
+          id: 1143,
+          name: "Philips Stadion",
+          city: "Eindhoven",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Play-offs",
+      },
+      teams: {
+        home: {
+          id: 197,
+          name: "PSV Eindhoven",
+          logo: "https://media.api-sports.io/football/teams/197.png",
+          winner: false,
+        },
+        away: {
+          id: 257,
+          name: "Rangers",
+          logo: "https://media.api-sports.io/football/teams/257.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 933171,
+        referee: "S. Vinčić",
+        timezone: "UTC",
+        date: "2022-08-17T16:45:00+00:00",
+        timestamp: 1660754700,
+        periods: {
+          first: 1660754700,
+          second: 1660758300,
+        },
+        venue: {
+          id: null,
+          name: "Tofiq Bəhramov adına Respublika stadionu",
+          city: "Baku",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Play-offs",
+      },
+      teams: {
+        home: {
+          id: 556,
+          name: "Qarabag",
+          logo: "https://media.api-sports.io/football/teams/556.png",
+          winner: null,
+        },
+        away: {
+          id: 567,
+          name: "Plzen",
+          logo: "https://media.api-sports.io/football/teams/567.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 933172,
+        referee: "Artur Soares Dias",
+        timezone: "UTC",
+        date: "2022-08-23T19:00:00+00:00",
+        timestamp: 1661281200,
+        periods: {
+          first: 1661281200,
+          second: 1661284800,
+        },
+        venue: {
+          id: 438,
+          name: "Doosan Aréna",
+          city: "Plzeň",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Play-offs",
+      },
+      teams: {
+        home: {
+          id: 567,
+          name: "Plzen",
+          logo: "https://media.api-sports.io/football/teams/567.png",
+          winner: true,
+        },
+        away: {
+          id: 556,
+          name: "Qarabag",
+          logo: "https://media.api-sports.io/football/teams/556.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 2,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 933173,
+        referee: "F. Zwayer",
+        timezone: "UTC",
+        date: "2022-08-17T19:00:00+00:00",
+        timestamp: 1660762800,
+        periods: {
+          first: 1660762800,
+          second: 1660766400,
+        },
+        venue: {
+          id: 12602,
+          name: "Stadion Miejski LKS Lodz",
+          city: "Łódź",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Play-offs",
+      },
+      teams: {
+        home: {
+          id: 572,
+          name: "Dynamo Kyiv",
+          logo: "https://media.api-sports.io/football/teams/572.png",
+          winner: false,
+        },
+        away: {
+          id: 211,
+          name: "Benfica",
+          logo: "https://media.api-sports.io/football/teams/211.png",
           winner: true,
         },
       },
@@ -22113,19 +5861,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608860,
-        referee: "M. Irrati",
+        id: 933174,
+        referee: "C. Turpin",
         timezone: "UTC",
-        date: "2021-04-25T16:00:00+00:00",
-        timestamp: 1619366400,
+        date: "2022-08-23T19:00:00+00:00",
+        timestamp: 1661281200,
         periods: {
-          first: 1619366400,
-          second: 1619370000,
+          first: 1661281200,
+          second: 1661284800,
         },
         venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
+          id: null,
+          name: "Estádio do Sport Lisboa e Benfica",
+          city: "Lisboa",
         },
         status: {
           long: "Match Finished",
@@ -22134,25 +5882,93 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 33",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Play-offs",
       },
       teams: {
         home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
+          id: 211,
+          name: "Benfica",
+          logo: "https://media.api-sports.io/football/teams/211.png",
           winner: true,
         },
         away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
+          id: 572,
+          name: "Dynamo Kyiv",
+          logo: "https://media.api-sports.io/football/teams/572.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 3,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 3,
+          away: 0,
+        },
+        fulltime: {
+          home: 3,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 933175,
+        referee: "Carlos del Cerro",
+        timezone: "UTC",
+        date: "2022-08-17T19:00:00+00:00",
+        timestamp: 1660762800,
+        periods: {
+          first: 1660762800,
+          second: 1660766400,
+        },
+        venue: {
+          id: 868,
+          name: "Sammy Ofer Stadium",
+          city: "Haifa",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Play-offs",
+      },
+      teams: {
+        home: {
+          id: 4195,
+          name: "Maccabi Haifa",
+          logo: "https://media.api-sports.io/football/teams/4195.png",
+          winner: true,
+        },
+        away: {
+          id: 598,
+          name: "FK Crvena Zvezda",
+          logo: "https://media.api-sports.io/football/teams/598.png",
           winner: false,
         },
       },
@@ -22163,7 +5979,7 @@ export const sampleResponse = {
       score: {
         halftime: {
           home: 1,
-          away: 1,
+          away: 2,
         },
         fulltime: {
           home: 3,
@@ -22181,19 +5997,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608861,
-        referee: "M. Gariglio",
+        id: 933176,
+        referee: "A. Taylor",
         timezone: "UTC",
-        date: "2021-04-24T18:45:00+00:00",
-        timestamp: 1619289900,
+        date: "2022-08-23T19:00:00+00:00",
+        timestamp: 1661281200,
         periods: {
-          first: 1619289900,
-          second: 1619293500,
+          first: 1661281200,
+          second: 1661284800,
         },
         venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
+          id: 1406,
+          name: "Stadion Rajko Mitić",
+          city: "Beograd",
         },
         status: {
           long: "Match Finished",
@@ -22202,25 +6018,93 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 33",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Play-offs",
       },
       teams: {
         home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
+          id: 598,
+          name: "FK Crvena Zvezda",
+          logo: "https://media.api-sports.io/football/teams/598.png",
+          winner: null,
+        },
+        away: {
+          id: 4195,
+          name: "Maccabi Haifa",
+          logo: "https://media.api-sports.io/football/teams/4195.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 2,
+          away: 1,
+        },
+        fulltime: {
+          home: 2,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946849,
+        referee: "I. Kovacs",
+        timezone: "UTC",
+        date: "2022-09-06T16:45:00+00:00",
+        timestamp: 1662482700,
+        periods: {
+          first: 1662482700,
+          second: 1662486300,
+        },
+        venue: {
+          id: 412,
+          name: "Stadion Maksimir",
+          city: "Zagreb",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group E - 1",
+      },
+      teams: {
+        home: {
+          id: 620,
+          name: "Dinamo Zagreb",
+          logo: "https://media.api-sports.io/football/teams/620.png",
           winner: true,
         },
         away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
+          id: 49,
+          name: "Chelsea",
+          logo: "https://media.api-sports.io/football/teams/49.png",
           winner: false,
         },
       },
@@ -22230,7 +6114,7 @@ export const sampleResponse = {
       },
       score: {
         halftime: {
-          home: 0,
+          home: 1,
           away: 0,
         },
         fulltime: {
@@ -22249,19 +6133,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608862,
-        referee: "G. Manganiello",
+        id: 946850,
+        referee: "F. Letexier",
         timezone: "UTC",
-        date: "2021-04-24T13:00:00+00:00",
-        timestamp: 1619269200,
+        date: "2022-09-06T16:45:00+00:00",
+        timestamp: 1662482700,
         periods: {
-          first: 1619269200,
-          second: 1619272800,
+          first: 1662482700,
+          second: 1662486300,
         },
         venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
+          id: 19381,
+          name: "SIGNAL IDUNA PARK",
+          city: "Dortmund",
         },
         status: {
           long: "Match Finished",
@@ -22270,39 +6154,39 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 33",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group G - 1",
       },
       teams: {
         home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
+          id: 165,
+          name: "Borussia Dortmund",
+          logo: "https://media.api-sports.io/football/teams/165.png",
           winner: true,
         },
         away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
+          id: 400,
+          name: "FC Copenhagen",
+          logo: "https://media.api-sports.io/football/teams/400.png",
           winner: false,
         },
       },
       goals: {
-        home: 2,
+        home: 3,
         away: 0,
       },
       score: {
         halftime: {
-          home: 0,
+          home: 2,
           away: 0,
         },
         fulltime: {
-          home: 2,
+          home: 3,
           away: 0,
         },
         extratime: {
@@ -22317,19 +6201,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608863,
-        referee: "M. Mariani",
+        id: 946851,
+        referee: "S. Jovanović",
         timezone: "UTC",
-        date: "2021-04-25T10:30:00+00:00",
-        timestamp: 1619346600,
+        date: "2022-09-06T19:00:00+00:00",
+        timestamp: 1662490800,
         periods: {
-          first: 1619346600,
-          second: 1619350200,
+          first: 1662490800,
+          second: 1662494400,
         },
         venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
+          id: 148,
+          name: "Red Bull Arena",
+          city: "Wals-Siezenheim",
         },
         status: {
           long: "Match Finished",
@@ -22338,39 +6222,175 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 33",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group E - 1",
       },
       teams: {
         home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: false,
+          id: 571,
+          name: "Red Bull Salzburg",
+          logo: "https://media.api-sports.io/football/teams/571.png",
+          winner: null,
         },
         away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: true,
+          id: 489,
+          name: "AC Milan",
+          logo: "https://media.api-sports.io/football/teams/489.png",
+          winner: null,
         },
       },
       goals: {
-        home: 2,
-        away: 4,
+        home: 1,
+        away: 1,
       },
       score: {
         halftime: {
           home: 1,
-          away: 2,
+          away: 1,
         },
         fulltime: {
-          home: 2,
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946852,
+        referee: "S. Schärer",
+        timezone: "UTC",
+        date: "2022-09-06T19:00:00+00:00",
+        timestamp: 1662490800,
+        periods: {
+          first: 1662490800,
+          second: 1662494400,
+        },
+        venue: {
+          id: 1386,
+          name: "Celtic Park",
+          city: "Glasgow",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group F - 1",
+      },
+      teams: {
+        home: {
+          id: 247,
+          name: "Celtic",
+          logo: "https://media.api-sports.io/football/teams/247.png",
+          winner: false,
+        },
+        away: {
+          id: 541,
+          name: "Real Madrid",
+          logo: "https://media.api-sports.io/football/teams/541.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 3,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 3,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946853,
+        referee: "João Pedro Pinheiro",
+        timezone: "UTC",
+        date: "2022-09-06T19:00:00+00:00",
+        timestamp: 1662490800,
+        periods: {
+          first: 1662490800,
+          second: 1662494400,
+        },
+        venue: {
+          id: 738,
+          name: "Red Bull Arena",
+          city: "Leipzig",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group F - 1",
+      },
+      teams: {
+        home: {
+          id: 173,
+          name: "RB Leipzig",
+          logo: "https://media.api-sports.io/football/teams/173.png",
+          winner: false,
+        },
+        away: {
+          id: 550,
+          name: "Shakhtar Donetsk",
+          logo: "https://media.api-sports.io/football/teams/550.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 4,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
           away: 4,
         },
         extratime: {
@@ -22385,19 +6405,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608864,
-        referee: "R. Abisso",
+        id: 946854,
+        referee: "D. Massa",
         timezone: "UTC",
-        date: "2021-04-25T13:00:00+00:00",
-        timestamp: 1619355600,
+        date: "2022-09-06T19:00:00+00:00",
+        timestamp: 1662490800,
         periods: {
-          first: 1619355600,
-          second: 1619359200,
+          first: 1662490800,
+          second: 1662494400,
         },
         venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
+          id: 1494,
+          name: "Estadio Ramón Sánchez Pizjuán",
+          city: "Sevilla",
         },
         status: {
           long: "Match Finished",
@@ -22406,107 +6426,107 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 33",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group G - 1",
       },
       teams: {
         home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
+          id: 536,
+          name: "Sevilla",
+          logo: "https://media.api-sports.io/football/teams/536.png",
+          winner: false,
+        },
+        away: {
+          id: 50,
+          name: "Manchester City",
+          logo: "https://media.api-sports.io/football/teams/50.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 4,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 0,
+          away: 4,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946855,
+        referee: "A. Taylor",
+        timezone: "UTC",
+        date: "2022-09-06T19:00:00+00:00",
+        timestamp: 1662490800,
+        periods: {
+          first: 1662490800,
+          second: 1662494400,
+        },
+        venue: {
+          id: 671,
+          name: "Parc des Princes",
+          city: "Paris",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group H - 1",
+      },
+      teams: {
+        home: {
+          id: 85,
+          name: "Paris Saint Germain",
+          logo: "https://media.api-sports.io/football/teams/85.png",
           winner: true,
         },
         away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
+          id: 496,
+          name: "Juventus",
+          logo: "https://media.api-sports.io/football/teams/496.png",
           winner: false,
         },
       },
       goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608865,
-        referee: "L. Pairetto",
-        timezone: "UTC",
-        date: "2021-05-02T13:00:00+00:00",
-        timestamp: 1619960400,
-        periods: {
-          first: 1619960400,
-          second: 1619964000,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 34",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: null,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
+        home: 2,
         away: 1,
       },
       score: {
         halftime: {
-          home: 0,
-          away: 1,
+          home: 2,
+          away: 0,
         },
         fulltime: {
-          home: 1,
+          home: 2,
           away: 1,
         },
         extratime: {
@@ -22521,19 +6541,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608866,
-        referee: "G. Calvarese",
+        id: 946856,
+        referee: "A. Ekberg",
         timezone: "UTC",
-        date: "2021-05-01T18:45:00+00:00",
-        timestamp: 1619894700,
+        date: "2022-09-06T19:00:00+00:00",
+        timestamp: 1662490800,
         periods: {
-          first: 1619894700,
-          second: 1619898300,
+          first: 1662490800,
+          second: 1662494400,
         },
         venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
+          id: null,
+          name: "Estádio do Sport Lisboa e Benfica",
+          city: "Lisboa",
         },
         status: {
           long: "Match Finished",
@@ -22542,25 +6562,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 34",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group H - 1",
       },
       teams: {
         home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
+          id: 211,
+          name: "Benfica",
+          logo: "https://media.api-sports.io/football/teams/211.png",
           winner: true,
         },
         away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
+          id: 4195,
+          name: "Maccabi Haifa",
+          logo: "https://media.api-sports.io/football/teams/4195.png",
           winner: false,
         },
       },
@@ -22570,7 +6590,7 @@ export const sampleResponse = {
       },
       score: {
         halftime: {
-          home: 1,
+          home: 0,
           away: 0,
         },
         fulltime: {
@@ -22589,14 +6609,150 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608867,
-        referee: "M. Fabbri",
+        id: 946857,
+        referee: "T. Stieler",
         timezone: "UTC",
-        date: "2021-05-02T13:00:00+00:00",
-        timestamp: 1619960400,
+        date: "2022-09-07T16:45:00+00:00",
+        timestamp: 1662569100,
         periods: {
-          first: 1619960400,
-          second: 1619964000,
+          first: 1662569100,
+          second: 1662572700,
+        },
+        venue: {
+          id: 1117,
+          name: "Johan Cruijff Arena",
+          city: "Amsterdam",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group A - 1",
+      },
+      teams: {
+        home: {
+          id: 194,
+          name: "Ajax",
+          logo: "https://media.api-sports.io/football/teams/194.png",
+          winner: true,
+        },
+        away: {
+          id: 257,
+          name: "Rangers",
+          logo: "https://media.api-sports.io/football/teams/257.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 4,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 3,
+          away: 0,
+        },
+        fulltime: {
+          home: 4,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946858,
+        referee: "O. Grinfeeld",
+        timezone: "UTC",
+        date: "2022-09-07T16:45:00+00:00",
+        timestamp: 1662569100,
+        periods: {
+          first: 1662569100,
+          second: 1662572700,
+        },
+        venue: {
+          id: 10491,
+          name: "Deutsche Bank Park",
+          city: "Frankfurt am Main",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group D - 1",
+      },
+      teams: {
+        home: {
+          id: 169,
+          name: "Eintracht Frankfurt",
+          logo: "https://media.api-sports.io/football/teams/169.png",
+          winner: false,
+        },
+        away: {
+          id: 228,
+          name: "Sporting CP",
+          logo: "https://media.api-sports.io/football/teams/228.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 3,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 3,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946859,
+        referee: "Carlos del Cerro",
+        timezone: "UTC",
+        date: "2022-09-07T19:00:00+00:00",
+        timestamp: 1662577200,
+        periods: {
+          first: 1662577200,
+          second: 1662580800,
         },
         venue: {
           id: 11904,
@@ -22610,176 +6766,40 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 34",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group A - 1",
       },
       teams: {
         home: {
           id: 492,
           name: "Napoli",
           logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: null,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608868,
-        referee: "F. Dionisi",
-        timezone: "UTC",
-        date: "2021-05-02T13:00:00+00:00",
-        timestamp: 1619960400,
-        periods: {
-          first: 1619960400,
-          second: 1619964000,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 34",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: null,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608869,
-        referee: "P. Giacomelli",
-        timezone: "UTC",
-        date: "2021-05-02T10:30:00+00:00",
-        timestamp: 1619951400,
-        periods: {
-          first: 1619951400,
-          second: 1619955000,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 34",
-      },
-      teams: {
-        home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
           winner: true,
         },
         away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
+          id: 40,
+          name: "Liverpool",
+          logo: "https://media.api-sports.io/football/teams/40.png",
           winner: false,
         },
       },
       goals: {
         home: 4,
-        away: 3,
+        away: 1,
       },
       score: {
         halftime: {
-          home: 2,
+          home: 3,
           away: 0,
         },
         fulltime: {
           home: 4,
-          away: 3,
+          away: 1,
         },
         extratime: {
           home: null,
@@ -22793,19 +6813,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608870,
-        referee: "A. Prontera",
+        id: 946860,
+        referee: "S. Marciniak",
         timezone: "UTC",
-        date: "2021-05-01T16:00:00+00:00",
-        timestamp: 1619884800,
+        date: "2022-09-07T19:00:00+00:00",
+        timestamp: 1662577200,
         periods: {
-          first: 1619884800,
-          second: 1619888400,
+          first: 1662577200,
+          second: 1662580800,
         },
         venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
+          id: 19217,
+          name: "Estádio Cívitas Metropolitano",
+          city: "Madrid",
         },
         status: {
           long: "Match Finished",
@@ -22814,19 +6834,359 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 34",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group B - 1",
       },
       teams: {
         home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
+          id: 530,
+          name: "Atletico Madrid",
+          logo: "https://media.api-sports.io/football/teams/530.png",
+          winner: true,
+        },
+        away: {
+          id: 212,
+          name: "FC Porto",
+          logo: "https://media.api-sports.io/football/teams/212.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946861,
+        referee: "I. Peljto",
+        timezone: "UTC",
+        date: "2022-09-07T19:00:00+00:00",
+        timestamp: 1662577200,
+        periods: {
+          first: 1662577200,
+          second: 1662580800,
+        },
+        venue: {
+          id: 176,
+          name: "Jan Breydelstadion",
+          city: "Brugge",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group B - 1",
+      },
+      teams: {
+        home: {
+          id: 569,
+          name: "Club Brugge KV",
+          logo: "https://media.api-sports.io/football/teams/569.png",
+          winner: true,
+        },
+        away: {
+          id: 168,
+          name: "Bayer Leverkusen",
+          logo: "https://media.api-sports.io/football/teams/168.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946862,
+        referee: "L. Visser",
+        timezone: "UTC",
+        date: "2022-09-07T19:00:00+00:00",
+        timestamp: 1662577200,
+        periods: {
+          first: 1662577200,
+          second: 1662580800,
+        },
+        venue: {
+          id: 18630,
+          name: "Spotify Camp Nou",
+          city: "Barcelona",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group C - 1",
+      },
+      teams: {
+        home: {
+          id: 529,
+          name: "Barcelona",
+          logo: "https://media.api-sports.io/football/teams/529.png",
+          winner: true,
+        },
+        away: {
+          id: 567,
+          name: "Plzen",
+          logo: "https://media.api-sports.io/football/teams/567.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 5,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 3,
+          away: 1,
+        },
+        fulltime: {
+          home: 5,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946863,
+        referee: "C. Turpin",
+        timezone: "UTC",
+        date: "2022-09-07T19:00:00+00:00",
+        timestamp: 1662577200,
+        periods: {
+          first: 1662577200,
+          second: 1662580800,
+        },
+        venue: {
+          id: 907,
+          name: "Stadio Giuseppe Meazza",
+          city: "Milano",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group C - 1",
+      },
+      teams: {
+        home: {
+          id: 505,
+          name: "Inter",
+          logo: "https://media.api-sports.io/football/teams/505.png",
+          winner: false,
+        },
+        away: {
+          id: 157,
+          name: "Bayern Munich",
+          logo: "https://media.api-sports.io/football/teams/157.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 0,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946864,
+        referee: "S. Vinčić",
+        timezone: "UTC",
+        date: "2022-09-07T19:00:00+00:00",
+        timestamp: 1662577200,
+        periods: {
+          first: 1662577200,
+          second: 1662580800,
+        },
+        venue: {
+          id: 593,
+          name: "Tottenham Hotspur Stadium",
+          city: "London",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group D - 1",
+      },
+      teams: {
+        home: {
+          id: 47,
+          name: "Tottenham",
+          logo: "https://media.api-sports.io/football/teams/47.png",
+          winner: true,
+        },
+        away: {
+          id: 81,
+          name: "Marseille",
+          logo: "https://media.api-sports.io/football/teams/81.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946865,
+        referee: "S. Schärer",
+        timezone: "UTC",
+        date: "2022-09-13T16:45:00+00:00",
+        timestamp: 1663087500,
+        periods: {
+          first: 1663087500,
+          second: 1663091100,
+        },
+        venue: {
+          id: 438,
+          name: "Doosan Aréna",
+          city: "Plzeň",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group C - 2",
+      },
+      teams: {
+        home: {
+          id: 567,
+          name: "Plzen",
+          logo: "https://media.api-sports.io/football/teams/567.png",
           winner: false,
         },
         away: {
@@ -22843,7 +7203,7 @@ export const sampleResponse = {
       score: {
         halftime: {
           home: 0,
-          away: 0,
+          away: 1,
         },
         fulltime: {
           home: 0,
@@ -22861,19 +7221,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608871,
-        referee: "D. Chiffi",
+        id: 946866,
+        referee: "S. Jovanović",
         timezone: "UTC",
-        date: "2021-05-02T16:00:00+00:00",
-        timestamp: 1619971200,
+        date: "2022-09-13T16:45:00+00:00",
+        timestamp: 1663087500,
         periods: {
-          first: 1619971200,
-          second: 1619974800,
+          first: 1663087500,
+          second: 1663091100,
         },
         venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
+          id: 1293,
+          name: "Estádio José Alvalade",
+          city: "Lisboa",
         },
         status: {
           long: "Match Finished",
@@ -22882,25 +7242,909 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 34",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group D - 2",
       },
       teams: {
         home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
+          id: 228,
+          name: "Sporting CP",
+          logo: "https://media.api-sports.io/football/teams/228.png",
+          winner: true,
+        },
+        away: {
+          id: 47,
+          name: "Tottenham",
+          logo: "https://media.api-sports.io/football/teams/47.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946867,
+        referee: "Artur Soares Dias",
+        timezone: "UTC",
+        date: "2022-09-13T19:00:00+00:00",
+        timestamp: 1663095600,
+        periods: {
+          first: 1663095600,
+          second: 1663099200,
+        },
+        venue: {
+          id: 550,
+          name: "Anfield",
+          city: "Liverpool",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group A - 2",
+      },
+      teams: {
+        home: {
+          id: 40,
+          name: "Liverpool",
+          logo: "https://media.api-sports.io/football/teams/40.png",
+          winner: true,
+        },
+        away: {
+          id: 194,
+          name: "Ajax",
+          logo: "https://media.api-sports.io/football/teams/194.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 1,
+        },
+        fulltime: {
+          home: 2,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946868,
+        referee: "Antonio Mateu",
+        timezone: "UTC",
+        date: "2022-09-14T19:00:00+00:00",
+        timestamp: 1663182000,
+        periods: {
+          first: 1663182000,
+          second: 1663185600,
+        },
+        venue: {
+          id: 1401,
+          name: "Ibrox Stadium",
+          city: "Glasgow",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group A - 2",
+      },
+      teams: {
+        home: {
+          id: 257,
+          name: "Rangers",
+          logo: "https://media.api-sports.io/football/teams/257.png",
           winner: false,
         },
         away: {
+          id: 492,
+          name: "Napoli",
+          logo: "https://media.api-sports.io/football/teams/492.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 3,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 3,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946869,
+        referee: "A. Sidiropoulos",
+        timezone: "UTC",
+        date: "2022-09-13T19:00:00+00:00",
+        timestamp: 1663095600,
+        periods: {
+          first: 1663095600,
+          second: 1663099200,
+        },
+        venue: {
+          id: 1286,
+          name: "Estádio Do Dragão",
+          city: "Porto",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group B - 2",
+      },
+      teams: {
+        home: {
+          id: 212,
+          name: "FC Porto",
+          logo: "https://media.api-sports.io/football/teams/212.png",
+          winner: false,
+        },
+        away: {
+          id: 569,
+          name: "Club Brugge KV",
+          logo: "https://media.api-sports.io/football/teams/569.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 4,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 0,
+          away: 4,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946870,
+        referee: "M. Oliver",
+        timezone: "UTC",
+        date: "2022-09-13T19:00:00+00:00",
+        timestamp: 1663095600,
+        periods: {
+          first: 1663095600,
+          second: 1663099200,
+        },
+        venue: {
+          id: 699,
+          name: "BayArena",
+          city: "Leverkusen",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group B - 2",
+      },
+      teams: {
+        home: {
+          id: 168,
+          name: "Bayer Leverkusen",
+          logo: "https://media.api-sports.io/football/teams/168.png",
+          winner: true,
+        },
+        away: {
+          id: 530,
+          name: "Atletico Madrid",
+          logo: "https://media.api-sports.io/football/teams/530.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946871,
+        referee: "D. Makkelie",
+        timezone: "UTC",
+        date: "2022-09-13T19:00:00+00:00",
+        timestamp: 1663095600,
+        periods: {
+          first: 1663095600,
+          second: 1663099200,
+        },
+        venue: {
+          id: 700,
+          name: "Allianz Arena",
+          city: "München",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group C - 2",
+      },
+      teams: {
+        home: {
+          id: 157,
+          name: "Bayern Munich",
+          logo: "https://media.api-sports.io/football/teams/157.png",
+          winner: true,
+        },
+        away: {
+          id: 529,
+          name: "Barcelona",
+          logo: "https://media.api-sports.io/football/teams/529.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946872,
+        referee: "José Sánchez",
+        timezone: "UTC",
+        date: "2022-09-13T19:00:00+00:00",
+        timestamp: 1663095600,
+        periods: {
+          first: 1663095600,
+          second: 1663099200,
+        },
+        venue: {
+          id: 12678,
+          name: "Stade Orange Vélodrome",
+          city: "Marseille",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group D - 2",
+      },
+      teams: {
+        home: {
+          id: 81,
+          name: "Marseille",
+          logo: "https://media.api-sports.io/football/teams/81.png",
+          winner: false,
+        },
+        away: {
+          id: 169,
+          name: "Eintracht Frankfurt",
+          logo: "https://media.api-sports.io/football/teams/169.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 0,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946873,
+        referee: "Jesús Gil",
+        timezone: "UTC",
+        date: "2022-09-14T16:45:00+00:00",
+        timestamp: 1663173900,
+        periods: {
+          first: 1663173900,
+          second: 1663177500,
+        },
+        venue: {
+          id: 907,
+          name: "Stadio Giuseppe Meazza",
+          city: "Milano",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group E - 2",
+      },
+      teams: {
+        home: {
+          id: 489,
+          name: "AC Milan",
+          logo: "https://media.api-sports.io/football/teams/489.png",
+          winner: true,
+        },
+        away: {
+          id: 620,
+          name: "Dinamo Zagreb",
+          logo: "https://media.api-sports.io/football/teams/620.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 3,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 3,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946874,
+        referee: "G. Nyberg",
+        timezone: "UTC",
+        date: "2022-09-14T16:45:00+00:00",
+        timestamp: 1663173900,
+        periods: {
+          first: 1663173900,
+          second: 1663177500,
+        },
+        venue: {
+          id: 1253,
+          name: "Stadion Miejski Legii Warszawa im. Marszałka Józefa Piłsudskiego",
+          city: "Warszawa",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group F - 2",
+      },
+      teams: {
+        home: {
+          id: 550,
+          name: "Shakhtar Donetsk",
+          logo: "https://media.api-sports.io/football/teams/550.png",
+          winner: null,
+        },
+        away: {
+          id: 247,
+          name: "Celtic",
+          logo: "https://media.api-sports.io/football/teams/247.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946875,
+        referee: "I. Kružliak",
+        timezone: "UTC",
+        date: "2022-09-14T19:00:00+00:00",
+        timestamp: 1663182000,
+        periods: {
+          first: 1663182000,
+          second: 1663185600,
+        },
+        venue: {
+          id: 519,
+          name: "Stamford Bridge",
+          city: "London",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group E - 2",
+      },
+      teams: {
+        home: {
+          id: 49,
+          name: "Chelsea",
+          logo: "https://media.api-sports.io/football/teams/49.png",
+          winner: null,
+        },
+        away: {
+          id: 571,
+          name: "Red Bull Salzburg",
+          logo: "https://media.api-sports.io/football/teams/571.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946876,
+        referee: "M. Mariani",
+        timezone: "UTC",
+        date: "2022-09-14T19:00:00+00:00",
+        timestamp: 1663182000,
+        periods: {
+          first: 1663182000,
+          second: 1663185600,
+        },
+        venue: {
+          id: 1456,
+          name: "Estadio Santiago Bernabéu",
+          city: "Madrid",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group F - 2",
+      },
+      teams: {
+        home: {
+          id: 541,
+          name: "Real Madrid",
+          logo: "https://media.api-sports.io/football/teams/541.png",
+          winner: true,
+        },
+        away: {
+          id: 173,
+          name: "RB Leipzig",
+          logo: "https://media.api-sports.io/football/teams/173.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946877,
+        referee: "D. Orsato",
+        timezone: "UTC",
+        date: "2022-09-14T19:00:00+00:00",
+        timestamp: 1663182000,
+        periods: {
+          first: 1663182000,
+          second: 1663185600,
+        },
+        venue: {
+          id: 555,
+          name: "Etihad Stadium",
+          city: "Manchester",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group G - 2",
+      },
+      teams: {
+        home: {
+          id: 50,
+          name: "Manchester City",
+          logo: "https://media.api-sports.io/football/teams/50.png",
+          winner: true,
+        },
+        away: {
+          id: 165,
+          name: "Borussia Dortmund",
+          logo: "https://media.api-sports.io/football/teams/165.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946878,
+        referee: "I. Peljto",
+        timezone: "UTC",
+        date: "2022-09-14T19:00:00+00:00",
+        timestamp: 1663182000,
+        periods: {
+          first: 1663182000,
+          second: 1663185600,
+        },
+        venue: {
+          id: 11600,
+          name: "Parken",
+          city: "København",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group G - 2",
+      },
+      teams: {
+        home: {
+          id: 400,
+          name: "FC Copenhagen",
+          logo: "https://media.api-sports.io/football/teams/400.png",
+          winner: null,
+        },
+        away: {
+          id: 536,
+          name: "Sevilla",
+          logo: "https://media.api-sports.io/football/teams/536.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946879,
+        referee: "F. Zwayer",
+        timezone: "UTC",
+        date: "2022-09-14T19:00:00+00:00",
+        timestamp: 1663182000,
+        periods: {
+          first: 1663182000,
+          second: 1663185600,
+        },
+        venue: {
+          id: 909,
+          name: "Allianz Stadium",
+          city: "Torino",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group H - 2",
+      },
+      teams: {
+        home: {
           id: 496,
           name: "Juventus",
           logo: "https://media.api-sports.io/football/teams/496.png",
+          winner: false,
+        },
+        away: {
+          id: 211,
+          name: "Benfica",
+          logo: "https://media.api-sports.io/football/teams/211.png",
           winner: true,
         },
       },
@@ -22911,7 +8155,7 @@ export const sampleResponse = {
       score: {
         halftime: {
           home: 1,
-          away: 0,
+          away: 1,
         },
         fulltime: {
           home: 1,
@@ -22929,19 +8173,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608872,
-        referee: "G. Aureliano",
+        id: 946880,
+        referee: "D. Siebert",
         timezone: "UTC",
-        date: "2021-05-03T18:45:00+00:00",
-        timestamp: 1620067500,
+        date: "2022-09-14T19:00:00+00:00",
+        timestamp: 1663182000,
         periods: {
-          first: 1620067500,
-          second: 1620071100,
+          first: 1663182000,
+          second: 1663185600,
         },
         venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
+          id: 868,
+          name: "Sammy Ofer Stadium",
+          city: "Haifa",
         },
         status: {
           long: "Match Finished",
@@ -22950,365 +8194,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 34",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group H - 2",
       },
       teams: {
         home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: true,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608873,
-        referee: "J. Sacchi",
-        timezone: "UTC",
-        date: "2021-05-02T18:45:00+00:00",
-        timestamp: 1619981100,
-        periods: {
-          first: 1619981100,
-          second: 1619984700,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 34",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: true,
-        },
-        away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608874,
-        referee: "M. Volpi",
-        timezone: "UTC",
-        date: "2021-05-01T13:00:00+00:00",
-        timestamp: 1619874000,
-        periods: {
-          first: 1619874000,
-          second: 1619877600,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 34",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
-          winner: null,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608875,
-        referee: "A. Giua",
-        timezone: "UTC",
-        date: "2021-05-09T13:00:00+00:00",
-        timestamp: 1620565200,
-        periods: {
-          first: 1620565200,
-          second: 1620568800,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 35",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
+          id: 4195,
+          name: "Maccabi Haifa",
+          logo: "https://media.api-sports.io/football/teams/4195.png",
           winner: false,
         },
         away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 5,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 5,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608876,
-        referee: "A. Santoro",
-        timezone: "UTC",
-        date: "2021-05-08T13:00:00+00:00",
-        timestamp: 1620478800,
-        periods: {
-          first: 1620478800,
-          second: 1620482400,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 35",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: null,
-        },
-        away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608877,
-        referee: "D. Doveri",
-        timezone: "UTC",
-        date: "2021-05-09T13:00:00+00:00",
-        timestamp: 1620565200,
-        periods: {
-          first: 1620565200,
-          second: 1620568800,
-        },
-        venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 35",
-      },
-      teams: {
-        home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: false,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
+          id: 85,
+          name: "Paris Saint Germain",
+          logo: "https://media.api-sports.io/football/teams/85.png",
           winner: true,
         },
       },
@@ -23337,19 +8241,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608878,
-        referee: "S. Sozza",
+        id: 946881,
+        referee: "N. Dabanović",
         timezone: "UTC",
-        date: "2021-05-09T16:00:00+00:00",
-        timestamp: 1620576000,
+        date: "2022-10-04T16:45:00+00:00",
+        timestamp: 1664901900,
         periods: {
-          first: 1620576000,
-          second: 1620579600,
+          first: 1664901900,
+          second: 1664905500,
         },
         venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
+          id: 700,
+          name: "Allianz Arena",
+          city: "München",
         },
         status: {
           long: "Match Finished",
@@ -23358,25 +8262,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 35",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group C - 3",
       },
       teams: {
         home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
+          id: 157,
+          name: "Bayern Munich",
+          logo: "https://media.api-sports.io/football/teams/157.png",
           winner: true,
         },
         away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
+          id: 567,
+          name: "Plzen",
+          logo: "https://media.api-sports.io/football/teams/567.png",
           winner: false,
         },
       },
@@ -23386,7 +8290,7 @@ export const sampleResponse = {
       },
       score: {
         halftime: {
-          home: 0,
+          home: 3,
           away: 0,
         },
         fulltime: {
@@ -23405,19 +8309,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608879,
-        referee: "F. Maresca",
+        id: 946882,
+        referee: "D. Massa",
         timezone: "UTC",
-        date: "2021-05-08T18:45:00+00:00",
-        timestamp: 1620499500,
+        date: "2022-10-04T16:45:00+00:00",
+        timestamp: 1664901900,
         periods: {
-          first: 1620499500,
-          second: 1620503100,
+          first: 1664901900,
+          second: 1664905500,
         },
         venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
+          id: 12678,
+          name: "Stade Orange Vélodrome",
+          city: "Marseille",
         },
         status: {
           long: "Match Finished",
@@ -23426,25 +8330,93 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 35",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group D - 3",
       },
       teams: {
         home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
+          id: 81,
+          name: "Marseille",
+          logo: "https://media.api-sports.io/football/teams/81.png",
           winner: true,
         },
         away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
+          id: 228,
+          name: "Sporting CP",
+          logo: "https://media.api-sports.io/football/teams/228.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 4,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 3,
+          away: 1,
+        },
+        fulltime: {
+          home: 4,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946883,
+        referee: "C. Turpin",
+        timezone: "UTC",
+        date: "2022-10-04T19:00:00+00:00",
+        timestamp: 1664910000,
+        periods: {
+          first: 1664910000,
+          second: 1664913600,
+        },
+        venue: {
+          id: 550,
+          name: "Anfield",
+          city: "Liverpool",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group A - 3",
+      },
+      teams: {
+        home: {
+          id: 40,
+          name: "Liverpool",
+          logo: "https://media.api-sports.io/football/teams/40.png",
+          winner: true,
+        },
+        away: {
+          id: 257,
+          name: "Rangers",
+          logo: "https://media.api-sports.io/football/teams/257.png",
           winner: false,
         },
       },
@@ -23473,19 +8445,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608880,
-        referee: "P. Valeri",
+        id: 946884,
+        referee: "F. Letexier",
         timezone: "UTC",
-        date: "2021-05-09T18:45:00+00:00",
-        timestamp: 1620585900,
+        date: "2022-10-04T19:00:00+00:00",
+        timestamp: 1664910000,
         periods: {
-          first: 1620585900,
-          second: 1620589500,
+          first: 1664910000,
+          second: 1664913600,
         },
         venue: {
-          id: 909,
-          name: "Allianz Stadium",
-          city: "Torino",
+          id: 1117,
+          name: "Johan Cruijff Arena",
+          city: "Amsterdam",
         },
         status: {
           long: "Match Finished",
@@ -23494,40 +8466,40 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 35",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group A - 3",
       },
       teams: {
         home: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
+          id: 194,
+          name: "Ajax",
+          logo: "https://media.api-sports.io/football/teams/194.png",
           winner: false,
         },
         away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
+          id: 492,
+          name: "Napoli",
+          logo: "https://media.api-sports.io/football/teams/492.png",
           winner: true,
         },
       },
       goals: {
-        home: 0,
-        away: 3,
+        home: 1,
+        away: 6,
       },
       score: {
         halftime: {
-          home: 0,
-          away: 1,
+          home: 1,
+          away: 3,
         },
         fulltime: {
-          home: 0,
-          away: 3,
+          home: 1,
+          away: 6,
         },
         extratime: {
           home: null,
@@ -23541,19 +8513,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608881,
-        referee: "M. Irrati",
+        id: 946885,
+        referee: "A. Taylor",
         timezone: "UTC",
-        date: "2021-05-08T13:00:00+00:00",
-        timestamp: 1620478800,
+        date: "2022-10-04T19:00:00+00:00",
+        timestamp: 1664910000,
         periods: {
-          first: 1620478800,
-          second: 1620482400,
+          first: 1664910000,
+          second: 1664913600,
         },
         venue: {
-          id: 939,
-          name: "Stadio Alberto Picco",
-          city: "La Spezia",
+          id: 1286,
+          name: "Estádio Do Dragão",
+          city: "Porto",
         },
         status: {
           long: "Match Finished",
@@ -23562,25 +8534,637 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 35",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group B - 3",
       },
       teams: {
         home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
+          id: 212,
+          name: "FC Porto",
+          logo: "https://media.api-sports.io/football/teams/212.png",
+          winner: true,
+        },
+        away: {
+          id: 168,
+          name: "Bayer Leverkusen",
+          logo: "https://media.api-sports.io/football/teams/168.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946886,
+        referee: "I. Kovacs",
+        timezone: "UTC",
+        date: "2022-10-04T19:00:00+00:00",
+        timestamp: 1664910000,
+        periods: {
+          first: 1664910000,
+          second: 1664913600,
+        },
+        venue: {
+          id: 176,
+          name: "Jan Breydelstadion",
+          city: "Brugge",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group B - 3",
+      },
+      teams: {
+        home: {
+          id: 569,
+          name: "Club Brugge KV",
+          logo: "https://media.api-sports.io/football/teams/569.png",
+          winner: true,
+        },
+        away: {
+          id: 530,
+          name: "Atletico Madrid",
+          logo: "https://media.api-sports.io/football/teams/530.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946887,
+        referee: "S. Vinčić",
+        timezone: "UTC",
+        date: "2022-10-04T19:00:00+00:00",
+        timestamp: 1664910000,
+        periods: {
+          first: 1664910000,
+          second: 1664913600,
+        },
+        venue: {
+          id: 907,
+          name: "Stadio Giuseppe Meazza",
+          city: "Milano",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group C - 3",
+      },
+      teams: {
+        home: {
+          id: 505,
+          name: "Inter",
+          logo: "https://media.api-sports.io/football/teams/505.png",
+          winner: true,
+        },
+        away: {
+          id: 529,
+          name: "Barcelona",
+          logo: "https://media.api-sports.io/football/teams/529.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946888,
+        referee: "D. Orsato",
+        timezone: "UTC",
+        date: "2022-10-04T19:00:00+00:00",
+        timestamp: 1664910000,
+        periods: {
+          first: 1664910000,
+          second: 1664913600,
+        },
+        venue: {
+          id: 10491,
+          name: "Deutsche Bank Park",
+          city: "Frankfurt am Main",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group D - 3",
+      },
+      teams: {
+        home: {
+          id: 169,
+          name: "Eintracht Frankfurt",
+          logo: "https://media.api-sports.io/football/teams/169.png",
+          winner: null,
+        },
+        away: {
+          id: 47,
+          name: "Tottenham",
+          logo: "https://media.api-sports.io/football/teams/47.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946889,
+        referee: "A. Treimanis",
+        timezone: "UTC",
+        date: "2022-10-05T16:45:00+00:00",
+        timestamp: 1664988300,
+        periods: {
+          first: 1664988300,
+          second: 1664991900,
+        },
+        venue: {
+          id: 148,
+          name: "Red Bull Arena",
+          city: "Wals-Siezenheim",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group E - 3",
+      },
+      teams: {
+        home: {
+          id: 571,
+          name: "Red Bull Salzburg",
+          logo: "https://media.api-sports.io/football/teams/571.png",
+          winner: true,
+        },
+        away: {
+          id: 620,
+          name: "Dinamo Zagreb",
+          logo: "https://media.api-sports.io/football/teams/620.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946890,
+        referee: "E. Eskås",
+        timezone: "UTC",
+        date: "2022-10-05T16:45:00+00:00",
+        timestamp: 1664988300,
+        periods: {
+          first: 1664988300,
+          second: 1664991900,
+        },
+        venue: {
+          id: 738,
+          name: "Red Bull Arena",
+          city: "Leipzig",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group F - 3",
+      },
+      teams: {
+        home: {
+          id: 173,
+          name: "RB Leipzig",
+          logo: "https://media.api-sports.io/football/teams/173.png",
+          winner: true,
+        },
+        away: {
+          id: 247,
+          name: "Celtic",
+          logo: "https://media.api-sports.io/football/teams/247.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 3,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 3,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946891,
+        referee: "D. Makkelie",
+        timezone: "UTC",
+        date: "2022-10-05T19:00:00+00:00",
+        timestamp: 1664996400,
+        periods: {
+          first: 1664996400,
+          second: 1665000000,
+        },
+        venue: {
+          id: 519,
+          name: "Stamford Bridge",
+          city: "London",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group E - 3",
+      },
+      teams: {
+        home: {
+          id: 49,
+          name: "Chelsea",
+          logo: "https://media.api-sports.io/football/teams/49.png",
+          winner: true,
+        },
+        away: {
+          id: 489,
+          name: "AC Milan",
+          logo: "https://media.api-sports.io/football/teams/489.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 3,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 3,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946892,
+        referee: "I. Kružliak",
+        timezone: "UTC",
+        date: "2022-10-05T19:00:00+00:00",
+        timestamp: 1664996400,
+        periods: {
+          first: 1664996400,
+          second: 1665000000,
+        },
+        venue: {
+          id: 1456,
+          name: "Estadio Santiago Bernabéu",
+          city: "Madrid",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group F - 3",
+      },
+      teams: {
+        home: {
+          id: 541,
+          name: "Real Madrid",
+          logo: "https://media.api-sports.io/football/teams/541.png",
+          winner: true,
+        },
+        away: {
+          id: 550,
+          name: "Shakhtar Donetsk",
+          logo: "https://media.api-sports.io/football/teams/550.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 2,
+          away: 1,
+        },
+        fulltime: {
+          home: 2,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946893,
+        referee: "D. Rumšas",
+        timezone: "UTC",
+        date: "2022-10-05T19:00:00+00:00",
+        timestamp: 1664996400,
+        periods: {
+          first: 1664996400,
+          second: 1665000000,
+        },
+        venue: {
+          id: 555,
+          name: "Etihad Stadium",
+          city: "Manchester",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group G - 3",
+      },
+      teams: {
+        home: {
+          id: 50,
+          name: "Manchester City",
+          logo: "https://media.api-sports.io/football/teams/50.png",
+          winner: true,
+        },
+        away: {
+          id: 400,
+          name: "FC Copenhagen",
+          logo: "https://media.api-sports.io/football/teams/400.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 5,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 3,
+          away: 0,
+        },
+        fulltime: {
+          home: 5,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946894,
+        referee: "M. Mariani",
+        timezone: "UTC",
+        date: "2022-10-05T19:00:00+00:00",
+        timestamp: 1664996400,
+        periods: {
+          first: 1664996400,
+          second: 1665000000,
+        },
+        venue: {
+          id: 1494,
+          name: "Estadio Ramón Sánchez Pizjuán",
+          city: "Sevilla",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group G - 3",
+      },
+      teams: {
+        home: {
+          id: 536,
+          name: "Sevilla",
+          logo: "https://media.api-sports.io/football/teams/536.png",
           winner: false,
         },
         away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
+          id: 165,
+          name: "Borussia Dortmund",
+          logo: "https://media.api-sports.io/football/teams/165.png",
           winner: true,
         },
       },
@@ -23609,19 +9193,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608882,
-        referee: "G. Ayroldi",
+        id: 946895,
+        referee: "S. Schärer",
         timezone: "UTC",
-        date: "2021-05-08T16:00:00+00:00",
-        timestamp: 1620489600,
+        date: "2022-10-05T19:00:00+00:00",
+        timestamp: 1664996400,
         periods: {
-          first: 1620489600,
-          second: 1620493200,
+          first: 1664996400,
+          second: 1665000000,
         },
         venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
+          id: 909,
+          name: "Allianz Stadium",
+          city: "Torino",
         },
         status: {
           long: "Match Finished",
@@ -23630,39 +9214,39 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 35",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group H - 3",
       },
       teams: {
         home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
+          id: 496,
+          name: "Juventus",
+          logo: "https://media.api-sports.io/football/teams/496.png",
           winner: true,
         },
         away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
+          id: 4195,
+          name: "Maccabi Haifa",
+          logo: "https://media.api-sports.io/football/teams/4195.png",
           winner: false,
         },
       },
       goals: {
-        home: 5,
+        home: 3,
         away: 1,
       },
       score: {
         halftime: {
-          home: 3,
-          away: 1,
+          home: 1,
+          away: 0,
         },
         fulltime: {
-          home: 5,
+          home: 3,
           away: 1,
         },
         extratime: {
@@ -23677,19 +9261,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608883,
-        referee: "M. Mariani",
+        id: 946896,
+        referee: "Jesús Gil",
         timezone: "UTC",
-        date: "2021-05-09T10:30:00+00:00",
-        timestamp: 1620556200,
+        date: "2022-10-05T19:00:00+00:00",
+        timestamp: 1664996400,
         periods: {
-          first: 1620556200,
-          second: 1620559800,
+          first: 1664996400,
+          second: 1665000000,
         },
         venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
+          id: null,
+          name: "Estádio do Sport Lisboa e Benfica",
+          city: "Lisboa",
         },
         status: {
           long: "Match Finished",
@@ -23698,40 +9282,40 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 35",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group H - 3",
       },
       teams: {
         home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: false,
+          id: 211,
+          name: "Benfica",
+          logo: "https://media.api-sports.io/football/teams/211.png",
+          winner: null,
         },
         away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
+          id: 85,
+          name: "Paris Saint Germain",
+          logo: "https://media.api-sports.io/football/teams/85.png",
+          winner: null,
         },
       },
       goals: {
         home: 1,
-        away: 2,
+        away: 1,
       },
       score: {
         halftime: {
-          home: 0,
+          home: 1,
           away: 1,
         },
         fulltime: {
           home: 1,
-          away: 2,
+          away: 1,
         },
         extratime: {
           home: null,
@@ -23745,19 +9329,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608884,
-        referee: "D. Massa",
+        id: 946897,
+        referee: "Artur Soares Dias",
         timezone: "UTC",
-        date: "2021-05-09T13:00:00+00:00",
-        timestamp: 1620565200,
+        date: "2022-10-11T16:45:00+00:00",
+        timestamp: 1665506700,
         periods: {
-          first: 1620565200,
-          second: 1620568800,
+          first: 1665506700,
+          second: 1665510300,
         },
         venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
+          id: 11600,
+          name: "Parken",
+          city: "København",
         },
         status: {
           long: "Match Finished",
@@ -23766,31 +9350,31 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 35",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group G - 4",
       },
       teams: {
         home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
+          id: 400,
+          name: "FC Copenhagen",
+          logo: "https://media.api-sports.io/football/teams/400.png",
           winner: null,
         },
         away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
+          id: 50,
+          name: "Manchester City",
+          logo: "https://media.api-sports.io/football/teams/50.png",
           winner: null,
         },
       },
       goals: {
-        home: 1,
-        away: 1,
+        home: 0,
+        away: 0,
       },
       score: {
         halftime: {
@@ -23798,8 +9382,8 @@ export const sampleResponse = {
           away: 0,
         },
         fulltime: {
-          home: 1,
-          away: 1,
+          home: 0,
+          away: 0,
         },
         extratime: {
           home: null,
@@ -23813,19 +9397,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608885,
-        referee: "D. Massa",
+        id: 946898,
+        referee: "Antonio Mateu",
         timezone: "UTC",
-        date: "2021-05-12T18:45:00+00:00",
-        timestamp: 1620845100,
+        date: "2022-10-11T16:45:00+00:00",
+        timestamp: 1665506700,
         periods: {
-          first: 1620845100,
-          second: 1620848700,
+          first: 1665506700,
+          second: 1665510300,
         },
         venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
+          id: 868,
+          name: "Sammy Ofer Stadium",
+          city: "Haifa",
         },
         status: {
           long: "Match Finished",
@@ -23834,25 +9418,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 36",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group H - 4",
       },
       teams: {
         home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
+          id: 4195,
+          name: "Maccabi Haifa",
+          logo: "https://media.api-sports.io/football/teams/4195.png",
           winner: true,
         },
         away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
+          id: 496,
+          name: "Juventus",
+          logo: "https://media.api-sports.io/football/teams/496.png",
           winner: false,
         },
       },
@@ -23862,7 +9446,7 @@ export const sampleResponse = {
       },
       score: {
         halftime: {
-          home: 1,
+          home: 2,
           away: 0,
         },
         fulltime: {
@@ -23881,19 +9465,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608886,
-        referee: "M. Mariani",
+        id: 946899,
+        referee: "T. Stieler",
         timezone: "UTC",
-        date: "2021-05-12T16:30:00+00:00",
-        timestamp: 1620837000,
+        date: "2022-10-11T19:00:00+00:00",
+        timestamp: 1665514800,
         periods: {
-          first: 1620837000,
-          second: 1620840600,
+          first: 1665514800,
+          second: 1665518400,
         },
         venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
+          id: 412,
+          name: "Stadion Maksimir",
+          city: "Zagreb",
         },
         status: {
           long: "Match Finished",
@@ -23902,25 +9486,501 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 36",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group E - 4",
       },
       teams: {
         home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
+          id: 620,
+          name: "Dinamo Zagreb",
+          logo: "https://media.api-sports.io/football/teams/620.png",
           winner: null,
         },
         away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
+          id: 571,
+          name: "Red Bull Salzburg",
+          logo: "https://media.api-sports.io/football/teams/571.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946900,
+        referee: "D. Siebert",
+        timezone: "UTC",
+        date: "2022-10-11T19:00:00+00:00",
+        timestamp: 1665514800,
+        periods: {
+          first: 1665514800,
+          second: 1665518400,
+        },
+        venue: {
+          id: 907,
+          name: "Stadio Giuseppe Meazza",
+          city: "Milano",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group E - 4",
+      },
+      teams: {
+        home: {
+          id: 489,
+          name: "AC Milan",
+          logo: "https://media.api-sports.io/football/teams/489.png",
+          winner: false,
+        },
+        away: {
+          id: 49,
+          name: "Chelsea",
+          logo: "https://media.api-sports.io/football/teams/49.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 2,
+        },
+        fulltime: {
+          home: 0,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946901,
+        referee: "O. Grinfeeld",
+        timezone: "UTC",
+        date: "2022-10-11T19:00:00+00:00",
+        timestamp: 1665514800,
+        periods: {
+          first: 1665514800,
+          second: 1665518400,
+        },
+        venue: {
+          id: 1253,
+          name: "Stadion Miejski Legii Warszawa im. Marszałka Józefa Piłsudskiego",
+          city: "Warszawa",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group F - 4",
+      },
+      teams: {
+        home: {
+          id: 550,
+          name: "Shakhtar Donetsk",
+          logo: "https://media.api-sports.io/football/teams/550.png",
+          winner: null,
+        },
+        away: {
+          id: 541,
+          name: "Real Madrid",
+          logo: "https://media.api-sports.io/football/teams/541.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946902,
+        referee: "H. Meler",
+        timezone: "UTC",
+        date: "2022-10-11T19:00:00+00:00",
+        timestamp: 1665514800,
+        periods: {
+          first: 1665514800,
+          second: 1665518400,
+        },
+        venue: {
+          id: 1386,
+          name: "Celtic Park",
+          city: "Glasgow",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group F - 4",
+      },
+      teams: {
+        home: {
+          id: 247,
+          name: "Celtic",
+          logo: "https://media.api-sports.io/football/teams/247.png",
+          winner: false,
+        },
+        away: {
+          id: 173,
+          name: "RB Leipzig",
+          logo: "https://media.api-sports.io/football/teams/173.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946903,
+        referee: "S. Jovanović",
+        timezone: "UTC",
+        date: "2022-10-11T19:00:00+00:00",
+        timestamp: 1665514800,
+        periods: {
+          first: 1665514800,
+          second: 1665518400,
+        },
+        venue: {
+          id: 19381,
+          name: "SIGNAL IDUNA PARK",
+          city: "Dortmund",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group G - 4",
+      },
+      teams: {
+        home: {
+          id: 165,
+          name: "Borussia Dortmund",
+          logo: "https://media.api-sports.io/football/teams/165.png",
+          winner: null,
+        },
+        away: {
+          id: 536,
+          name: "Sevilla",
+          logo: "https://media.api-sports.io/football/teams/536.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946904,
+        referee: "M. Oliver",
+        timezone: "UTC",
+        date: "2022-10-11T19:00:00+00:00",
+        timestamp: 1665514800,
+        periods: {
+          first: 1665514800,
+          second: 1665518400,
+        },
+        venue: {
+          id: 671,
+          name: "Parc des Princes",
+          city: "Paris",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group H - 4",
+      },
+      teams: {
+        home: {
+          id: 85,
+          name: "Paris Saint Germain",
+          logo: "https://media.api-sports.io/football/teams/85.png",
+          winner: null,
+        },
+        away: {
+          id: 211,
+          name: "Benfica",
+          logo: "https://media.api-sports.io/football/teams/211.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946905,
+        referee: "F. Zwayer",
+        timezone: "UTC",
+        date: "2022-10-12T16:45:00+00:00",
+        timestamp: 1665593100,
+        periods: {
+          first: 1665593100,
+          second: 1665596700,
+        },
+        venue: {
+          id: 11904,
+          name: "Stadio Diego Armando Maradona",
+          city: "Napoli",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group A - 4",
+      },
+      teams: {
+        home: {
+          id: 492,
+          name: "Napoli",
+          logo: "https://media.api-sports.io/football/teams/492.png",
+          winner: true,
+        },
+        away: {
+          id: 194,
+          name: "Ajax",
+          logo: "https://media.api-sports.io/football/teams/194.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 4,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 2,
+          away: 0,
+        },
+        fulltime: {
+          home: 4,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946906,
+        referee: "D. Makkelie",
+        timezone: "UTC",
+        date: "2022-10-12T16:45:00+00:00",
+        timestamp: 1665593100,
+        periods: {
+          first: 1665593100,
+          second: 1665596700,
+        },
+        venue: {
+          id: 19217,
+          name: "Estádio Cívitas Metropolitano",
+          city: "Madrid",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group B - 4",
+      },
+      teams: {
+        home: {
+          id: 530,
+          name: "Atletico Madrid",
+          logo: "https://media.api-sports.io/football/teams/530.png",
+          winner: null,
+        },
+        away: {
+          id: 569,
+          name: "Club Brugge KV",
+          logo: "https://media.api-sports.io/football/teams/569.png",
           winner: null,
         },
       },
@@ -23949,19 +10009,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608887,
-        referee: "F. Fourneau",
+        id: 946907,
+        referee: "S. Vinčić",
         timezone: "UTC",
-        date: "2021-05-12T18:45:00+00:00",
-        timestamp: 1620845100,
+        date: "2022-10-12T19:00:00+00:00",
+        timestamp: 1665601200,
         periods: {
-          first: 1620845100,
-          second: 1620848700,
+          first: 1665601200,
+          second: 1665604800,
         },
         venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
+          id: 1401,
+          name: "Ibrox Stadium",
+          city: "Glasgow",
         },
         status: {
           long: "Match Finished",
@@ -23970,175 +10030,39 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 36",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group A - 4",
       },
       teams: {
         home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
+          id: 257,
+          name: "Rangers",
+          logo: "https://media.api-sports.io/football/teams/257.png",
           winner: false,
         },
         away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608888,
-        referee: "P. Giacomelli",
-        timezone: "UTC",
-        date: "2021-05-12T18:45:00+00:00",
-        timestamp: 1620845100,
-        periods: {
-          first: 1620845100,
-          second: 1620848700,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 36",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: false,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
+          id: 40,
+          name: "Liverpool",
+          logo: "https://media.api-sports.io/football/teams/40.png",
           winner: true,
         },
       },
       goals: {
         home: 1,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 2,
-        },
-        fulltime: {
-          home: 1,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608889,
-        referee: "M. Guida",
-        timezone: "UTC",
-        date: "2021-05-12T18:45:00+00:00",
-        timestamp: 1620845100,
-        periods: {
-          first: 1620845100,
-          second: 1620848700,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 36",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: false,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
         away: 7,
       },
       score: {
         halftime: {
-          home: 0,
-          away: 2,
+          home: 1,
+          away: 1,
         },
         fulltime: {
-          home: 0,
+          home: 1,
           away: 7,
         },
         extratime: {
@@ -24153,19 +10077,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608890,
-        referee: "F. Dionisi",
+        id: 946908,
+        referee: "I. Kovacs",
         timezone: "UTC",
-        date: "2021-05-12T18:45:00+00:00",
-        timestamp: 1620845100,
+        date: "2022-10-12T19:00:00+00:00",
+        timestamp: 1665601200,
         periods: {
-          first: 1620845100,
-          second: 1620848700,
+          first: 1665601200,
+          second: 1665604800,
         },
         venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
+          id: 699,
+          name: "BayArena",
+          city: "Leverkusen",
         },
         status: {
           long: "Match Finished",
@@ -24174,40 +10098,40 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 36",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group B - 4",
       },
       teams: {
         home: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: true,
+          id: 168,
+          name: "Bayer Leverkusen",
+          logo: "https://media.api-sports.io/football/teams/168.png",
+          winner: false,
         },
         away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
+          id: 212,
+          name: "FC Porto",
+          logo: "https://media.api-sports.io/football/teams/212.png",
+          winner: true,
         },
       },
       goals: {
-        home: 1,
-        away: 0,
+        home: 0,
+        away: 3,
       },
       score: {
         halftime: {
           home: 0,
-          away: 0,
+          away: 1,
         },
         fulltime: {
-          home: 1,
-          away: 0,
+          home: 0,
+          away: 3,
         },
         extratime: {
           home: null,
@@ -24221,19 +10145,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608891,
-        referee: "D. Chiffi",
+        id: 946909,
+        referee: "S. Marciniak",
         timezone: "UTC",
-        date: "2021-05-12T18:45:00+00:00",
-        timestamp: 1620845100,
+        date: "2022-10-12T19:00:00+00:00",
+        timestamp: 1665601200,
         periods: {
-          first: 1620845100,
-          second: 1620848700,
+          first: 1665601200,
+          second: 1665604800,
         },
         venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
+          id: 18630,
+          name: "Spotify Camp Nou",
+          city: "Barcelona",
         },
         status: {
           long: "Match Finished",
@@ -24242,107 +10166,175 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 36",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group C - 4",
       },
       teams: {
         home: {
+          id: 529,
+          name: "Barcelona",
+          logo: "https://media.api-sports.io/football/teams/529.png",
+          winner: null,
+        },
+        away: {
           id: 505,
           name: "Inter",
           logo: "https://media.api-sports.io/football/teams/505.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 3,
+        away: 3,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 3,
+          away: 3,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946910,
+        referee: "B. Frankowski",
+        timezone: "UTC",
+        date: "2022-10-12T19:00:00+00:00",
+        timestamp: 1665601200,
+        periods: {
+          first: 1665601200,
+          second: 1665604800,
+        },
+        venue: {
+          id: 438,
+          name: "Doosan Aréna",
+          city: "Plzeň",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group C - 4",
+      },
+      teams: {
+        home: {
+          id: 567,
+          name: "Plzen",
+          logo: "https://media.api-sports.io/football/teams/567.png",
+          winner: false,
+        },
+        away: {
+          id: 157,
+          name: "Bayern Munich",
+          logo: "https://media.api-sports.io/football/teams/157.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 4,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 4,
+        },
+        fulltime: {
+          home: 2,
+          away: 4,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946911,
+        referee: "Carlos del Cerro",
+        timezone: "UTC",
+        date: "2022-10-12T19:00:00+00:00",
+        timestamp: 1665601200,
+        periods: {
+          first: 1665601200,
+          second: 1665604800,
+        },
+        venue: {
+          id: 593,
+          name: "Tottenham Hotspur Stadium",
+          city: "London",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group D - 4",
+      },
+      teams: {
+        home: {
+          id: 47,
+          name: "Tottenham",
+          logo: "https://media.api-sports.io/football/teams/47.png",
           winner: true,
         },
         away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
+          id: 169,
+          name: "Eintracht Frankfurt",
+          logo: "https://media.api-sports.io/football/teams/169.png",
           winner: false,
         },
       },
       goals: {
         home: 3,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608892,
-        referee: "F. Maresca",
-        timezone: "UTC",
-        date: "2021-05-12T18:45:00+00:00",
-        timestamp: 1620845100,
-        periods: {
-          first: 1620845100,
-          second: 1620848700,
-        },
-        venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 36",
-      },
-      teams: {
-        home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: null,
-        },
-        away: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
         away: 2,
       },
       score: {
         halftime: {
-          home: 1,
+          home: 3,
           away: 1,
         },
         fulltime: {
-          home: 2,
+          home: 3,
           away: 2,
         },
         extratime: {
@@ -24357,14 +10349,762 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608893,
-        referee: "G. Calvarese",
+        id: 946912,
+        referee: "Alejandro Hernández",
         timezone: "UTC",
-        date: "2021-05-11T18:45:00+00:00",
-        timestamp: 1620758700,
+        date: "2022-10-12T19:00:00+00:00",
+        timestamp: 1665601200,
         periods: {
-          first: 1620758700,
-          second: 1620762300,
+          first: 1665601200,
+          second: 1665604800,
+        },
+        venue: {
+          id: 1293,
+          name: "Estádio José Alvalade",
+          city: "Lisboa",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group D - 4",
+      },
+      teams: {
+        home: {
+          id: 228,
+          name: "Sporting CP",
+          logo: "https://media.api-sports.io/football/teams/228.png",
+          winner: false,
+        },
+        away: {
+          id: 81,
+          name: "Marseille",
+          logo: "https://media.api-sports.io/football/teams/81.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 2,
+        },
+        fulltime: {
+          home: 0,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946913,
+        referee: "S. Schärer",
+        timezone: "UTC",
+        date: "2022-10-25T16:45:00+00:00",
+        timestamp: 1666716300,
+        periods: {
+          first: 1666716300,
+          second: 1666719900,
+        },
+        venue: {
+          id: 148,
+          name: "Red Bull Arena",
+          city: "Wals-Siezenheim",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group E - 5",
+      },
+      teams: {
+        home: {
+          id: 571,
+          name: "Red Bull Salzburg",
+          logo: "https://media.api-sports.io/football/teams/571.png",
+          winner: false,
+        },
+        away: {
+          id: 49,
+          name: "Chelsea",
+          logo: "https://media.api-sports.io/football/teams/49.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946914,
+        referee: "B. Bastien",
+        timezone: "UTC",
+        date: "2022-10-25T16:45:00+00:00",
+        timestamp: 1666716300,
+        periods: {
+          first: 1666716300,
+          second: 1666719900,
+        },
+        venue: {
+          id: 1494,
+          name: "Estadio Ramón Sánchez Pizjuán",
+          city: "Sevilla",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group G - 5",
+      },
+      teams: {
+        home: {
+          id: 536,
+          name: "Sevilla",
+          logo: "https://media.api-sports.io/football/teams/536.png",
+          winner: true,
+        },
+        away: {
+          id: 400,
+          name: "FC Copenhagen",
+          logo: "https://media.api-sports.io/football/teams/400.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 3,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 3,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946915,
+        referee: "S. Marciniak",
+        timezone: "UTC",
+        date: "2022-10-25T19:00:00+00:00",
+        timestamp: 1666724400,
+        periods: {
+          first: 1666724400,
+          second: 1666728000,
+        },
+        venue: {
+          id: 412,
+          name: "Stadion Maksimir",
+          city: "Zagreb",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group E - 5",
+      },
+      teams: {
+        home: {
+          id: 620,
+          name: "Dinamo Zagreb",
+          logo: "https://media.api-sports.io/football/teams/620.png",
+          winner: false,
+        },
+        away: {
+          id: 489,
+          name: "AC Milan",
+          logo: "https://media.api-sports.io/football/teams/489.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 4,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 0,
+          away: 4,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946916,
+        referee: "S. Gözübüyük",
+        timezone: "UTC",
+        date: "2022-10-25T19:00:00+00:00",
+        timestamp: 1666724400,
+        periods: {
+          first: 1666724400,
+          second: 1666728000,
+        },
+        venue: {
+          id: 1386,
+          name: "Celtic Park",
+          city: "Glasgow",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group F - 5",
+      },
+      teams: {
+        home: {
+          id: 247,
+          name: "Celtic",
+          logo: "https://media.api-sports.io/football/teams/247.png",
+          winner: null,
+        },
+        away: {
+          id: 550,
+          name: "Shakhtar Donetsk",
+          logo: "https://media.api-sports.io/football/teams/550.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946917,
+        referee: "D. Orsato",
+        timezone: "UTC",
+        date: "2022-10-25T19:00:00+00:00",
+        timestamp: 1666724400,
+        periods: {
+          first: 1666724400,
+          second: 1666728000,
+        },
+        venue: {
+          id: 738,
+          name: "Red Bull Arena",
+          city: "Leipzig",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group F - 5",
+      },
+      teams: {
+        home: {
+          id: 173,
+          name: "RB Leipzig",
+          logo: "https://media.api-sports.io/football/teams/173.png",
+          winner: true,
+        },
+        away: {
+          id: 541,
+          name: "Real Madrid",
+          logo: "https://media.api-sports.io/football/teams/541.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 3,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 2,
+          away: 1,
+        },
+        fulltime: {
+          home: 3,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946918,
+        referee: "D. Massa",
+        timezone: "UTC",
+        date: "2022-10-25T19:00:00+00:00",
+        timestamp: 1666724400,
+        periods: {
+          first: 1666724400,
+          second: 1666728000,
+        },
+        venue: {
+          id: 19381,
+          name: "SIGNAL IDUNA PARK",
+          city: "Dortmund",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group G - 5",
+      },
+      teams: {
+        home: {
+          id: 165,
+          name: "Borussia Dortmund",
+          logo: "https://media.api-sports.io/football/teams/165.png",
+          winner: null,
+        },
+        away: {
+          id: 50,
+          name: "Manchester City",
+          logo: "https://media.api-sports.io/football/teams/50.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946919,
+        referee: "F. Zwayer",
+        timezone: "UTC",
+        date: "2022-10-25T19:00:00+00:00",
+        timestamp: 1666724400,
+        periods: {
+          first: 1666724400,
+          second: 1666728000,
+        },
+        venue: {
+          id: 671,
+          name: "Parc des Princes",
+          city: "Paris",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group H - 5",
+      },
+      teams: {
+        home: {
+          id: 85,
+          name: "Paris Saint Germain",
+          logo: "https://media.api-sports.io/football/teams/85.png",
+          winner: true,
+        },
+        away: {
+          id: 4195,
+          name: "Maccabi Haifa",
+          logo: "https://media.api-sports.io/football/teams/4195.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 7,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 4,
+          away: 1,
+        },
+        fulltime: {
+          home: 7,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946920,
+        referee: "S. Jovanović",
+        timezone: "UTC",
+        date: "2022-10-25T19:00:00+00:00",
+        timestamp: 1666724400,
+        periods: {
+          first: 1666724400,
+          second: 1666728000,
+        },
+        venue: {
+          id: null,
+          name: "Estádio do Sport Lisboa e Benfica",
+          city: "Lisboa",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group H - 5",
+      },
+      teams: {
+        home: {
+          id: 211,
+          name: "Benfica",
+          logo: "https://media.api-sports.io/football/teams/211.png",
+          winner: true,
+        },
+        away: {
+          id: 496,
+          name: "Juventus",
+          logo: "https://media.api-sports.io/football/teams/496.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 4,
+        away: 3,
+      },
+      score: {
+        halftime: {
+          home: 3,
+          away: 1,
+        },
+        fulltime: {
+          home: 4,
+          away: 3,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946921,
+        referee: "M. Oliver",
+        timezone: "UTC",
+        date: "2022-10-26T16:45:00+00:00",
+        timestamp: 1666802700,
+        periods: {
+          first: 1666802700,
+          second: 1666806300,
+        },
+        venue: {
+          id: 176,
+          name: "Jan Breydelstadion",
+          city: "Brugge",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group B - 5",
+      },
+      teams: {
+        home: {
+          id: 569,
+          name: "Club Brugge KV",
+          logo: "https://media.api-sports.io/football/teams/569.png",
+          winner: false,
+        },
+        away: {
+          id: 212,
+          name: "FC Porto",
+          logo: "https://media.api-sports.io/football/teams/212.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 4,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 0,
+          away: 4,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946922,
+        referee: "A. Ekberg",
+        timezone: "UTC",
+        date: "2022-10-26T16:45:00+00:00",
+        timestamp: 1666802700,
+        periods: {
+          first: 1666802700,
+          second: 1666806300,
+        },
+        venue: {
+          id: 907,
+          name: "Stadio Giuseppe Meazza",
+          city: "Milano",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group C - 5",
+      },
+      teams: {
+        home: {
+          id: 505,
+          name: "Inter",
+          logo: "https://media.api-sports.io/football/teams/505.png",
+          winner: true,
+        },
+        away: {
+          id: 567,
+          name: "Plzen",
+          logo: "https://media.api-sports.io/football/teams/567.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 4,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 2,
+          away: 0,
+        },
+        fulltime: {
+          home: 4,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946923,
+        referee: "H. Meler",
+        timezone: "UTC",
+        date: "2022-10-26T19:00:00+00:00",
+        timestamp: 1666810800,
+        periods: {
+          first: 1666810800,
+          second: 1666814400,
         },
         venue: {
           id: 11904,
@@ -24378,13 +11118,13 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 36",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group A - 5",
       },
       teams: {
         home: {
@@ -24394,23 +11134,295 @@ export const sampleResponse = {
           winner: true,
         },
         away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
+          id: 257,
+          name: "Rangers",
+          logo: "https://media.api-sports.io/football/teams/257.png",
           winner: false,
         },
       },
       goals: {
-        home: 5,
-        away: 1,
+        home: 3,
+        away: 0,
       },
       score: {
         halftime: {
           home: 2,
+          away: 0,
+        },
+        fulltime: {
+          home: 3,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946924,
+        referee: "José Sánchez",
+        timezone: "UTC",
+        date: "2022-10-26T19:00:00+00:00",
+        timestamp: 1666810800,
+        periods: {
+          first: 1666810800,
+          second: 1666814400,
+        },
+        venue: {
+          id: 1117,
+          name: "Johan Cruijff Arena",
+          city: "Amsterdam",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group A - 5",
+      },
+      teams: {
+        home: {
+          id: 194,
+          name: "Ajax",
+          logo: "https://media.api-sports.io/football/teams/194.png",
+          winner: false,
+        },
+        away: {
+          id: 40,
+          name: "Liverpool",
+          logo: "https://media.api-sports.io/football/teams/40.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 3,
+      },
+      score: {
+        halftime: {
+          home: 0,
           away: 1,
         },
         fulltime: {
-          home: 5,
+          home: 0,
+          away: 3,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946925,
+        referee: "C. Turpin",
+        timezone: "UTC",
+        date: "2022-10-26T19:00:00+00:00",
+        timestamp: 1666810800,
+        periods: {
+          first: 1666810800,
+          second: 1666814400,
+        },
+        venue: {
+          id: 19217,
+          name: "Estádio Cívitas Metropolitano",
+          city: "Madrid",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group B - 5",
+      },
+      teams: {
+        home: {
+          id: 530,
+          name: "Atletico Madrid",
+          logo: "https://media.api-sports.io/football/teams/530.png",
+          winner: null,
+        },
+        away: {
+          id: 168,
+          name: "Bayer Leverkusen",
+          logo: "https://media.api-sports.io/football/teams/168.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 2,
+        },
+        fulltime: {
+          home: 2,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946926,
+        referee: "A. Taylor",
+        timezone: "UTC",
+        date: "2022-10-26T19:00:00+00:00",
+        timestamp: 1666810800,
+        periods: {
+          first: 1666810800,
+          second: 1666814400,
+        },
+        venue: {
+          id: 18630,
+          name: "Spotify Camp Nou",
+          city: "Barcelona",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group C - 5",
+      },
+      teams: {
+        home: {
+          id: 529,
+          name: "Barcelona",
+          logo: "https://media.api-sports.io/football/teams/529.png",
+          winner: false,
+        },
+        away: {
+          id: 157,
+          name: "Bayern Munich",
+          logo: "https://media.api-sports.io/football/teams/157.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 3,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 2,
+        },
+        fulltime: {
+          home: 0,
+          away: 3,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946927,
+        referee: "D. Makkelie",
+        timezone: "UTC",
+        date: "2022-10-26T19:00:00+00:00",
+        timestamp: 1666810800,
+        periods: {
+          first: 1666810800,
+          second: 1666814400,
+        },
+        venue: {
+          id: 593,
+          name: "Tottenham Hotspur Stadium",
+          city: "London",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group D - 5",
+      },
+      teams: {
+        home: {
+          id: 47,
+          name: "Tottenham",
+          logo: "https://media.api-sports.io/football/teams/47.png",
+          winner: null,
+        },
+        away: {
+          id: 228,
+          name: "Sporting CP",
+          logo: "https://media.api-sports.io/football/teams/228.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
           away: 1,
         },
         extratime: {
@@ -24425,19 +11437,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608894,
-        referee: "L. Massimi",
+        id: 946928,
+        referee: "Jesús Gil",
         timezone: "UTC",
-        date: "2021-05-13T18:45:00+00:00",
-        timestamp: 1620931500,
+        date: "2022-10-26T19:00:00+00:00",
+        timestamp: 1666810800,
         periods: {
-          first: 1620931500,
-          second: 1620935100,
+          first: 1666810800,
+          second: 1666814400,
         },
         venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
+          id: 10491,
+          name: "Deutsche Bank Park",
+          city: "Frankfurt am Main",
         },
         status: {
           long: "Match Finished",
@@ -24446,25 +11458,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 36",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group D - 5",
       },
       teams: {
         home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
+          id: 169,
+          name: "Eintracht Frankfurt",
+          logo: "https://media.api-sports.io/football/teams/169.png",
           winner: true,
         },
         away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
+          id: 81,
+          name: "Marseille",
+          logo: "https://media.api-sports.io/football/teams/81.png",
           winner: false,
         },
       },
@@ -24474,7 +11486,75 @@ export const sampleResponse = {
       },
       score: {
         halftime: {
-          home: 1,
+          home: 2,
+          away: 1,
+        },
+        fulltime: {
+          home: 2,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946929,
+        referee: "D. Orsato",
+        timezone: "UTC",
+        date: "2022-11-01T17:45:00+00:00",
+        timestamp: 1667324700,
+        periods: {
+          first: 1667324700,
+          second: 1667328300,
+        },
+        venue: {
+          id: 1286,
+          name: "Estádio Do Dragão",
+          city: "Porto",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group B - 6",
+      },
+      teams: {
+        home: {
+          id: 212,
+          name: "FC Porto",
+          logo: "https://media.api-sports.io/football/teams/212.png",
+          winner: true,
+        },
+        away: {
+          id: 530,
+          name: "Atletico Madrid",
+          logo: "https://media.api-sports.io/football/teams/530.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 2,
           away: 0,
         },
         fulltime: {
@@ -24493,19 +11573,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608895,
-        referee: "L. Marinelli",
+        id: 946930,
+        referee: "M. Mariani",
         timezone: "UTC",
-        date: "2021-05-15T13:00:00+00:00",
-        timestamp: 1621083600,
+        date: "2022-11-01T17:45:00+00:00",
+        timestamp: 1667324700,
         periods: {
-          first: 1621083600,
-          second: 1621087200,
+          first: 1667324700,
+          second: 1667328300,
         },
         venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
+          id: 699,
+          name: "BayArena",
+          city: "Leverkusen",
         },
         status: {
           long: "Match Finished",
@@ -24514,161 +11594,25 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 37",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group B - 6",
       },
       teams: {
         home: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: false,
-        },
-        away: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 4,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 3,
-        },
-        fulltime: {
-          home: 3,
-          away: 4,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608896,
-        referee: "M. Marchetti",
-        timezone: "UTC",
-        date: "2021-05-17T18:45:00+00:00",
-        timestamp: 1621277100,
-        periods: {
-          first: 1621277100,
-          second: 1621280700,
-        },
-        venue: {
-          id: 890,
-          name: "Stadio Marc'Antonio Bentegodi",
-          city: "Verona",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 37",
-      },
-      teams: {
-        home: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
+          id: 168,
+          name: "Bayer Leverkusen",
+          logo: "https://media.api-sports.io/football/teams/168.png",
           winner: null,
         },
         away: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 2,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608897,
-        referee: "D. Massa",
-        timezone: "UTC",
-        date: "2021-05-16T18:45:00+00:00",
-        timestamp: 1621190700,
-        periods: {
-          first: 1621190700,
-          second: 1621194300,
-        },
-        venue: {
-          id: 907,
-          name: "Stadio Giuseppe Meazza",
-          city: "Milano",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 37",
-      },
-      teams: {
-        home: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: null,
-        },
-        away: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
+          id: 569,
+          name: "Club Brugge KV",
+          logo: "https://media.api-sports.io/football/teams/569.png",
           winner: null,
         },
       },
@@ -24697,19 +11641,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608898,
-        referee: "P. Giacomelli",
+        id: 946931,
+        referee: "T. Stieler",
         timezone: "UTC",
-        date: "2021-05-16T13:00:00+00:00",
-        timestamp: 1621170000,
+        date: "2022-11-01T20:00:00+00:00",
+        timestamp: 1667332800,
         periods: {
-          first: 1621170000,
-          second: 1621173600,
+          first: 1667332800,
+          second: 1667336400,
         },
         venue: {
-          id: 880,
-          name: "Stadio Ciro Vigorito",
-          city: "Benevento",
+          id: 550,
+          name: "Anfield",
+          city: "Liverpool",
         },
         status: {
           long: "Match Finished",
@@ -24718,25 +11662,773 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 37",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group A - 6",
       },
       teams: {
         home: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
+          id: 40,
+          name: "Liverpool",
+          logo: "https://media.api-sports.io/football/teams/40.png",
+          winner: true,
+        },
+        away: {
+          id: 492,
+          name: "Napoli",
+          logo: "https://media.api-sports.io/football/teams/492.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946932,
+        referee: "G. Nyberg",
+        timezone: "UTC",
+        date: "2022-11-01T20:00:00+00:00",
+        timestamp: 1667332800,
+        periods: {
+          first: 1667332800,
+          second: 1667336400,
+        },
+        venue: {
+          id: 1401,
+          name: "Ibrox Stadium",
+          city: "Glasgow",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group A - 6",
+      },
+      teams: {
+        home: {
+          id: 257,
+          name: "Rangers",
+          logo: "https://media.api-sports.io/football/teams/257.png",
+          winner: false,
+        },
+        away: {
+          id: 194,
+          name: "Ajax",
+          logo: "https://media.api-sports.io/football/teams/194.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 3,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 2,
+        },
+        fulltime: {
+          home: 1,
+          away: 3,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946933,
+        referee: "I. Kružliak",
+        timezone: "UTC",
+        date: "2022-11-01T20:00:00+00:00",
+        timestamp: 1667332800,
+        periods: {
+          first: 1667332800,
+          second: 1667336400,
+        },
+        venue: {
+          id: 700,
+          name: "Allianz Arena",
+          city: "München",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group C - 6",
+      },
+      teams: {
+        home: {
+          id: 157,
+          name: "Bayern Munich",
+          logo: "https://media.api-sports.io/football/teams/157.png",
+          winner: true,
+        },
+        away: {
+          id: 505,
+          name: "Inter",
+          logo: "https://media.api-sports.io/football/teams/505.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946934,
+        referee: "R. Petrescu",
+        timezone: "UTC",
+        date: "2022-11-01T20:00:00+00:00",
+        timestamp: 1667332800,
+        periods: {
+          first: 1667332800,
+          second: 1667336400,
+        },
+        venue: {
+          id: 438,
+          name: "Doosan Aréna",
+          city: "Plzeň",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group C - 6",
+      },
+      teams: {
+        home: {
+          id: 567,
+          name: "Plzen",
+          logo: "https://media.api-sports.io/football/teams/567.png",
+          winner: false,
+        },
+        away: {
+          id: 529,
+          name: "Barcelona",
+          logo: "https://media.api-sports.io/football/teams/529.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 4,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 2,
+        },
+        fulltime: {
+          home: 2,
+          away: 4,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946935,
+        referee: "S. Vinčić",
+        timezone: "UTC",
+        date: "2022-11-01T20:00:00+00:00",
+        timestamp: 1667332800,
+        periods: {
+          first: 1667332800,
+          second: 1667336400,
+        },
+        venue: {
+          id: 1293,
+          name: "Estádio José Alvalade",
+          city: "Lisboa",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group D - 6",
+      },
+      teams: {
+        home: {
+          id: 228,
+          name: "Sporting CP",
+          logo: "https://media.api-sports.io/football/teams/228.png",
+          winner: false,
+        },
+        away: {
+          id: 169,
+          name: "Eintracht Frankfurt",
+          logo: "https://media.api-sports.io/football/teams/169.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946936,
+        referee: "S. Marciniak",
+        timezone: "UTC",
+        date: "2022-11-01T20:00:00+00:00",
+        timestamp: 1667332800,
+        periods: {
+          first: 1667332800,
+          second: 1667336400,
+        },
+        venue: {
+          id: 12678,
+          name: "Stade Orange Vélodrome",
+          city: "Marseille",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group D - 6",
+      },
+      teams: {
+        home: {
+          id: 81,
+          name: "Marseille",
+          logo: "https://media.api-sports.io/football/teams/81.png",
+          winner: false,
+        },
+        away: {
+          id: 47,
+          name: "Tottenham",
+          logo: "https://media.api-sports.io/football/teams/47.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946937,
+        referee: "S. Frappart",
+        timezone: "UTC",
+        date: "2022-11-02T17:45:00+00:00",
+        timestamp: 1667411100,
+        periods: {
+          first: 1667411100,
+          second: 1667414700,
+        },
+        venue: {
+          id: 1456,
+          name: "Estadio Santiago Bernabéu",
+          city: "Madrid",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group F - 6",
+      },
+      teams: {
+        home: {
+          id: 541,
+          name: "Real Madrid",
+          logo: "https://media.api-sports.io/football/teams/541.png",
+          winner: true,
+        },
+        away: {
+          id: 247,
+          name: "Celtic",
+          logo: "https://media.api-sports.io/football/teams/247.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 5,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 2,
+          away: 0,
+        },
+        fulltime: {
+          home: 5,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946938,
+        referee: "M. Oliver",
+        timezone: "UTC",
+        date: "2022-11-02T17:45:00+00:00",
+        timestamp: 1667411100,
+        periods: {
+          first: 1667411100,
+          second: 1667414700,
+        },
+        venue: {
+          id: 1253,
+          name: "Stadion Miejski Legii Warszawa im. Marszałka Józefa Piłsudskiego",
+          city: "Warszawa",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group F - 6",
+      },
+      teams: {
+        home: {
+          id: 550,
+          name: "Shakhtar Donetsk",
+          logo: "https://media.api-sports.io/football/teams/550.png",
+          winner: false,
+        },
+        away: {
+          id: 173,
+          name: "RB Leipzig",
+          logo: "https://media.api-sports.io/football/teams/173.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 4,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 0,
+          away: 4,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946939,
+        referee: "F. Letexier",
+        timezone: "UTC",
+        date: "2022-11-02T20:00:00+00:00",
+        timestamp: 1667419200,
+        periods: {
+          first: 1667419200,
+          second: 1667422800,
+        },
+        venue: {
+          id: 519,
+          name: "Stamford Bridge",
+          city: "London",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group E - 6",
+      },
+      teams: {
+        home: {
+          id: 49,
+          name: "Chelsea",
+          logo: "https://media.api-sports.io/football/teams/49.png",
+          winner: true,
+        },
+        away: {
+          id: 620,
+          name: "Dinamo Zagreb",
+          logo: "https://media.api-sports.io/football/teams/620.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 2,
+          away: 1,
+        },
+        fulltime: {
+          home: 2,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946940,
+        referee: "Antonio Mateu",
+        timezone: "UTC",
+        date: "2022-11-02T20:00:00+00:00",
+        timestamp: 1667419200,
+        periods: {
+          first: 1667419200,
+          second: 1667422800,
+        },
+        venue: {
+          id: 907,
+          name: "Stadio Giuseppe Meazza",
+          city: "Milano",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group E - 6",
+      },
+      teams: {
+        home: {
+          id: 489,
+          name: "AC Milan",
+          logo: "https://media.api-sports.io/football/teams/489.png",
+          winner: true,
+        },
+        away: {
+          id: 571,
+          name: "Red Bull Salzburg",
+          logo: "https://media.api-sports.io/football/teams/571.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 4,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 4,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946941,
+        referee: "O. Grinfeeld",
+        timezone: "UTC",
+        date: "2022-11-02T20:00:00+00:00",
+        timestamp: 1667419200,
+        periods: {
+          first: 1667419200,
+          second: 1667422800,
+        },
+        venue: {
+          id: 555,
+          name: "Etihad Stadium",
+          city: "Manchester",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group G - 6",
+      },
+      teams: {
+        home: {
+          id: 50,
+          name: "Manchester City",
+          logo: "https://media.api-sports.io/football/teams/50.png",
+          winner: true,
+        },
+        away: {
+          id: 536,
+          name: "Sevilla",
+          logo: "https://media.api-sports.io/football/teams/536.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 3,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 3,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 946942,
+        referee: "Ə. Ağayev",
+        timezone: "UTC",
+        date: "2022-11-02T20:00:00+00:00",
+        timestamp: 1667419200,
+        periods: {
+          first: 1667419200,
+          second: 1667422800,
+        },
+        venue: {
+          id: 11600,
+          name: "Parken",
+          city: "København",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group G - 6",
+      },
+      teams: {
+        home: {
+          id: 400,
+          name: "FC Copenhagen",
+          logo: "https://media.api-sports.io/football/teams/400.png",
           winner: null,
         },
         away: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
+          id: 165,
+          name: "Borussia Dortmund",
+          logo: "https://media.api-sports.io/football/teams/165.png",
           winner: null,
         },
       },
@@ -24747,7 +12439,7 @@ export const sampleResponse = {
       score: {
         halftime: {
           home: 1,
-          away: 0,
+          away: 1,
         },
         fulltime: {
           home: 1,
@@ -24765,14 +12457,14 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608899,
-        referee: "G. Calvarese",
+        id: 946943,
+        referee: "Carlos del Cerro",
         timezone: "UTC",
-        date: "2021-05-15T16:00:00+00:00",
-        timestamp: 1621094400,
+        date: "2022-11-02T20:00:00+00:00",
+        timestamp: 1667419200,
         periods: {
-          first: 1621094400,
-          second: 1621098000,
+          first: 1667419200,
+          second: 1667422800,
         },
         venue: {
           id: 909,
@@ -24786,787 +12478,39 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 37",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group H - 6",
       },
       teams: {
         home: {
           id: 496,
           name: "Juventus",
           logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-        away: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 3,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 1,
-        },
-        fulltime: {
-          home: 3,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608900,
-        referee: "L. Pairetto",
-        timezone: "UTC",
-        date: "2021-05-15T18:45:00+00:00",
-        timestamp: 1621104300,
-        periods: {
-          first: 1621104300,
-          second: 1621107900,
-        },
-        venue: {
-          id: 910,
-          name: "Stadio Olimpico",
-          city: "Roma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 37",
-      },
-      teams: {
-        home: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: true,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608901,
-        referee: "R. Abisso",
-        timezone: "UTC",
-        date: "2021-05-16T10:30:00+00:00",
-        timestamp: 1621161000,
-        periods: {
-          first: 1621161000,
-          second: 1621164600,
-        },
-        venue: {
-          id: 902,
-          name: "Stadio Artemio Franchi",
-          city: "Firenze",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 37",
-      },
-      teams: {
-        home: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
           winner: false,
         },
         away: {
-          id: 492,
-          name: "Napoli",
-          logo: "https://media.api-sports.io/football/teams/492.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 2,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 2,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608902,
-        referee: "M. Gariglio",
-        timezone: "UTC",
-        date: "2021-05-16T13:00:00+00:00",
-        timestamp: 1621170000,
-        periods: {
-          first: 1621170000,
-          second: 1621173600,
-        },
-        venue: {
-          id: 928,
-          name: "Dacia Arena",
-          city: "Udine",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 37",
-      },
-      teams: {
-        home: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
-          winner: false,
-        },
-        away: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608903,
-        referee: "M. Piccinini",
-        timezone: "UTC",
-        date: "2021-05-16T16:00:00+00:00",
-        timestamp: 1621180800,
-        periods: {
-          first: 1621180800,
-          second: 1621184400,
-        },
-        venue: {
-          id: 921,
-          name: "Stadio Ennio Tardini",
-          city: "Parma",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 37",
-      },
-      teams: {
-        home: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
-          winner: false,
-        },
-        away: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
+          id: 85,
+          name: "Paris Saint Germain",
+          logo: "https://media.api-sports.io/football/teams/85.png",
           winner: true,
         },
       },
       goals: {
         home: 1,
-        away: 3,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 1,
-        },
-        fulltime: {
-          home: 1,
-          away: 3,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608904,
-        referee: "D. Orsato",
-        timezone: "UTC",
-        date: "2021-05-15T13:00:00+00:00",
-        timestamp: 1621083600,
-        periods: {
-          first: 1621083600,
-          second: 1621087200,
-        },
-        venue: {
-          id: 939,
-          name: "Stadio Alberto Picco",
-          city: "La Spezia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 37",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: true,
-        },
-        away: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 4,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 4,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608905,
-        referee: "Marco Di Bello, Italy",
-        timezone: "UTC",
-        date: "2021-05-23T18:45:00+00:00",
-        timestamp: 1621795500,
-        periods: {
-          first: 1621795500,
-          second: 1621799100,
-        },
-        venue: {
-          id: 943,
-          name: "Stadio Olimpico Grande Torino",
-          city: "Torino",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 38",
-      },
-      teams: {
-        home: {
-          id: 503,
-          name: "Torino",
-          logo: "https://media.api-sports.io/football/teams/503.png",
-          winner: null,
-        },
-        away: {
-          id: 506,
-          name: "Benevento",
-          logo: "https://media.api-sports.io/football/teams/506.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 1,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608906,
-        referee: "Eugenio Abbattista, Italy",
-        timezone: "UTC",
-        date: "2021-05-22T18:45:00+00:00",
-        timestamp: 1621709100,
-        periods: {
-          first: 1621709100,
-          second: 1621712700,
-        },
-        venue: {
-          id: 895,
-          name: "Stadio Ezio Scida",
-          city: "Crotone",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 38",
-      },
-      teams: {
-        home: {
-          id: 501,
-          name: "Crotone",
-          logo: "https://media.api-sports.io/football/teams/501.png",
-          winner: null,
-        },
-        away: {
-          id: 502,
-          name: "Fiorentina",
-          logo: "https://media.api-sports.io/football/teams/502.png",
-          winner: null,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 0,
-        },
-        fulltime: {
-          home: 0,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608907,
-        referee: "Francesco Meraviglia, Italy",
-        timezone: "UTC",
-        date: "2021-05-22T18:45:00+00:00",
-        timestamp: 1621709100,
-        periods: {
-          first: 1621709100,
-          second: 1621712700,
-        },
-        venue: {
-          id: 883,
-          name: "Sardegna Arena",
-          city: "Cagliari",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 38",
-      },
-      teams: {
-        home: {
-          id: 490,
-          name: "Cagliari",
-          logo: "https://media.api-sports.io/football/teams/490.png",
-          winner: false,
-        },
-        away: {
-          id: 495,
-          name: "Genoa",
-          logo: "https://media.api-sports.io/football/teams/495.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
-        away: 1,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 1,
-        },
-        fulltime: {
-          home: 0,
-          away: 1,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608908,
-        referee: "Paolo Valeri, Italy",
-        timezone: "UTC",
-        date: "2021-05-23T18:45:00+00:00",
-        timestamp: 1621795500,
-        periods: {
-          first: 1621795500,
-          second: 1621799100,
-        },
-        venue: {
-          id: 881,
-          name: "Stadio Renato Dall'Ara",
-          city: "Bologna",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 38",
-      },
-      teams: {
-        home: {
-          id: 500,
-          name: "Bologna",
-          logo: "https://media.api-sports.io/football/teams/500.png",
-          winner: false,
-        },
-        away: {
-          id: 496,
-          name: "Juventus",
-          logo: "https://media.api-sports.io/football/teams/496.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 1,
-        away: 4,
-      },
-      score: {
-        halftime: {
-          home: 0,
-          away: 3,
-        },
-        fulltime: {
-          home: 1,
-          away: 4,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608909,
-        referee: "Alessandro Prontera, Italy",
-        timezone: "UTC",
-        date: "2021-05-23T18:45:00+00:00",
-        timestamp: 1621795500,
-        periods: {
-          first: 1621795500,
-          second: 1621799100,
-        },
-        venue: {
-          id: 935,
-          name: "MAPEI Stadium - Città del Tricolore",
-          city: "Reggio nell'Emilia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 38",
-      },
-      teams: {
-        home: {
-          id: 488,
-          name: "Sassuolo",
-          logo: "https://media.api-sports.io/football/teams/488.png",
-          winner: true,
-        },
-        away: {
-          id: 487,
-          name: "Lazio",
-          logo: "https://media.api-sports.io/football/teams/487.png",
-          winner: false,
-        },
-      },
-      goals: {
-        home: 2,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 1,
-          away: 0,
-        },
-        fulltime: {
-          home: 2,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608910,
-        referee: "Maurizio Mariani, Italy",
-        timezone: "UTC",
-        date: "2021-05-23T18:45:00+00:00",
-        timestamp: 1621795500,
-        periods: {
-          first: 1621795500,
-          second: 1621799100,
-        },
-        venue: {
-          id: 879,
-          name: "Gewiss Stadium",
-          city: "Bergamo",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 38",
-      },
-      teams: {
-        home: {
-          id: 499,
-          name: "Atalanta",
-          logo: "https://media.api-sports.io/football/teams/499.png",
-          winner: false,
-        },
-        away: {
-          id: 489,
-          name: "AC Milan",
-          logo: "https://media.api-sports.io/football/teams/489.png",
-          winner: true,
-        },
-      },
-      goals: {
-        home: 0,
         away: 2,
       },
       score: {
         halftime: {
-          home: 0,
+          home: 1,
           away: 1,
         },
         fulltime: {
-          home: 0,
+          home: 1,
           away: 2,
         },
         extratime: {
@@ -25581,19 +12525,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608911,
-        referee: "Daniele Paterna, Italy",
+        id: 946944,
+        referee: "A. Taylor",
         timezone: "UTC",
-        date: "2021-05-22T18:45:00+00:00",
-        timestamp: 1621709100,
+        date: "2022-11-02T20:00:00+00:00",
+        timestamp: 1667419200,
         periods: {
-          first: 1621709100,
-          second: 1621712700,
+          first: 1667419200,
+          second: 1667422800,
         },
         venue: {
-          id: 905,
-          name: "Stadio Comunale Luigi Ferraris",
-          city: "Genova",
+          id: 868,
+          name: "Sammy Ofer Stadium",
+          city: "Haifa",
         },
         status: {
           long: "Match Finished",
@@ -25602,108 +12546,40 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 38",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Group H - 6",
       },
       teams: {
         home: {
-          id: 498,
-          name: "Sampdoria",
-          logo: "https://media.api-sports.io/football/teams/498.png",
-          winner: true,
-        },
-        away: {
-          id: 523,
-          name: "Parma",
-          logo: "https://media.api-sports.io/football/teams/523.png",
+          id: 4195,
+          name: "Maccabi Haifa",
+          logo: "https://media.api-sports.io/football/teams/4195.png",
           winner: false,
         },
-      },
-      goals: {
-        home: 3,
-        away: 0,
-      },
-      score: {
-        halftime: {
-          home: 2,
-          away: 0,
-        },
-        fulltime: {
-          home: 3,
-          away: 0,
-        },
-        extratime: {
-          home: null,
-          away: null,
-        },
-        penalty: {
-          home: null,
-          away: null,
-        },
-      },
-    },
-    {
-      fixture: {
-        id: 608912,
-        referee: "Ivano Pezzuto, Italy",
-        timezone: "UTC",
-        date: "2021-05-23T18:45:00+00:00",
-        timestamp: 1621795500,
-        periods: {
-          first: 1621795500,
-          second: 1621799100,
-        },
-        venue: {
-          id: 939,
-          name: "Stadio Alberto Picco",
-          city: "La Spezia",
-        },
-        status: {
-          long: "Match Finished",
-          short: "FT",
-          elapsed: 90,
-        },
-      },
-      league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 38",
-      },
-      teams: {
-        home: {
-          id: 515,
-          name: "Spezia",
-          logo: "https://media.api-sports.io/football/teams/515.png",
-          winner: null,
-        },
         away: {
-          id: 497,
-          name: "AS Roma",
-          logo: "https://media.api-sports.io/football/teams/497.png",
-          winner: null,
+          id: 211,
+          name: "Benfica",
+          logo: "https://media.api-sports.io/football/teams/211.png",
+          winner: true,
         },
       },
       goals: {
-        home: 2,
-        away: 2,
+        home: 1,
+        away: 6,
       },
       score: {
         halftime: {
-          home: 2,
-          away: 0,
+          home: 1,
+          away: 1,
         },
         fulltime: {
-          home: 2,
-          away: 2,
+          home: 1,
+          away: 6,
         },
         extratime: {
           home: null,
@@ -25717,14 +12593,14 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608913,
-        referee: "Manuel Volpi, Italy",
+        id: 971793,
+        referee: "S. Schärer",
         timezone: "UTC",
-        date: "2021-05-23T13:00:00+00:00",
-        timestamp: 1621774800,
+        date: "2023-02-14T20:00:00+00:00",
+        timestamp: 1676404800,
         periods: {
-          first: 1621774800,
-          second: 1621778400,
+          first: 1676404800,
+          second: 1676408400,
         },
         venue: {
           id: 907,
@@ -25738,25 +12614,365 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 38",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
       },
       teams: {
         home: {
-          id: 505,
-          name: "Inter",
-          logo: "https://media.api-sports.io/football/teams/505.png",
+          id: 489,
+          name: "AC Milan",
+          logo: "https://media.api-sports.io/football/teams/489.png",
           winner: true,
         },
         away: {
-          id: 494,
-          name: "Udinese",
-          logo: "https://media.api-sports.io/football/teams/494.png",
+          id: 47,
+          name: "Tottenham",
+          logo: "https://media.api-sports.io/football/teams/47.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 971794,
+        referee: "C. Turpin",
+        timezone: "UTC",
+        date: "2023-03-08T20:00:00+00:00",
+        timestamp: 1678305600,
+        periods: {
+          first: 1678305600,
+          second: 1678309200,
+        },
+        venue: {
+          id: 593,
+          name: "Tottenham Hotspur Stadium",
+          city: "London",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
+      },
+      teams: {
+        home: {
+          id: 47,
+          name: "Tottenham",
+          logo: "https://media.api-sports.io/football/teams/47.png",
+          winner: null,
+        },
+        away: {
+          id: 489,
+          name: "AC Milan",
+          logo: "https://media.api-sports.io/football/teams/489.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 971795,
+        referee: "M. Oliver",
+        timezone: "UTC",
+        date: "2023-02-14T20:00:00+00:00",
+        timestamp: 1676404800,
+        periods: {
+          first: 1676404800,
+          second: 1676408400,
+        },
+        venue: {
+          id: 671,
+          name: "Parc des Princes",
+          city: "Paris",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
+      },
+      teams: {
+        home: {
+          id: 85,
+          name: "Paris Saint Germain",
+          logo: "https://media.api-sports.io/football/teams/85.png",
+          winner: false,
+        },
+        away: {
+          id: 157,
+          name: "Bayern Munich",
+          logo: "https://media.api-sports.io/football/teams/157.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 971796,
+        referee: "D. Orsato",
+        timezone: "UTC",
+        date: "2023-03-08T20:00:00+00:00",
+        timestamp: 1678305600,
+        periods: {
+          first: 1678305600,
+          second: 1678309200,
+        },
+        venue: {
+          id: 700,
+          name: "Allianz Arena",
+          city: "München",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
+      },
+      teams: {
+        home: {
+          id: 157,
+          name: "Bayern Munich",
+          logo: "https://media.api-sports.io/football/teams/157.png",
+          winner: true,
+        },
+        away: {
+          id: 85,
+          name: "Paris Saint Germain",
+          logo: "https://media.api-sports.io/football/teams/85.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 971797,
+        referee: "D. Massa",
+        timezone: "UTC",
+        date: "2023-02-15T20:00:00+00:00",
+        timestamp: 1676491200,
+        periods: {
+          first: 1676491200,
+          second: 1676494800,
+        },
+        venue: {
+          id: 176,
+          name: "Jan Breydelstadion",
+          city: "Brugge",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
+      },
+      teams: {
+        home: {
+          id: 569,
+          name: "Club Brugge KV",
+          logo: "https://media.api-sports.io/football/teams/569.png",
+          winner: false,
+        },
+        away: {
+          id: 211,
+          name: "Benfica",
+          logo: "https://media.api-sports.io/football/teams/211.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 971798,
+        referee: "H. Meler",
+        timezone: "UTC",
+        date: "2023-03-07T20:00:00+00:00",
+        timestamp: 1678219200,
+        periods: {
+          first: 1678219200,
+          second: 1678222800,
+        },
+        venue: {
+          id: null,
+          name: "Estádio do Sport Lisboa e Benfica",
+          city: "Lisboa",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
+      },
+      teams: {
+        home: {
+          id: 211,
+          name: "Benfica",
+          logo: "https://media.api-sports.io/football/teams/211.png",
+          winner: true,
+        },
+        away: {
+          id: 569,
+          name: "Club Brugge KV",
+          logo: "https://media.api-sports.io/football/teams/569.png",
           winner: false,
         },
       },
@@ -25785,19 +13001,19 @@ export const sampleResponse = {
     },
     {
       fixture: {
-        id: 608914,
-        referee: "Daniele Chiffi, Italy",
+        id: 971799,
+        referee: "Jesús Gil",
         timezone: "UTC",
-        date: "2021-05-23T18:45:00+00:00",
-        timestamp: 1621795500,
+        date: "2023-02-15T20:00:00+00:00",
+        timestamp: 1676491200,
         periods: {
-          first: 1621795500,
-          second: 1621799100,
+          first: 1676491200,
+          second: 1676494800,
         },
         venue: {
-          id: null,
-          name: "Stadio Diego Armando Maradona",
-          city: "Naples",
+          id: 19381,
+          name: "SIGNAL IDUNA PARK",
+          city: "Dortmund",
         },
         status: {
           long: "Match Finished",
@@ -25806,25 +13022,909 @@ export const sampleResponse = {
         },
       },
       league: {
-        id: 135,
-        name: "Serie A",
-        country: "Italy",
-        logo: "https://media.api-sports.io/football/leagues/135.png",
-        flag: "https://media.api-sports.io/flags/it.svg",
-        season: 2020,
-        round: "Regular Season - 38",
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
+      },
+      teams: {
+        home: {
+          id: 165,
+          name: "Borussia Dortmund",
+          logo: "https://media.api-sports.io/football/teams/165.png",
+          winner: true,
+        },
+        away: {
+          id: 49,
+          name: "Chelsea",
+          logo: "https://media.api-sports.io/football/teams/49.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 971800,
+        referee: "D. Makkelie",
+        timezone: "UTC",
+        date: "2023-03-07T20:00:00+00:00",
+        timestamp: 1678219200,
+        periods: {
+          first: 1678219200,
+          second: 1678222800,
+        },
+        venue: {
+          id: 519,
+          name: "Stamford Bridge",
+          city: "London",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
+      },
+      teams: {
+        home: {
+          id: 49,
+          name: "Chelsea",
+          logo: "https://media.api-sports.io/football/teams/49.png",
+          winner: true,
+        },
+        away: {
+          id: 165,
+          name: "Borussia Dortmund",
+          logo: "https://media.api-sports.io/football/teams/165.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 971801,
+        referee: "I. Kovacs",
+        timezone: "UTC",
+        date: "2023-02-21T20:00:00+00:00",
+        timestamp: 1677009600,
+        periods: {
+          first: 1677009600,
+          second: 1677013200,
+        },
+        venue: {
+          id: 550,
+          name: "Anfield",
+          city: "Liverpool",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
+      },
+      teams: {
+        home: {
+          id: 40,
+          name: "Liverpool",
+          logo: "https://media.api-sports.io/football/teams/40.png",
+          winner: false,
+        },
+        away: {
+          id: 541,
+          name: "Real Madrid",
+          logo: "https://media.api-sports.io/football/teams/541.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 5,
+      },
+      score: {
+        halftime: {
+          home: 2,
+          away: 2,
+        },
+        fulltime: {
+          home: 2,
+          away: 5,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 971802,
+        referee: "F. Zwayer",
+        timezone: "UTC",
+        date: "2023-03-15T20:00:00+00:00",
+        timestamp: 1678910400,
+        periods: {
+          first: 1678910400,
+          second: 1678914000,
+        },
+        venue: {
+          id: 1456,
+          name: "Estadio Santiago Bernabéu",
+          city: "Madrid",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
+      },
+      teams: {
+        home: {
+          id: 541,
+          name: "Real Madrid",
+          logo: "https://media.api-sports.io/football/teams/541.png",
+          winner: true,
+        },
+        away: {
+          id: 40,
+          name: "Liverpool",
+          logo: "https://media.api-sports.io/football/teams/40.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 971803,
+        referee: "Artur Soares Dias",
+        timezone: "UTC",
+        date: "2023-02-21T20:00:00+00:00",
+        timestamp: 1677009600,
+        periods: {
+          first: 1677009600,
+          second: 1677013200,
+        },
+        venue: {
+          id: 10491,
+          name: "Deutsche Bank Park",
+          city: "Frankfurt am Main",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
+      },
+      teams: {
+        home: {
+          id: 169,
+          name: "Eintracht Frankfurt",
+          logo: "https://media.api-sports.io/football/teams/169.png",
+          winner: false,
+        },
+        away: {
+          id: 492,
+          name: "Napoli",
+          logo: "https://media.api-sports.io/football/teams/492.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 0,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 971804,
+        referee: "A. Taylor",
+        timezone: "UTC",
+        date: "2023-03-15T20:00:00+00:00",
+        timestamp: 1678910400,
+        periods: {
+          first: 1678910400,
+          second: 1678914000,
+        },
+        venue: {
+          id: 11904,
+          name: "Stadio Diego Armando Maradona",
+          city: "Napoli",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
       },
       teams: {
         home: {
           id: 492,
           name: "Napoli",
           logo: "https://media.api-sports.io/football/teams/492.png",
+          winner: true,
+        },
+        away: {
+          id: 169,
+          name: "Eintracht Frankfurt",
+          logo: "https://media.api-sports.io/football/teams/169.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 3,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 3,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 971805,
+        referee: "S. Gözübüyük",
+        timezone: "UTC",
+        date: "2023-02-22T20:00:00+00:00",
+        timestamp: 1677096000,
+        periods: {
+          first: 1677096000,
+          second: 1677099600,
+        },
+        venue: {
+          id: 738,
+          name: "Red Bull Arena",
+          city: "Leipzig",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
+      },
+      teams: {
+        home: {
+          id: 173,
+          name: "RB Leipzig",
+          logo: "https://media.api-sports.io/football/teams/173.png",
           winner: null,
         },
         away: {
-          id: 504,
-          name: "Verona",
-          logo: "https://media.api-sports.io/football/teams/504.png",
+          id: 50,
+          name: "Manchester City",
+          logo: "https://media.api-sports.io/football/teams/50.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 971806,
+        referee: "S. Vinčić",
+        timezone: "UTC",
+        date: "2023-03-14T20:00:00+00:00",
+        timestamp: 1678824000,
+        periods: {
+          first: 1678824000,
+          second: 1678827600,
+        },
+        venue: {
+          id: 555,
+          name: "Etihad Stadium",
+          city: "Manchester",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
+      },
+      teams: {
+        home: {
+          id: 50,
+          name: "Manchester City",
+          logo: "https://media.api-sports.io/football/teams/50.png",
+          winner: true,
+        },
+        away: {
+          id: 173,
+          name: "RB Leipzig",
+          logo: "https://media.api-sports.io/football/teams/173.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 7,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 3,
+          away: 0,
+        },
+        fulltime: {
+          home: 7,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 971807,
+        referee: "S. Jovanović",
+        timezone: "UTC",
+        date: "2023-02-22T20:00:00+00:00",
+        timestamp: 1677096000,
+        periods: {
+          first: 1677096000,
+          second: 1677099600,
+        },
+        venue: {
+          id: 907,
+          name: "Stadio Giuseppe Meazza",
+          city: "Milano",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
+      },
+      teams: {
+        home: {
+          id: 505,
+          name: "Inter",
+          logo: "https://media.api-sports.io/football/teams/505.png",
+          winner: true,
+        },
+        away: {
+          id: 212,
+          name: "FC Porto",
+          logo: "https://media.api-sports.io/football/teams/212.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 971808,
+        referee: "S. Marciniak",
+        timezone: "UTC",
+        date: "2023-03-14T20:00:00+00:00",
+        timestamp: 1678824000,
+        periods: {
+          first: 1678824000,
+          second: 1678827600,
+        },
+        venue: {
+          id: 1286,
+          name: "Estádio Do Dragão",
+          city: "Porto",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Round of 16",
+      },
+      teams: {
+        home: {
+          id: 212,
+          name: "FC Porto",
+          logo: "https://media.api-sports.io/football/teams/212.png",
+          winner: null,
+        },
+        away: {
+          id: 505,
+          name: "Inter",
+          logo: "https://media.api-sports.io/football/teams/505.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 1016055,
+        referee: "M. Oliver",
+        timezone: "UTC",
+        date: "2023-04-11T19:00:00+00:00",
+        timestamp: 1681239600,
+        periods: {
+          first: 1681239600,
+          second: 1681243200,
+        },
+        venue: {
+          id: null,
+          name: "Estádio do Sport Lisboa e Benfica",
+          city: "Lisboa",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Quarter-finals",
+      },
+      teams: {
+        home: {
+          id: 211,
+          name: "Benfica",
+          logo: "https://media.api-sports.io/football/teams/211.png",
+          winner: false,
+        },
+        away: {
+          id: 505,
+          name: "Inter",
+          logo: "https://media.api-sports.io/football/teams/505.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 1016056,
+        referee: "Carlos del Cerro",
+        timezone: "UTC",
+        date: "2023-04-19T19:00:00+00:00",
+        timestamp: 1681930800,
+        periods: {
+          first: 1681930800,
+          second: 1681934400,
+        },
+        venue: {
+          id: 907,
+          name: "Stadio Giuseppe Meazza",
+          city: "Milano",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Quarter-finals",
+      },
+      teams: {
+        home: {
+          id: 505,
+          name: "Inter",
+          logo: "https://media.api-sports.io/football/teams/505.png",
+          winner: null,
+        },
+        away: {
+          id: 211,
+          name: "Benfica",
+          logo: "https://media.api-sports.io/football/teams/211.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 3,
+        away: 3,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 1,
+        },
+        fulltime: {
+          home: 3,
+          away: 3,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 1016057,
+        referee: "Jesús Gil",
+        timezone: "UTC",
+        date: "2023-04-11T19:00:00+00:00",
+        timestamp: 1681239600,
+        periods: {
+          first: 1681239600,
+          second: 1681243200,
+        },
+        venue: {
+          id: 555,
+          name: "Etihad Stadium",
+          city: "Manchester",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Quarter-finals",
+      },
+      teams: {
+        home: {
+          id: 50,
+          name: "Manchester City",
+          logo: "https://media.api-sports.io/football/teams/50.png",
+          winner: true,
+        },
+        away: {
+          id: 157,
+          name: "Bayern Munich",
+          logo: "https://media.api-sports.io/football/teams/157.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 3,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 3,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 1016058,
+        referee: "C. Turpin",
+        timezone: "UTC",
+        date: "2023-04-19T19:00:00+00:00",
+        timestamp: 1681930800,
+        periods: {
+          first: 1681930800,
+          second: 1681934400,
+        },
+        venue: {
+          id: 700,
+          name: "Allianz Arena",
+          city: "München",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Quarter-finals",
+      },
+      teams: {
+        home: {
+          id: 157,
+          name: "Bayern Munich",
+          logo: "https://media.api-sports.io/football/teams/157.png",
+          winner: null,
+        },
+        away: {
+          id: 50,
+          name: "Manchester City",
+          logo: "https://media.api-sports.io/football/teams/50.png",
           winner: null,
         },
       },
@@ -25840,6 +13940,618 @@ export const sampleResponse = {
         fulltime: {
           home: 1,
           away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 1016059,
+        referee: "F. Letexier",
+        timezone: "UTC",
+        date: "2023-04-12T19:00:00+00:00",
+        timestamp: 1681326000,
+        periods: {
+          first: 1681326000,
+          second: 1681329600,
+        },
+        venue: {
+          id: 1456,
+          name: "Estadio Santiago Bernabéu",
+          city: "Madrid",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Quarter-finals",
+      },
+      teams: {
+        home: {
+          id: 541,
+          name: "Real Madrid",
+          logo: "https://media.api-sports.io/football/teams/541.png",
+          winner: true,
+        },
+        away: {
+          id: 49,
+          name: "Chelsea",
+          logo: "https://media.api-sports.io/football/teams/49.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 2,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 2,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 1016060,
+        referee: "D. Orsato",
+        timezone: "UTC",
+        date: "2023-04-18T19:00:00+00:00",
+        timestamp: 1681844400,
+        periods: {
+          first: 1681844400,
+          second: 1681848000,
+        },
+        venue: {
+          id: 519,
+          name: "Stamford Bridge",
+          city: "London",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Quarter-finals",
+      },
+      teams: {
+        home: {
+          id: 49,
+          name: "Chelsea",
+          logo: "https://media.api-sports.io/football/teams/49.png",
+          winner: false,
+        },
+        away: {
+          id: 541,
+          name: "Real Madrid",
+          logo: "https://media.api-sports.io/football/teams/541.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 0,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 1016061,
+        referee: "I. Kovacs",
+        timezone: "UTC",
+        date: "2023-04-12T19:00:00+00:00",
+        timestamp: 1681326000,
+        periods: {
+          first: 1681326000,
+          second: 1681329600,
+        },
+        venue: {
+          id: 907,
+          name: "Stadio Giuseppe Meazza",
+          city: "Milano",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Quarter-finals",
+      },
+      teams: {
+        home: {
+          id: 489,
+          name: "AC Milan",
+          logo: "https://media.api-sports.io/football/teams/489.png",
+          winner: true,
+        },
+        away: {
+          id: 492,
+          name: "Napoli",
+          logo: "https://media.api-sports.io/football/teams/492.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 1016062,
+        referee: "S. Marciniak",
+        timezone: "UTC",
+        date: "2023-04-18T19:00:00+00:00",
+        timestamp: 1681844400,
+        periods: {
+          first: 1681844400,
+          second: 1681848000,
+        },
+        venue: {
+          id: 11904,
+          name: "Stadio Diego Armando Maradona",
+          city: "Napoli",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Quarter-finals",
+      },
+      teams: {
+        home: {
+          id: 492,
+          name: "Napoli",
+          logo: "https://media.api-sports.io/football/teams/492.png",
+          winner: null,
+        },
+        away: {
+          id: 489,
+          name: "AC Milan",
+          logo: "https://media.api-sports.io/football/teams/489.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 1,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 1022981,
+        referee: "Artur Soares Dias",
+        timezone: "UTC",
+        date: "2023-05-09T19:00:00+00:00",
+        timestamp: 1683658800,
+        periods: {
+          first: 1683658800,
+          second: 1683662400,
+        },
+        venue: {
+          id: 1456,
+          name: "Estadio Santiago Bernabéu",
+          city: "Madrid",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Semi-finals",
+      },
+      teams: {
+        home: {
+          id: 541,
+          name: "Real Madrid",
+          logo: "https://media.api-sports.io/football/teams/541.png",
+          winner: null,
+        },
+        away: {
+          id: 50,
+          name: "Manchester City",
+          logo: "https://media.api-sports.io/football/teams/50.png",
+          winner: null,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 1,
+      },
+      score: {
+        halftime: {
+          home: 1,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 1,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 1022982,
+        referee: "S. Marciniak",
+        timezone: "UTC",
+        date: "2023-05-17T19:00:00+00:00",
+        timestamp: 1684350000,
+        periods: {
+          first: 1684350000,
+          second: 1684353600,
+        },
+        venue: {
+          id: 555,
+          name: "Etihad Stadium",
+          city: "Manchester",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Semi-finals",
+      },
+      teams: {
+        home: {
+          id: 50,
+          name: "Manchester City",
+          logo: "https://media.api-sports.io/football/teams/50.png",
+          winner: true,
+        },
+        away: {
+          id: 541,
+          name: "Real Madrid",
+          logo: "https://media.api-sports.io/football/teams/541.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 4,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 2,
+          away: 0,
+        },
+        fulltime: {
+          home: 4,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 1022983,
+        referee: "Jesús Gil",
+        timezone: "UTC",
+        date: "2023-05-10T19:00:00+00:00",
+        timestamp: 1683745200,
+        periods: {
+          first: 1683745200,
+          second: 1683748800,
+        },
+        venue: {
+          id: 907,
+          name: "Stadio Giuseppe Meazza",
+          city: "Milano",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Semi-finals",
+      },
+      teams: {
+        home: {
+          id: 489,
+          name: "AC Milan",
+          logo: "https://media.api-sports.io/football/teams/489.png",
+          winner: false,
+        },
+        away: {
+          id: 505,
+          name: "Inter",
+          logo: "https://media.api-sports.io/football/teams/505.png",
+          winner: true,
+        },
+      },
+      goals: {
+        home: 0,
+        away: 2,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 2,
+        },
+        fulltime: {
+          home: 0,
+          away: 2,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 1022984,
+        referee: "C. Turpin",
+        timezone: "UTC",
+        date: "2023-05-16T19:00:00+00:00",
+        timestamp: 1684263600,
+        periods: {
+          first: 1684263600,
+          second: 1684267200,
+        },
+        venue: {
+          id: 907,
+          name: "Stadio Giuseppe Meazza",
+          city: "Milano",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Semi-finals",
+      },
+      teams: {
+        home: {
+          id: 505,
+          name: "Inter",
+          logo: "https://media.api-sports.io/football/teams/505.png",
+          winner: true,
+        },
+        away: {
+          id: 489,
+          name: "AC Milan",
+          logo: "https://media.api-sports.io/football/teams/489.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
+        },
+        extratime: {
+          home: null,
+          away: null,
+        },
+        penalty: {
+          home: null,
+          away: null,
+        },
+      },
+    },
+    {
+      fixture: {
+        id: 1027909,
+        referee: "S. Marciniak",
+        timezone: "UTC",
+        date: "2023-06-10T19:00:00+00:00",
+        timestamp: 1686423600,
+        periods: {
+          first: 1686423600,
+          second: 1686427200,
+        },
+        venue: {
+          id: 1968,
+          name: "Atatürk Olimpiyat Stadı",
+          city: "İstanbul",
+        },
+        status: {
+          long: "Match Finished",
+          short: "FT",
+          elapsed: 90,
+        },
+      },
+      league: {
+        id: 2,
+        name: "UEFA Champions League",
+        country: "World",
+        logo: "https://media.api-sports.io/football/leagues/2.png",
+        flag: null,
+        season: 2022,
+        round: "Final",
+      },
+      teams: {
+        home: {
+          id: 50,
+          name: "Manchester City",
+          logo: "https://media.api-sports.io/football/teams/50.png",
+          winner: true,
+        },
+        away: {
+          id: 505,
+          name: "Inter",
+          logo: "https://media.api-sports.io/football/teams/505.png",
+          winner: false,
+        },
+      },
+      goals: {
+        home: 1,
+        away: 0,
+      },
+      score: {
+        halftime: {
+          home: 0,
+          away: 0,
+        },
+        fulltime: {
+          home: 1,
+          away: 0,
         },
         extratime: {
           home: null,

@@ -30,7 +30,7 @@ const ScoreGuesser = ({ onScore }: Props) => {
         reset();
       })}
     >
-      <Flex>
+      <Flex alignItems="center">
         <label htmlFor="home"></label>
         <Input
           {...register("home", { valueAsNumber: true })}
@@ -38,12 +38,12 @@ const ScoreGuesser = ({ onScore }: Props) => {
           fontWeight="bold"
           textAlign="center"
           type="number"
-          fontSize={{ base: "20px", lg: "7xl" }}
-          h={"fit-content"}
-          w={"2ch"}
+          fontSize={{ base: "initial", lg: "5xl" }}
+          w={{ base: "45px", lg: "100px" }}
+          h={{ base: "45px", lg: "100px" }}
         />
-        {/*         {errors.home && <p>{errors.home.message}</p>} */}
-        <Heading mx={2} fontSize={{ base: "20px", lg: "7xl" }}>
+        {/* {errors.home && <p>{errors.home.message}</p>} */}
+        <Heading color="#00887A" mx={2} fontSize={{ base: "20px", lg: "7xl" }}>
           -
         </Heading>
         <label htmlFor="away"></label>
@@ -53,9 +53,9 @@ const ScoreGuesser = ({ onScore }: Props) => {
           fontWeight="bold"
           textAlign="center"
           type="number"
-          fontSize={{ base: "20px", lg: "7xl" }}
-          h={"fit-content"}
-          w={"2ch"}
+          fontSize={{ base: "initial", lg: "5xl" }}
+          w={{ base: "45px", lg: "100px" }}
+          h={{ base: "45px", lg: "100px" }}
         />
         {/*         {errors.away && <p>{errors.away.message}</p>} */}
         <Button display="none" type="submit">

@@ -8,6 +8,7 @@ interface Fixture {
   };
   league: {
     name: string;
+    log: string;
   };
   teams: {
     home: { name: string; logo: string };
@@ -34,12 +35,13 @@ const useMatch = (answerStatus: boolean) => {
   /*   useEffect(() => {
     apiClient
       .get("/fixtures", {
-        params: { league: 39, season: 2022 },
+        params: { league: 2, season: 2022 },
       })
       .then((res) => {
         setIsLoading(true);
+        console.log(res.data);
         const randomGame = Math.floor(
-          Math.random() * sampleResponse.response.length - 1
+          Math.random() * res.data.response.length - 1
         );
         setGame(res.data.response[randomGame]);
       })

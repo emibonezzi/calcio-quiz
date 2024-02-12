@@ -1,6 +1,4 @@
 import {
-  Card,
-  CardBody,
   Divider,
   Flex,
   Grid,
@@ -70,21 +68,18 @@ function App() {
 
   return (
     <Grid
+      backgroundColor="#F7F9FB"
       alignItems="center"
       justifyItems={{ lg: "normal", base: "center" }}
       gap={5}
-      px={{ base: "0", lg: "20px" }}
-      paddingY="20px"
+      px={{ base: "0px", lg: "0px" }}
       templateAreas={{
-        base: `"navbar" "divider" "question" "score" "footer"`,
-        lg: `"navbar navbar navbar" "divider divider divider" "question question score" "footer footer footer"`,
+        base: `"navbar" "question" "score" "footer"`,
+        lg: `"navbar navbar navbar" "question question score" "footer footer footer"`,
       }}
     >
       <GridItem mb={3} area="navbar">
         <NavBar />
-      </GridItem>
-      <GridItem area="divider">
-        <Divider />
       </GridItem>
       <GridItem area="question">
         <GameCard
@@ -99,9 +94,21 @@ function App() {
           personalBest={personalBest}
         ></ScoreCard>
       </GridItem>
-      <GridItem area="footer  ">
-        <Flex h="150px" alignItems="center" justifyContent="center">
-          <Text>Developed by Emiliano Bonezzi</Text>
+      <GridItem color="#00887A" area="footer">
+        <Flex
+          borderTop="2px"
+          h={{ base: "80px", lg: "150px" }}
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Text
+            fontSize={{
+              base: "12px",
+              lg: "20px",
+            }}
+          >
+            Developed by Emiliano Bonezzi
+          </Text>
         </Flex>
       </GridItem>
     </Grid>

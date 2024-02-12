@@ -15,8 +15,10 @@ const TeamCard = ({ logo, name }: Props) => {
     >
       <Image mb={3} w={{ base: "50px", lg: "180px" }} src={logo}></Image>
       <Heading
+        textAlign="center"
+        color="#00887A"
         fontSize={{
-          base: "10px",
+          base: "12px",
           lg: "2xl",
         }}
       >

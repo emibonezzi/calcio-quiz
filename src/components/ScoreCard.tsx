@@ -16,6 +16,7 @@ const ScoreCard = ({ score, personalBest, attempts }: Props) => {
       justifyContent="center"
       boxSize={{ base: "200px", lg: "400px" }}
       boxShadow="xl"
+      color="#00887A"
     >
       <Flex justifyContent="space-between">
         <Heading fontSize={{ base: "md", lg: "4xl" }}>Score:</Heading>
