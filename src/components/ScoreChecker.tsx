@@ -25,9 +25,20 @@ const ScoreChecker = () => {
           fixture?.goals.away === awayGoals
         ) {
           setPoints();
+          toast({
+            title: "Right answer!",
+            position: "top",
+            colorScheme: "green",
+          });
         } else {
           if (lives > 1) {
             setLives();
+            toast({
+              title: "Wrong answer!",
+              description: `You have ${lives} left!`,
+              position: "top",
+              colorScheme: "red",
+            });
           } else {
             gameOver();
             navigate("/");
@@ -35,6 +46,7 @@ const ScoreChecker = () => {
               title: "Game over!",
               description: `Points: ${points}`,
               position: "top",
+              colorScheme: "red",
             });
           }
         }
