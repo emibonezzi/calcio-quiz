@@ -1,4 +1,3 @@
-import { sampleResponse } from "../utils/sampleResponse";
 import useFixtures from "./useFixtures";
 
 const getRandomGame = () => {

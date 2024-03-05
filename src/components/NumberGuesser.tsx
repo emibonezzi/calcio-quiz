@@ -65,7 +65,7 @@ const NumberGuesser = ({ type }: Props) => {
           <IconButton
             size={{ base: "xs", lg: "md" }}
             key={item.value}
-            onClick={(e) => updateToggle(item.value)}
+            onClick={() => updateToggle(item.value)}
             aria-label={item.toString()}
             icon={item.icon}
           ></IconButton>

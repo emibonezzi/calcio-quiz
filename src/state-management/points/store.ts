@@ -14,7 +14,7 @@ const usePointsStore = create<PointsStore>((set) => ({
   lives: 3,
   setPoints: () => set((store) => ({ points: store.points + 1 })),
   setLives: () => set((store) => ({ ...store, lives: store.lives - 1 })),
-  gameOver: () => set((store) => ({ points: 0, lives: 3 })),
+  gameOver: () => set(() => ({ points: 0, lives: 3 })),
 }));
 
 if (process.env.NODE_ENV === "development") {

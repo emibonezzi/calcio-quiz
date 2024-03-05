@@ -1,31 +1,23 @@
 import {
   Badge,
-  Box,
   Flex,
   Grid,
   GridItem,
-  Heading,
-  Image,
   Spacer,
   Spinner,
+  Text,
 } from "@chakra-ui/react";
-import getRandomGame from "../hooks/getRandomGame";
-import NumberGuesser from "./NumberGuesser";
-import useUserGuessStore from "../state-management/user-guess/store";
-import GuessedScore from "./GuessedScore";
-import ScoreChecker from "./ScoreChecker";
-import useFixtureStore from "../state-management/current-game/store";
-import TeamCard from "./TeamCard";
-import useFixtures from "../hooks/useFixtures";
 import { useEffect } from "react";
+import useFixtures from "../hooks/useFixtures";
+import useFixtureStore from "../state-management/current-game/store";
+import GuessedScore from "./GuessedScore";
 import NavBar from "./NavBar";
-import useFiltersStore from "../state-management/filters/store";
-
-const uclFilters = ["Round of 16", "Quarter-finals", "Semi-finals", "Final"];
+import NumberGuesser from "./NumberGuesser";
+import ScoreChecker from "./ScoreChecker";
+import TeamCard from "./TeamCard";
 
 const GameCard = () => {
-  const { fixtureQuery } = useFiltersStore();
-  const { games, isLoading } = useFixtures();
+  const { games, isLoading, error } = useFixtures();
   const { fixture, setFixture } = useFixtureStore();
 
   useEffect(() => {
@@ -38,6 +30,7 @@ const GameCard = () => {
 
   return (
     <Flex flexDirection="column" justifyContent="center" alignItems="center">
+      {error && <Text>{error.message}</Text>}
       <NavBar />
       <Grid
         alignItems="center"

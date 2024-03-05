@@ -1,16 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
-import APIClient from "../services/api-client";
-import useFiltersStore from "../state-management/filters/store";
 import ms from "ms";
 import { FetchResponse } from "../entities/FetchResponse";
-import useFixtureStore from "../state-management/current-game/store";
-import { Fixture } from "../entities/Fixture";
+import APIClient from "../services/api-client";
+import useFiltersStore from "../state-management/filters/store";
 
 const apiClient = new APIClient("/fixtures");
 
 const useFixtures = () => {
   const { fixtureQuery } = useFiltersStore();
-  let filteredGames: Fixture[] | undefined;
 
   const {
     data: games,
@@ -22,7 +19,7 @@ const useFixtures = () => {
     staleTime: ms("24h"),
   });
 
-  return { games, isLoading };
+  return { games, isLoading, error };
 };
 
 export default useFixtures;

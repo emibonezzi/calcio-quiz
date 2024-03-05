@@ -1,7 +1,6 @@
-import React from "react";
-import usePointsStore from "../state-management/points/store";
-import { FaStar } from "react-icons/fa";
 import { Box } from "@chakra-ui/react";
+import { FaStar } from "react-icons/fa";
+import usePointsStore from "../state-management/points/store";
 
 const Points = () => {
   const { points } = usePointsStore();

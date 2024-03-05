@@ -7,5 +7,5 @@ interface CurrentUserStore {
 
 create<CurrentUserStore>((set) => ({
   username: "",
-  setUsername: (username) => set((store) => ({ username: username })),
+  setUsername: (username) => set(() => ({ username: username })),
 }));

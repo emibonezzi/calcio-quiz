@@ -12,7 +12,7 @@ interface FixtureStore {
 const useFixtureStore = create<FixtureStore>((set) => ({
   fixture: null,
   setFixture: (newFixture) =>
-    set((store) => ({
+    set(() => ({
       fixture: newFixture,
     })),
   getRandomFixture: (games) =>

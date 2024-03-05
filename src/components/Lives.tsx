@@ -9,8 +9,8 @@ const Lives = () => {
     <Box display="flex" gap={3}>
       {Array(lives)
         .fill(0)
-        .map((item) => (
-          <FaHeart />
+        .map((item, index) => (
+          <FaHeart key={index} name={item} />
         ))}
     </Box>
   );

@@ -1,5 +1,4 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { FixturesQuery } from "../entities/FixturesQuery";
 import { FetchResponse } from "../entities/FetchResponse";
 
 const axiosInstance = axios.create({
@@ -10,7 +9,7 @@ const axiosInstance = axios.create({
   },
 });
 
-class APIClient<T> {
+class APIClient {
   endpoint: string;
 
   constructor(endpoint: string) {

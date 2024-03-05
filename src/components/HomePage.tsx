@@ -1,6 +1,5 @@
-import { Box, Heading, Select, Text } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import FilterSelector from "./FilterSelector";
-import UserForm from "./UserForm";
 
 const HomePage = () => {
   return (

@@ -1,8 +1,6 @@
-import { Box, Grid, GridItem } from "@chakra-ui/react";
-import React from "react";
-import Timer from "./Timer";
-import Points from "./Points";
+import { Grid, GridItem } from "@chakra-ui/react";
 import Lives from "./Lives";
+import Points from "./Points";
 
 const NavBar = () => {
   return (

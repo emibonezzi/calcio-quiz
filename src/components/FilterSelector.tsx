@@ -1,4 +1,4 @@
-import { Box, Button, Input, Select, Text } from "@chakra-ui/react";
+import { Box, Button, Select } from "@chakra-ui/react";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import useFiltersStore from "../state-management/filters/store";
@@ -6,7 +6,7 @@ import useFiltersStore from "../state-management/filters/store";
 const FilterSelector = () => {
   const leagueRef = useRef<HTMLSelectElement>(null);
   const seasonRef = useRef<HTMLSelectElement>(null);
-  const { fixtureQuery, setLeague, setSeason } = useFiltersStore();
+  const { setLeague, setSeason } = useFiltersStore();
   const navigate = useNavigate();
 
   return (

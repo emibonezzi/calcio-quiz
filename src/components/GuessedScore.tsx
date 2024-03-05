@@ -1,5 +1,4 @@
 import { Box, Heading } from "@chakra-ui/react";
-import React from "react";
 import useUserGuessStore from "../state-management/user-guess/store";
 
 const GuessedScore = () => {
