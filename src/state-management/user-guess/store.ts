@@ -6,17 +6,17 @@ interface UserGuessStore {
   awayGoals: number | string;
   setHomeGoals: (goals: number) => void;
   setAwayGoals: (goals: number) => void;
-  reset: () => void;
+  resetUserFields: () => void;
 }
 
 const useUserGuessStore = create<UserGuessStore>((set) => ({
-  homeGoals: "...",
-  awayGoals: "...",
+  homeGoals: " ",
+  awayGoals: " ",
   setHomeGoals: (userHomeGuess) =>
     set((store) => ({ ...store, homeGoals: userHomeGuess })),
   setAwayGoals: (userAwayGuess) =>
     set((store) => ({ ...store, awayGoals: userAwayGuess })),
-  reset: () => set(() => ({ homeGoals: "...", awayGoals: "..." })),
+  resetUserFields: () => set(() => ({ homeGoals: " ", awayGoals: " " })),
 }));
 
 if (process.env.NODE_ENV === "development") {

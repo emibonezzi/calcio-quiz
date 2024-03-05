@@ -54,10 +54,16 @@ const NumberGuesser = ({ type }: Props) => {
   const updateToggle = type === "home" ? setHomeGoals : setAwayGoals;
 
   return (
-    <Box mt={10} display="grid" gridTemplateColumns="repeat(3, 1fr)" gap={3}>
+    <Box
+      mt={6}
+      display="grid"
+      gridTemplateColumns={{ base: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
+      gap={3}
+    >
       {guesses.map((item) => {
         return (
           <IconButton
+            size={{ base: "xs", lg: "md" }}
             key={item.value}
             onClick={(e) => updateToggle(item.value)}
             aria-label={item.toString()}

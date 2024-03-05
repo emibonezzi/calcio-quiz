@@ -3,6 +3,7 @@ import APIClient from "../services/api-client";
 import useFiltersStore from "../state-management/filters/store";
 import ms from "ms";
 import { FetchResponse } from "../entities/FetchResponse";
+import useFixtureStore from "../state-management/current-game/store";
 
 const apiClient = new APIClient("/fixtures");
 
@@ -12,6 +13,7 @@ const useFixtures = () => {
   const {
     data: games,
     isLoading,
+    isSuccess,
     error,
   } = useQuery<FetchResponse>({
     queryKey: ["fixtures", fixtureQuery],
@@ -19,7 +21,7 @@ const useFixtures = () => {
     staleTime: ms("24h"),
   });
 
-  return { games, isLoading };
+  return { games, isLoading, isSuccess };
 };
 
 export default useFixtures;

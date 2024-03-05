@@ -1,51 +1,68 @@
 import {
   Badge,
+  Box,
   Flex,
   Grid,
   GridItem,
   Heading,
   Image,
   Spacer,
+  Spinner,
 } from "@chakra-ui/react";
-import useFixture from "../hooks/useFixture";
+import getRandomGame from "../hooks/getRandomGame";
 import NumberGuesser from "./NumberGuesser";
 import useUserGuessStore from "../state-management/user-guess/store";
 import GuessedScore from "./GuessedScore";
 import ScoreChecker from "./ScoreChecker";
+import useFixtureStore from "../state-management/current-game/store";
+import TeamCard from "./TeamCard";
+import useFixtures from "../hooks/useFixtures";
+import { useEffect } from "react";
+import NavBar from "./NavBar";
 
 const GameCard = () => {
-  const { randomGame } = useFixture();
+  const { games, isLoading } = useFixtures();
+  const { fixture, setFixture } = useFixtureStore();
+
+  useEffect(() => {
+    const randomGame =
+      games?.response[Math.floor(Math.random() * games.results)];
+    setFixture(randomGame);
+  }, [games]);
+
+  if (isLoading) return <Spinner />;
 
   return (
     <Flex flexDirection="column" justifyContent="center" alignItems="center">
+      <NavBar />
       <Grid
         alignItems="center"
         boxShadow="2xl"
         borderRadius={{ base: 25, lg: 50 }}
-        paddingX={{ base: 3, lg: 10 }}
+        paddingX={{ base: 2, lg: 10 }}
         py={10}
-        gap={5}
+        gap={{ base: 2, lg: 5 }}
         templateAreas={`"header header header" "home score away" "homeGuesser spacer awayGuesser" "check check check"`}
         templateColumns={"auto"}
       >
         <GridItem area="header">
           <Flex justifyItems="center" justifyContent="space-between">
             <Badge fontSize={{ base: "10px", lg: "15px" }}>
-              {randomGame?.league.name}
+              {fixture?.league.name}
             </Badge>
             <Badge fontSize={{ base: "10px", lg: "15px" }}>
-              {new Date(randomGame?.fixture.date || "").toDateString()}
+              {new Date(fixture?.fixture.date || "").toDateString()}
             </Badge>
           </Flex>
         </GridItem>
         <GridItem area="home">
-          <Image src={randomGame?.teams.home.logo} />
+          <TeamCard type="home" />
         </GridItem>
         <GridItem area="score">
           <GuessedScore />
         </GridItem>
         <GridItem area="away">
-          <Image src={randomGame?.teams.away.logo} />
+          <TeamCard type="away" />
         </GridItem>
         <GridItem area="homeGuesser">
           <NumberGuesser type="home" />
@@ -53,7 +70,7 @@ const GameCard = () => {
         <GridItem area="spacer">
           <Spacer />
         </GridItem>
-        <GridItem area="awayGuesser">
+        <GridItem mt={{ base: 3 }} area="awayGuesser">
           <NumberGuesser type="away" />
         </GridItem>
         <GridItem mt={5} area="check">

@@ -7,14 +7,22 @@ const GuessedScore = () => {
 
   return (
     <>
-      <Box display="flex" gap={3}>
-        <Box w="50px" border="2px" borderRadius="10px">
+      <Box display="flex">
+        <Box
+          w={{ base: "25px", lg: "50px" }}
+          bgColor="#3b444b"
+          borderRadius="10px"
+        >
           <Heading>{homeGoals}</Heading>
         </Box>
         <Box w="50px">
           <Heading>-</Heading>
         </Box>
-        <Box w="50px" border="2px" borderRadius="10px">
+        <Box
+          w={{ base: "25px", lg: "50px" }}
+          bgColor="#3b444b"
+          borderRadius="10px"
+        >
           <Heading>{awayGoals}</Heading>
         </Box>
       </Box>

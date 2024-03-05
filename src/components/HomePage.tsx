@@ -1,5 +1,6 @@
 import { Box, Heading, Select, Text } from "@chakra-ui/react";
 import FilterSelector from "./FilterSelector";
+import UserForm from "./UserForm";
 
 const HomePage = () => {
   return (
@@ -15,7 +16,6 @@ const HomePage = () => {
     >
       <Heading>Welcome to GuessTheScore!</Heading>
       <Text>This game will test your footie knowledge, are you ready?</Text>
-      <Text>Select your favorite league and season</Text>
       <FilterSelector />
     </Box>
   );
