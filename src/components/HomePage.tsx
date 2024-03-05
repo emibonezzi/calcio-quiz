@@ -15,7 +15,7 @@ const HomePage = () => {
       gap={5}
     >
       <Heading>Welcome to GuessTheScore!</Heading>
-      <Text>This game will test your footie knowledge, are you ready?</Text>
+      <Text>Are you up for the challenge? </Text>
       <FilterSelector />
     </Box>
   );

@@ -5,6 +5,7 @@ export interface Fixture {
   league: {
     name: string;
     logo: string;
+    round: string;
   };
   teams: {
     home: { name: string; logo: string };

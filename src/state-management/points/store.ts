@@ -11,7 +11,7 @@ interface PointsStore {
 
 const usePointsStore = create<PointsStore>((set) => ({
   points: 0,
-  lives: 5,
+  lives: 3,
   setPoints: () => set((store) => ({ points: store.points + 1 })),
   setLives: () => set((store) => ({ ...store, lives: store.lives - 1 })),
   gameOver: () => set((store) => ({ points: 0, lives: 3 })),

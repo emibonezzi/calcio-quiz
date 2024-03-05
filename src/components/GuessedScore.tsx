@@ -15,7 +15,7 @@ const GuessedScore = () => {
         >
           <Heading>{homeGoals}</Heading>
         </Box>
-        <Box w="50px">
+        <Box w={{ base: "25px", lg: "50px" }}>
           <Heading>-</Heading>
         </Box>
         <Box

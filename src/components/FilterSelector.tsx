@@ -23,23 +23,25 @@ const FilterSelector = () => {
     >
       <Box display="flex" flexDirection="column" gap={4} alignItems="center">
         {/*         <label>Enter your username:</label>
-        <Input w="150px"></Input>
-        <label>Select your favorite league and season</label> */}
+        <Input w="150px"></Input>*/}
+        <label>Select your go-to league and season:</label>
         <Box
           display="flex"
           flexDirection={{ base: "column", lg: "row" }}
           gap={5}
         >
           <Select
+            w="200px"
             fontSize={{ base: "14px", lg: "14px" }}
             id="league"
             ref={leagueRef}
           >
+            <option value={2}>Champions League</option>
             <option value={39}>Premier League</option>
             <option value={135}>Serie A</option>
             <option value={140}>La Liga</option>
           </Select>
-          <Select id="season" ref={seasonRef}>
+          <Select w="200px" id="season" ref={seasonRef}>
             <option>2023</option>
             <option>2022</option>
             <option>2021</option>

@@ -19,8 +19,12 @@ import TeamCard from "./TeamCard";
 import useFixtures from "../hooks/useFixtures";
 import { useEffect } from "react";
 import NavBar from "./NavBar";
+import useFiltersStore from "../state-management/filters/store";
+
+const uclFilters = ["Round of 16", "Quarter-finals", "Semi-finals", "Final"];
 
 const GameCard = () => {
+  const { fixtureQuery } = useFiltersStore();
   const { games, isLoading } = useFixtures();
   const { fixture, setFixture } = useFixtureStore();
 
@@ -40,7 +44,8 @@ const GameCard = () => {
         boxShadow="2xl"
         borderRadius={{ base: 25, lg: 50 }}
         paddingX={{ base: 2, lg: 10 }}
-        py={10}
+        pt={5}
+        pb={3}
         gap={{ base: 2, lg: 5 }}
         templateAreas={`"header header header" "home score away" "homeGuesser spacer awayGuesser" "check check check"`}
         templateColumns={"auto"}
@@ -73,7 +78,7 @@ const GameCard = () => {
         <GridItem mt={{ base: 3 }} area="awayGuesser">
           <NumberGuesser type="away" />
         </GridItem>
-        <GridItem mt={5} area="check">
+        <GridItem py={2} area="check">
           <ScoreChecker />
         </GridItem>
       </Grid>
