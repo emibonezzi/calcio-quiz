@@ -35,7 +35,7 @@ const ScoreChecker = () => {
             setLives();
             toast({
               title: "Wrong answer!",
-              description: `You have ${lives} left!`,
+              description: `You have ${lives - 1} attempts left!`,
               position: "top",
               colorScheme: "red",
             });
