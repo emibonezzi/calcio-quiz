@@ -42,9 +42,9 @@ const FilterSelector = () => {
             <option value={140}>La Liga</option>
           </Select>
           <Select w="200px" id="season" ref={seasonRef}>
-            <option>2023</option>
             <option>2022</option>
             <option>2021</option>
+            <option>2020</option>
           </Select>
         </Box>
         <Button mt={5} w="100px" type="submit">
