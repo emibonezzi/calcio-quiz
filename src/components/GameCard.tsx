@@ -68,7 +68,7 @@ const GameCard = () => {
         <GridItem area="spacer">
           <Spacer />
         </GridItem>
-        <GridItem mt={{ base: 3 }} area="awayGuesser">
+        <GridItem area="awayGuesser">
           <NumberGuesser type="away" />
         </GridItem>
         <GridItem py={2} area="check">
